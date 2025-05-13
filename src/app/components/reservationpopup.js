@@ -197,7 +197,9 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
                 name="services"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-ivory-cream">Services</FormLabel>
+                    <FormLabel className="text-ivory-cream">
+                      Workshop(s)
+                    </FormLabel>
                     <Popover>
                       <PopoverTrigger asChild>
                         <Button
@@ -205,8 +207,8 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
                           className="w-full justify-between bg-black/30 border-none text-ivory-cream rounded-xl hover:bg-black/50 focus:ring-2 focus:ring-light-gold-accent"
                         >
                           {field.value.length > 0
-                            ? `${field.value.length} service(s) sélectionné(s)`
-                            : "Sélectionnez des services"}
+                            ? `${field.value.length} Selected`
+                            : "Please Select a Workshop"}
                         </Button>
                       </PopoverTrigger>
                       <PopoverContent className="p-0 bg-charcoal-black border-0 rounded-xl mt-2 w-[var(--radix-popover-trigger-width)]">
@@ -273,7 +275,7 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
                 type="submit"
                 className="w-full rounded-full bg-sand/50 text-black text-lg font-bold py-4 mt-2 hover:bg-light-gold-accent/90 transition-colors"
               >
-                Réservez maintenant
+                Book Now
               </Button>
             </form>
           </Form>
