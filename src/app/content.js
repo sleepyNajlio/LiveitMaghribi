@@ -67,25 +67,31 @@ export const services = {
     },
     {
       title: "Zelij",
-      image: "/images/services/zellige.jpg",
+      image: "/images/services/Zellige.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
     },
     {
       title: "Zelij Painting",
-      image: "/images/services/zellige-painting.jpg",
+      image: "/images/services/Zellige-painting.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
     },
     {
       title: "Dreamcatcher",
-      image: "/images/services/dreamcatcher.jpg",
+      image: "/images/services/Dreamcatcher.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
     },
     {
       title: "Tissage",
       image: "/images/services/tissage.jpg",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+    },
+    {
+      title: "Embroidery",
+      image: "/images/services/Embroidery.jpg",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
     },
