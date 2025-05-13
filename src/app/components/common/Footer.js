@@ -18,7 +18,7 @@ const Footer = () => {
                 alt="Logo"
                 width={300}
                 height={300}
-                className="w-full h-full object-contain"
+                className="w-full object-contain"
               />
               <p className="text-ivory-cream tracking-wider text-center mb-4 italic">
                 {hero.description}
@@ -74,7 +74,9 @@ const Footer = () => {
 
       <div className="bg-black py-4">
         <div className="container mx-auto text-center">
-          <p className="text-white text-sm">&copy; {currentYear} - Tous droits réservés</p>
+          <p className="text-white text-sm">
+            &copy; {currentYear} - Tous droits réservés
+          </p>
         </div>
       </div>
     </div>

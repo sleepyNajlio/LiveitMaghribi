@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const AboutUs = () => {
   return (
-    <section id="about" className="py-8 px-6 lg:px-24">
+    <section id="about" className="py-8 px-6 lg:px-24 scroll-margin-top">
       <div className="container mx-auto space-y-16 ">
         <motion.div
           className="flex flex-col items-center justify-between space-y-8 lg:space-y-0 lg:space-x-12"
@@ -18,7 +18,7 @@ const AboutUs = () => {
           transition={{ duration: 1 }}
         >
           <motion.h2
-            className="text-4xl font-extrabold text-light-gold-accent text-center w-full"
+            className="text-4xl font-extrabold text-sand text-center w-full"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}

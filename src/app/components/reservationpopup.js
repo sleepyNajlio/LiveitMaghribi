@@ -82,11 +82,9 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
     // Format the message
     const message = `\nHello, I want to book :\nName : ${
       data.name
-    }\nServices : ${data.services.join(", ")}\nDate : ${
-      data.date.split('T')[0]
-    }\nTime : ${
-      data.time
-    }`.trim();
+    }\nWorkshops: ${data.services.join(", ")}\nDate : ${
+      data.date.split("T")[0]
+    }\nTime : ${data.time}`.trim();
 
     console.log(message);
 
@@ -186,7 +184,7 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
                           min="11:00"
                           max="18:00"
                           {...field}
-                          className="pl-4 bg-black/30 border-none rounded-xl text-ivory-cream placeholder:text-gray-400 focus:ring-2 focus:ring-light-gold-accent"
+                          className="pl-4 bg-black/30 border-none rounded-xl text-sand placeholder:text-gray-400 focus:ring-2 focus:ring-light-gold-accent"
                         />
                       </FormControl>
                     </div>
@@ -273,7 +271,7 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
               {/* Submit button */}
               <Button
                 type="submit"
-                className="w-full rounded-full bg-light-gold-accent text-black text-lg font-bold py-4 mt-2 hover:bg-light-gold-accent/90 transition-colors"
+                className="w-full rounded-full bg-sand/50 text-black text-lg font-bold py-4 mt-2 hover:bg-light-gold-accent/90 transition-colors"
               >
                 Réservez maintenant
               </Button>

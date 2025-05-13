@@ -10,10 +10,7 @@ import { hero } from "@/app/content";
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const images = [
-    { src: hero.image, alt: hero.alt },
-    { src: "/images/barber-hero1.jpg", alt: "BarberShop Hero Image 2" },
-  ];
+  const images = [{ src: hero.image, alt: hero.alt }];
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">

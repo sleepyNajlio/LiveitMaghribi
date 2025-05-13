@@ -2,48 +2,47 @@
 
 import { motion } from "framer-motion";
 import { services } from "@/app/content";
-import Image from "next/image";
+import { useState } from "react"; // Add this
 import FlipCard from "./FlipCard";
 
 export const Services = () => {
+  // Add state to track which card is flipped
+  const [flippedCardIndex, setFlippedCardIndex] = useState(null);
+
   return (
-    <section id="services" className="py-8 text-ivory-cream font-playfair">
+    <section
+      id="services"
+      className="py-8 text-ivory-cream font-playfair scroll-margin-top"
+    >
       <motion.div
         className="max-w-6xl mx-auto px-8"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <h2
-          className="text-4xl font-bold text-center mb-8"
-          style={{ textShadow: "var(--neon-glow)" }}
-        >
+        <h2 className="text-4xl text-cream font-bold text-center mb-8">
           {services.title}
         </h2>
-        <div className="flex flex-wrap gap-8 justify-center">
+        <div className="flex flex-wrap gap-4 lg:gap-8 justify-center">
           {services.items.map((service, index) => (
             <motion.div
               key={index}
-              className="p-1 bg-cream rounded-2xl shadow-2xl w-full md:w-1/2 lg:w-1/4 "
-              // whileHover={{ scale: 1.05 }}
+              className="p-1 bg-cream rounded-2xl shadow-2xl w-full md:w-1/2 lg:w-1/4 max-w-sm"
             >
               <FlipCard
+                calUsername={services.calUsername}
+                calEvent={service.calEvent}
                 title={service.title}
                 description={service.description}
                 image={service.image}
                 link={service.link}
+                isFlipped={flippedCardIndex === index}
+                onFlip={() =>
+                  // If the card is already flipped, unflip it
+                  // Otherwise, flip this card and unflip others
+                  setFlippedCardIndex(flippedCardIndex === index ? null : index)
+                }
               />
-              {/* <div className="relative w-full h-48 mb-4">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-center">
-                {service.title}
-              </h3> */}
             </motion.div>
           ))}
         </div>

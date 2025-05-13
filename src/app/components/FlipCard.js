@@ -2,17 +2,18 @@
 
 import { useState } from "react";
 import CalendlyButton from "./calendlyButton";
+import CalButton from "./calButton";
 
-const FlipCard = ({ title, description, image, link }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
+const FlipCard = ({ title, description, image, link, onFlip, isFlipped, calUsername, calEvent }) => {
+  // const [isFlipped, setIsFlipped] = useState(false);
 
   return (
     <div
-      className="group relative w-full aspect-square cursor-pointer "
-      onClick={() => setIsFlipped(!isFlipped)}
+      className="group relative w-full h-auto cursor-pointer "
+      onClick={onFlip}
     >
       <div
-        className={`relative w-full h-full transition-all duration-500 [transform-style:preserve-3d] ${
+        className={`relative w-full h-auto min-h-64 transition-all duration-500 [transform-style:preserve-3d] ${
           isFlipped ? "[transform:rotateY(180deg)]" : ""
         }`}
       >
@@ -36,11 +37,8 @@ const FlipCard = ({ title, description, image, link }) => {
             {title}
           </h3>
           <p className="text-cream/80 text-center">{description}</p>
-          <CalendlyButton
-            link={link}
-            buttonText="Book Your Spot"
-            className="flex justify-center items-end"
-          />
+          <CalButton username={calUsername} event={calEvent} />
+
         </div>
       </div>
     </div>

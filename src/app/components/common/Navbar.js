@@ -53,18 +53,18 @@ export default function Navbar() {
         isScrolled
           ? "fixed top-0 left-0 w-full z-50 bg-clay/90"
           : "absolute top-0 left-0 w-full z-50"
-      }`}
+      } h-20`}
     >
-      <div className="container mx-auto flex items-center justify-between px-4 py-4">
+      <div className="container mx-auto flex items-center justify-between px-4 pb-4 pt-2">
         <div className="text-xl font-bold px-6">
-          <Link href="/">
+          <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/logoL.png"
+              src="/images/navLogo.png"
               alt="logo"
               width={100}
               height={100}
               priority
-              style={{ width: 90, height: "auto" }}
+              style={{ height: 70, width: "auto" }}
             />
           </Link>
         </div>
