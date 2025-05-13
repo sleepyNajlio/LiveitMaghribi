@@ -15,7 +15,8 @@ export const hero = {
   title: "LIVE IT MAGHRIBI",
   description:
     "Unleash your creativity over coffee — Pottery, Tissage, Dreamcatchers, and more!",
-  image: "/images/Dreamcatcher-hero.jpg",
+
+    image: "/images/Dreamcatcher-hero.jpg",
   alt: "Dreamcatcher Hero Image",
   button: "Book Now!",
 };
