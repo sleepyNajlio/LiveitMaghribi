@@ -37,7 +37,7 @@ export const about = {
 
 export const services = {
   title: "Our Workshops",
-  calUsername: "agadigital",
+  calUsername: "liveitmaghribi",
   items: [
     {
       title: "Traditional Pottery",

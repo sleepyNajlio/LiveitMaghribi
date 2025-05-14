@@ -10,17 +10,15 @@ export const Services = () => {
   const [flippedCardIndex, setFlippedCardIndex] = useState(null);
 
   return (
-    <section
-      id="services"
-      className="py-8 text-ivory-cream font-playfair scroll-margin-top"
-    >
+    <section id="services" className="py-8 text-ivory-cream scroll-margin-top">
       <motion.div
         className="max-w-6xl mx-auto px-8"
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
       >
-        <h2 className="text-4xl text-cream font-bold text-center mb-8">
+        <h2 className="text-4xl text-mustard font-bold text-center mb-8">
           {services.title}
         </h2>
         <div className="flex flex-wrap gap-4 lg:gap-8 justify-center">

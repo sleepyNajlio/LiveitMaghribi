@@ -13,26 +13,31 @@ const AboutUs = () => {
       <div className="container mx-auto space-y-16 ">
         <motion.div
           className="flex flex-col items-center justify-between space-y-8 lg:space-y-0 lg:space-x-12"
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <motion.h2
-            className="text-4xl font-extrabold text-sand text-center w-full"
+            className="text-4xl font-extrabold text-mustard text-center w-full underline"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
           >
             {about.title}
           </motion.h2>
-          <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 lg:space-x-12">
-            <div className="lg:w-1/2">
+          <div className="flex flex-col lg:flex-row items-center justify-between lg:space-y-0 lg:space-x-12">
+            <div className="w-full lg:w-1/2">
               <Image
                 src="/full-logo.png"
-                alt="barber de luxe"
+                alt="Live It Maghribi"
                 width={600}
                 height={400}
                 className="w-full h-full object-cover transform transition duration-500 hover:scale-105"
+                loading="lazy"
+                quality={85}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="lg:w-1/2 space-y-4 items-center ">
@@ -40,14 +45,15 @@ const AboutUs = () => {
                 className="text-lg leading-relaxed text-center"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
               >
                 {about.description}
               </motion.p>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <motion.h3 className="text-4xl font-bold mt-8 mb-4 text-center text-light-gold-accent font-playfair">
+            <motion.h3 className="text-4xl font-bold mt-8 mb-4 text-center text-sand  underline">
               <LuCalendarClock className="inline-block mr-2 mb-2 text-ivory-cream" />
               Open Hours
             </motion.h3>

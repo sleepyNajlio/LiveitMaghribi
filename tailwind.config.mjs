@@ -22,6 +22,7 @@ export default {
         cream: "#FDEAD5",
         clay: "#9D5842",
         sand: "#E8D8C3",
+        mustard: "#F9F5EB",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

@@ -15,7 +15,13 @@ const nextConfig = {
   },
   experimental: {
     optimizeCss: true,
-    optimizePackageImports: ["@heroicons/react", "framer-motion"],
+    optimizePackageImports: [
+      "@heroicons/react",
+      "framer-motion",
+      "react-icons",
+      "gsap",
+      "lucide-react",
+    ],
   },
   async headers() {
     return [
@@ -52,7 +58,10 @@ const nextConfig = {
     ];
   },
   compress: true,
-  productionBrowserSourceMaps: true,
+  productionBrowserSourceMaps: false,
+  reactStrictMode: true,
+  poweredByHeader: false,
+  output: "standalone",
   reactStrictMode: true,
 };
 

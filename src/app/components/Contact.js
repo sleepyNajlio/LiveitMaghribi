@@ -48,8 +48,8 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-8 px-6 lg:px-48 scroll-margin-top">
-      <h2 className="text-4xl font-extrabold text-sand text-center mb-8 font-playfair">
-        Contactez-nous
+      <h2 className="text-4xl font-extrabold text-mustard text-center mb-8 ">
+        Where the Magic Happens
       </h2>
       <div className="container mx-auto space-y-16">
         {/* <motion.div
@@ -96,13 +96,13 @@ const Contact = () => {
         </motion.div> */}
 
         <motion.div
-          className="flex flex-col lg:flex-row items-center justify-between lg:px-12 space-y-8 lg:space-y-0 lg:space-x-12"
-          initial={{ opacity: 0, y: 100 }}
+          className="flex flex-col lg:flex-row items-center justify-center lg:px-12 space-y-8 lg:space-y-0 lg:space-x-12"
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <div className="lg:w-1/2 space-y-4 w-full">
+          {/* <div className="lg:w-1/2 space-y-4 w-full">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-lg font-medium">
@@ -156,9 +156,9 @@ const Contact = () => {
                 </motion.button>
               </div>
             </form>
-          </div>
+          </div> */}
 
-          <div className=" w-full lg:w-1/2">
+          <div className=" w-full ">
             <motion.iframe
               title="Carte Google Maps montrant l'emplacement de Barber de Luxe à Agadir"
               src={contact.addressLink}
@@ -169,9 +169,9 @@ const Contact = () => {
               allowFullScreen=""
               aria-hidden="false"
               tabIndex="0"
-              initial={{ scale: 0.8, opacity: 0 }}
+              initial={{ scale: 0.95, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.2 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
               className="rounded-2xl w-full"
             ></motion.iframe>
           </div>

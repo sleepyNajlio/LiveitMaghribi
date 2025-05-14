@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import { contact, hero } from "@/app/content";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,18 +13,27 @@ const Footer = () => {
       <footer className="bg-black py-16">
         <div className="container mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className=" w-full lg:w-2/3 animate__animated animate__fadeIn animate__delay-0.5s mb-4">
+            <motion.div
+              className="w-full lg:w-2/3 mb-4"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
               <Image
                 src="/full-logo.png"
                 alt="Logo"
                 width={300}
                 height={300}
-                className="w-full object-contain"
+                className="w-2/3 object-contain mx-auto"
+                loading="lazy"
+                quality={85}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <p className="text-ivory-cream tracking-wider text-center mb-4 italic">
                 {hero.description}
               </p>
-            </div>
+            </motion.div>
 
             {/* <div className="space-y-4 animate__animated animate__fadeIn animate__delay-1s">
               <h3 className="text-2xl font-bold text-ivory-cream">Contact</h3>
@@ -34,10 +44,14 @@ const Footer = () => {
               </ul>
             </div> */}
 
-            <div className="flex flex-col items-center justify-center space-y-4 animate__animated animate__fadeIn animate__delay-1.5s">
-              <h3 className="text-2xl font-bold text-ivory-cream font-playfair">
-                Suivez-nous
-              </h3>
+            <motion.div
+              className="flex flex-col items-center justify-center space-y-4"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
+              <h3 className="text-2xl font-bold text-mustard">Follow Us</h3>
               <div className="flex space-x-6">
                 <a
                   aria-label="Suivez-nous sur Facebook"
@@ -67,7 +81,7 @@ const Footer = () => {
                   <FaLinkedin className="text-3xl" />
                 </a> */}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </footer>

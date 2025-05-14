@@ -60,11 +60,12 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/images/navLogo.png"
-              alt="logo"
+              alt="Live It Maghribi Logo"
               width={100}
-              height={100}
+              height={70}
               priority
-              style={{ height: 70, width: "auto" }}
+              quality={85}
+              className="h-[70px] w-auto"
             />
           </Link>
         </div>
