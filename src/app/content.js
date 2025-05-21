@@ -16,7 +16,7 @@ export const hero = {
   description:
     "Unleash your creativity over coffee — Pottery, Tissage, Dreamcatchers, and more!",
 
-    image: "/images/Dreamcatcher-hero.jpg",
+  image: "/images/Dreamcatcher-hero.jpg",
   alt: "Dreamcatcher Hero Image",
   button: "Book Now!",
 };
@@ -41,76 +41,57 @@ export const services = {
   items: [
     {
       title: "Traditional Pottery",
-      description: [
-        "Discover the timeless art of Moroccan pottery using age-old techniques to shape and mold your own unique clay creation.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      ],
+      description:
+        "Discover the timeless art of Moroccan pottery and create your own unique piece.",
       image: "/images/services/Embroidery.avif",
       calEvent: "potterie",
     },
     {
       title: "Modern Pottery",
       image: "/images/services/Modern-Pottery.avif",
-      description: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      ],
+      description:
+        "Explore contemporary pottery techniques in a fun, creative environment.",
     },
     {
       title: "Cooking Class",
       image: "/images/services/Embroidery.avif",
-      description: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      ],
+      description:
+        "Learn to cook delicious Moroccan dishes with expert guidance.",
     },
     {
       title: "Ceramic Painting",
       image: "/images/services/Embroidery.avif",
-      description: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      ],
+      description:
+        "Paint and personalize beautiful ceramic pieces to take home.",
     },
     {
       title: "Zelij",
       image: "/images/services/Embroidery.avif",
-      description: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      ],
+      description:
+        "Create intricate Moroccan mosaic art using traditional zelij techniques.",
     },
     {
       title: "Zelij Painting",
       image: "/images/services/Zellige-painting.jpg",
-      description: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      ],
+      description: "Decorate and paint your own zelij tile masterpiece.",
     },
     {
       title: "Dreamcatcher",
       image: "/images/services/Embroidery.avif",
-      description: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      ],
+      description:
+        "Craft a unique dreamcatcher with colorful threads and beads.",
     },
     {
       title: "Tissage",
       image: "/images/services/tissage.jpg",
-      description: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      ],
+      description:
+        "Weave beautiful textiles using traditional Moroccan techniques.",
     },
     {
       title: "Embroidery",
       image: "/images/services/Embroidery.avif",
-      description: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      ],
+      description:
+        "Learn the art of Moroccan embroidery and create your own design.",
     },
   ],
 };

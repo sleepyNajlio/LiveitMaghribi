@@ -13,9 +13,9 @@ export default function Home() {
     <div>
       <Hero />
       {/* <WorkshopCard /> */}
-      <WorkshopsSection />
-      {/* <Services />
-      <About /> */}
+      {/* <WorkshopsSection /> */}
+      <Services />
+      {/* <About /> */}
       {/* <Gallery /> */}
       {/* <Pricing /> */}
       {/* <CTA /> */}

@@ -9,39 +9,39 @@ body {
 
 @layer base {
   :root {
-    --background: 10 39% 45%; /* #9f5645 - terracotta */
-    --foreground: 30 92% 89%; /* #fdead5 - cream */
+    --background: 12 30% 92%; /* soft warm cream */
+    --foreground: 15 15% 20%; /* muted deep brown */
 
-    --card: 30 72% 90%; /* light beige background */
-    --card-foreground: 15 30% 25%; /* soft brown text */
+    --card: 12 25% 96%; /* off-white with warmth */
+    --card-foreground: 15 15% 20%;
 
-    --popover: 30 92% 89%;
-    --popover-foreground: 15 30% 25%;
+    --popover: 12 25% 96%;
+    --popover-foreground: 15 15% 20%;
 
-    --primary: 18 60% 55%; /* richer variant of terracotta */
-    --primary-foreground: 30 100% 96%; /* near white */
+    --primary: 12 30% 45%; /* muted terracotta */
+    --primary-foreground: 30 90% 95%; /* pale cream text */
 
-    --secondary: 24 83% 82%; /* peach beige */
-    --secondary-foreground: 18 20% 20%;
+    --secondary: 27 20% 85%; /* desaturated beige */
+    --secondary-foreground: 15 15% 25%;
 
-    --muted: 20 45% 82%; /* muted warm beige */
-    --muted-foreground: 15 20% 30%;
+    --muted: 30 20% 90%; /* calm light beige */
+    --muted-foreground: 15 10% 35%;
 
-    --accent: 16 41% 58%; /* dusty clay accent */
-    --accent-foreground: 30 100% 96%;
+    --accent: 18 25% 70%; /* dusty warm tone */
+    --accent-foreground: 30 90% 95%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 60% 45%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 18 60% 85%;
-    --input: 18 60% 85%;
-    --ring: 10 39% 45%;
+    --border: 20 15% 80%;
+    --input: 20 15% 80%;
+    --ring: 12 30% 45%;
 
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --chart-1: 16 20% 65%;
+    --chart-2: 174 15% 40%;
+    --chart-3: 198 15% 30%;
+    --chart-4: 43 30% 60%;
+    --chart-5: 28 40% 55%;
 
     --radius: 0.5rem;
   }
