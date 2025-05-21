@@ -9,7 +9,10 @@ import Link from "next/link";
 
 const AboutUs = () => {
   return (
-    <section id="about" className="py-8 px-6 lg:px-24 scroll-margin-top">
+    <section
+      id="about"
+      className="py-8 px-6 lg:px-24 bg-background text-foreground scroll-margin-top"
+    >
       <div className="container mx-auto space-y-16 ">
         <motion.div
           className="flex flex-col items-center justify-between space-y-8 lg:space-y-0 lg:space-x-12"
@@ -19,7 +22,7 @@ const AboutUs = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <motion.h2
-            className="text-4xl font-extrabold text-mustard text-center w-full underline"
+            className="text-4xl font-extrabold text-primary text-center w-full underline"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -53,15 +56,15 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <motion.h3 className="text-4xl font-bold mt-8 mb-4 text-center text-sand  underline">
+            <motion.h3 className="text-4xl font-bold mt-8 mb-4 text-center text-secondary underline">
               <LuCalendarClock className="inline-block mr-2 mb-2 text-ivory-cream" />
               Open Hours
             </motion.h3>
-            <hr className="w-1/2 border-t border-ivory-cream mx-auto" />
-            <motion.p className="text-xl leading-relaxed my-4 text-center">
+            <hr className="w-1/2 border-t border-muted mx-auto" />
+            <motion.p className="text-xl leading-relaxed my-4 text-center text-foreground">
               <span className="font-bold ">
-                <PiClockClockwiseLight className="inline-block mb-1 ml-3 text-ivory-cream" />
-                <span className="text-sand"> 7 / 7</span> Days:
+                <PiClockClockwiseLight className="inline-block mb-1 ml-3 text-secondary" />
+                <span className="text-secondary"> 7 / 7</span> Days:
               </span>{" "}
               {/* <PiClockClockwiseLight className="inline-block mb-1 ml-3 text-ivory-cream" /> */}
               {contact.hours}
@@ -71,7 +74,7 @@ const AboutUs = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 href={contact.whatsapp}
-                className="text-ivory-cream border border-cream rounded-2xl px-4 py-2 w-fit mx-auto my-4 hover:text-sand transition-colors duration-300"
+                className="text-foreground border border-muted rounded-2xl px-4 py-2 w-fit mx-auto my-4 hover:text-secondary transition-colors duration-300"
               >
                 <LuPhone className="inline-block mb-1 text-ivory-cream" />
                 <span className="ml-2">Contact us</span>

@@ -47,8 +47,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-8 px-6 lg:px-48 scroll-margin-top">
-      <h2 className="text-4xl font-extrabold text-mustard text-center mb-8 ">
+    <section
+      id="contact"
+      className="py-8 px-6 lg:px-48 bg-background text-foreground scroll-margin-top"
+    >
+      <h2 className="text-4xl font-extrabold text-primary text-center mb-8 ">
         Where the Magic Happens
       </h2>
       <div className="container mx-auto space-y-16">

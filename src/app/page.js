@@ -6,17 +6,20 @@ import Contact from "./components/Contact";
 import CTA from "./components/CTA";
 import { Services } from "./components/Services";
 import Gallery from "./components/gallery";
+import WorkshopsSection from "./components/workshopsSection";
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      <Services />
-      <About />
+      {/* <WorkshopCard /> */}
+      <WorkshopsSection />
+      {/* <Services />
+      <About /> */}
       {/* <Gallery /> */}
       {/* <Pricing /> */}
       {/* <CTA /> */}
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }

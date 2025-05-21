@@ -41,59 +41,76 @@ export const services = {
   items: [
     {
       title: "Traditional Pottery",
-      description:
+      description: [
         "Discover the timeless art of Moroccan pottery using age-old techniques to shape and mold your own unique clay creation.",
-      image: "/images/services/traditional-pottery.jpg",
-      link: "https://calendly.com/najlio-dev/pottery",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      ],
+      image: "/images/services/Embroidery.avif",
       calEvent: "potterie",
     },
     {
       title: "Modern Pottery",
-      image: "/images/services/modern-pottery.jpg",
-      description:
+      image: "/images/services/Modern-Pottery.avif",
+      description: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      ],
     },
     {
       title: "Cooking Class",
-      image: "/images/services/cooking.jpg",
-      description:
+      image: "/images/services/Embroidery.avif",
+      description: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      ],
     },
     {
       title: "Ceramic Painting",
-      image: "/images/services/ceramic-paint.jpg",
-      description:
+      image: "/images/services/Embroidery.avif",
+      description: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      ],
     },
     {
       title: "Zelij",
-      image: "/images/services/Zellige.jpg",
-      description:
+      image: "/images/services/Embroidery.avif",
+      description: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      ],
     },
     {
       title: "Zelij Painting",
       image: "/images/services/Zellige-painting.jpg",
-      description:
+      description: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      ],
     },
     {
       title: "Dreamcatcher",
-      image: "/images/services/Dreamcatcher.jpg",
-      description:
+      image: "/images/services/Embroidery.avif",
+      description: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      ],
     },
     {
       title: "Tissage",
       image: "/images/services/tissage.jpg",
-      description:
+      description: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      ],
     },
     {
       title: "Embroidery",
-      image: "/images/services/Embroidery.jpg",
-      description:
+      image: "/images/services/Embroidery.avif",
+      description: [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      ],
     },
   ],
 };

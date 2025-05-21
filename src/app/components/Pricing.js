@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { FaCheckCircle } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import { FaCheckCircle } from "react-icons/fa";
 
 const Pricing = () => {
   const plans = [
@@ -61,12 +61,16 @@ const Pricing = () => {
             transition={{ type: "spring", stiffness: 200 }}
           >
             <div className="p-6">
-              <h2 className="text-2xl font-bold mb-4 text-center">{plan.title}</h2>
+              <h2 className="text-2xl font-bold mb-4 text-center">
+                {plan.title}
+              </h2>
               <ul className="space-y-3">
                 {plan.prices.map((item, idx) => (
                   <li key={idx} className="flex justify-between">
                     <span>{item.frequency}</span>
-                    <span className="text-yellow-400 font-semibold">{item.price}</span>
+                    <span className="text-yellow-400 font-semibold">
+                      {item.price}
+                    </span>
                   </li>
                 ))}
               </ul>

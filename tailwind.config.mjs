@@ -11,18 +11,22 @@ export default {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        "charcoal-black": "#1C1C1C",
-        "ivory-cream": "#F5F5DC",
-        "antique-gold": "#D4AF37",
-        "mahogany-brown": "#4A2C2A",
-        "slate-gray": "#708090",
-        "classic-gold": "#C5A349",
-        "charcoal-gray": "#333333",
-        "light-gold-accent": "#E6C87A",
-        cream: "#FDEAD5",
-        clay: "#9D5842",
-        sand: "#E8D8C3",
-        mustard: "#F9F5EB",
+
+        primary: "hsl(var(--primary))",
+        "primary-foreground": "hsl(var(--primary-foreground))",
+
+        secondary: "hsl(var(--secondary))",
+        "secondary-foreground": "hsl(var(--secondary-foreground))",
+
+        accent: "hsl(var(--accent))",
+        "accent-foreground": "hsl(var(--accent-foreground))",
+
+        muted: "hsl(var(--muted))",
+        "muted-foreground": "hsl(var(--muted-foreground))",
+
+        card: "hsl(var(--card))",
+        "card-foreground": "hsl(var(--card-foreground))",
+
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

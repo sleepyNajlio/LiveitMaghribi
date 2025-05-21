@@ -51,7 +51,7 @@ export default function Navbar() {
     <nav
       className={`${
         isScrolled
-          ? "fixed top-0 left-0 w-full z-50 bg-clay/90"
+          ? "fixed top-0 left-0 w-full z-50 bg-background/90"
           : "absolute top-0 left-0 w-full z-50"
       } h-20`}
     >
