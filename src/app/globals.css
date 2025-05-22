@@ -9,39 +9,49 @@ body {
 
 @layer base {
   :root {
-    --background: 12 30% 92%; /* soft warm cream */
-    --foreground: 15 15% 20%; /* muted deep brown */
+    /* Base colors */
+    --background: 12 45% 45%; /* #9f5744 - terracotta */
+    --foreground: 30 80% 92%; /* #feebd6 - cream */
 
-    --card: 12 25% 96%; /* off-white with warmth */
-    --card-foreground: 15 15% 20%;
+    /* Card variants */
+    --card: 12 45% 98%; /* light terracotta background */
+    --card-foreground: 12 45% 25%; /* dark terracotta text */
 
-    --popover: 12 25% 96%;
-    --popover-foreground: 15 15% 20%;
+    /* Popover */
+    --popover: 12 45% 98%;
+    --popover-foreground: 12 45% 25%;
 
-    --primary: 12 30% 45%; /* muted terracotta */
-    --primary-foreground: 30 90% 95%; /* pale cream text */
+    /* Primary - main brand color */
+    --primary: 12 45% 45%; /* #9f5744 - terracotta */
+    --primary-foreground: 30 80% 92%; /* #feebd6 - cream */
 
-    --secondary: 27 20% 85%; /* desaturated beige */
-    --secondary-foreground: 15 15% 25%;
+    /* Secondary - complementary */
+    --secondary: 30 35% 85%; /* muted warm beige */
+    --secondary-foreground: 12 45% 25%;
 
-    --muted: 30 20% 90%; /* calm light beige */
-    --muted-foreground: 15 10% 35%;
+    /* Muted variants */
+    --muted: 20 30% 90%; /* subtle beige */
+    --muted-foreground: 12 35% 35%;
 
-    --accent: 18 25% 70%; /* dusty warm tone */
-    --accent-foreground: 30 90% 95%;
+    /* Accent colors */
+    --accent: 35 40% 65%; /* warm sand */
+    --accent-foreground: 12 45% 25%;
 
-    --destructive: 0 60% 45%;
-    --destructive-foreground: 0 0% 98%;
+    /* Destructive */
+    --destructive: 0 65% 45%; /* warm red */
+    --destructive-foreground: 30 80% 92%;
 
-    --border: 20 15% 80%;
-    --input: 20 15% 80%;
-    --ring: 12 30% 45%;
+    /* UI elements */
+    --border: 25 25% 80%;
+    --input: 25 25% 80%;
+    --ring: 12 45% 45%;
 
-    --chart-1: 16 20% 65%;
-    --chart-2: 174 15% 40%;
-    --chart-3: 198 15% 30%;
-    --chart-4: 43 30% 60%;
-    --chart-5: 28 40% 55%;
+    /* Chart colors */
+    --chart-1: 12 45% 45%; /* terracotta */
+    --chart-2: 35 40% 65%; /* sand */
+    --chart-3: 20 30% 55%; /* taupe */
+    --chart-4: 30 35% 75%; /* warm beige */
+    --chart-5: 15 40% 60%; /* rustic brown */
 
     --radius: 0.5rem;
   }

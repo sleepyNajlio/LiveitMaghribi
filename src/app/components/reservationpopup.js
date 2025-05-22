@@ -158,12 +158,12 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
                     <FormLabel className="text-cream">Date</FormLabel>
                     <div className="relative">
                       <FormControl>
-                        <DatePicker
+                        {/* <DatePicker
                           date={field.value ? new Date(field.value) : null}
                           setDate={(date) =>
                             field.onChange(date ? date.toISOString() : "")
                           }
-                        />
+                        /> */}
                       </FormControl>
                     </div>
                     <FormMessage className="text-red-400" />

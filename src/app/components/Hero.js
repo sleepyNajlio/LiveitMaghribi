@@ -13,7 +13,7 @@ const Hero = () => {
   const images = [{ src: hero.image, alt: hero.alt }];
 
   return (
-    <section className="relative h-screen max-h-[80vh] flex items-center justify-center overflow-hidden bg-background text-foreground">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-background text-foreground">
       <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
 
       <div className="absolute inset-0 w-full h-full">
@@ -43,9 +43,7 @@ const Hero = () => {
         <h1 className="text-5xl md:text-5xl max-w-3xl font-bold text-center">
           {hero.title}
         </h1>
-        <p className="text-l md:text-2xl max-w-2xl mx-auto mb-8">
-          {hero.description}
-        </p>
+        <p className="text-l md:text-2xl max-w-2xl mx-auto mb-8">{hero.description}</p>
         <ReservationPopup
           trigger={
             <button

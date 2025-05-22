@@ -37,61 +37,97 @@ export const about = {
 
 export const services = {
   title: "Our Workshops",
-  calUsername: "liveitmaghribi",
+  calUsername: "your-calendly-username", // replace with actual if needed
   items: [
     {
-      title: "Traditional Pottery",
-      description:
-        "Discover the timeless art of Moroccan pottery and create your own unique piece.",
-      image: "/images/services/Embroidery.avif",
-      calEvent: "potterie",
+      title: "Traditional Pottery Workshop",
+      description: "Spin the Clay. Shape the Tradition.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "traditional-pottery",
     },
     {
-      title: "Modern Pottery",
+      title: "Modern Pottery Workshop",
+      description: "Craft with Your Hands. Create from the Heart.",
       image: "/images/services/Modern-Pottery.avif",
-      description:
-        "Explore contemporary pottery techniques in a fun, creative environment.",
+      calEvent: "modern-pottery",
+    },
+    {
+      title: "Mosaïque Workshop",
+      description: "Piece by Piece, a Story Unfolds.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "mosaique",
+    },
+    {
+      title: "Zelij Painting Workshop",
+      description: "Brush Strokes of Heritage.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "zelij-painting",
+    },
+    {
+      title: "Tissage / Weaving Workshop",
+      description: "Threads of Tradition.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "tissage-weaving",
+    },
+    {
+      title: "Dreamcatcher Workshop",
+      description: "Catch the Dreams, Craft the Magic.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "dreamcatcher",
+    },
+    {
+      title: "Brodery Workshop",
+      description: "Stitching Stories.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "brodery",
+    },
+    {
+      title: "Crochet Workshop",
+      description: "Loops of Love.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "crochet",
+    },
+    {
+      title: "Concrete Workshop",
+      description: "Solid Foundations, Creative Expressions.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "concrete",
+    },
+    {
+      title: "Ceramic Painting Workshop",
+      description: "Coloring Clay with Culture.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "ceramic-painting",
+    },
+    {
+      title: "Canvas Painting Workshop",
+      description: "Your Canvas, Your Story.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "canvas-painting",
+    },
+    {
+      title: "Candle Painting Workshop",
+      description: "Light Up Your Creativity.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "candle-painting",
+    },
+    {
+      title: "Jewellery Workshop",
+      description: "Wear What You Create.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "jewellery",
+    },
+    {
+      title: "Cake Decoration Workshop",
+      description: "Deliciously Designed.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "cake-decoration",
     },
     {
       title: "Cooking Class",
-      image: "/images/services/Embroidery.avif",
-      description:
-        "Learn to cook delicious Moroccan dishes with expert guidance.",
-    },
-    {
-      title: "Ceramic Painting",
-      image: "/images/services/Embroidery.avif",
-      description:
-        "Paint and personalize beautiful ceramic pieces to take home.",
-    },
-    {
-      title: "Zelij",
-      image: "/images/services/Embroidery.avif",
-      description:
-        "Create intricate Moroccan mosaic art using traditional zelij techniques.",
-    },
-    {
-      title: "Zelij Painting",
-      image: "/images/services/Zellige-painting.jpg",
-      description: "Decorate and paint your own zelij tile masterpiece.",
-    },
-    {
-      title: "Dreamcatcher",
-      image: "/images/services/Embroidery.avif",
-      description:
-        "Craft a unique dreamcatcher with colorful threads and beads.",
-    },
-    {
-      title: "Tissage",
-      image: "/images/services/tissage.jpg",
-      description:
-        "Weave beautiful textiles using traditional Moroccan techniques.",
-    },
-    {
-      title: "Embroidery",
-      image: "/images/services/Embroidery.avif",
-      description:
-        "Learn the art of Moroccan embroidery and create your own design.",
+      description: "Flavors You’ll Never Forget.",
+      image: "/images/services/Modern-Pottery.avif",
+      calEvent: "cooking-class",
     },
   ],
 };

@@ -7,6 +7,7 @@ import CTA from "./components/CTA";
 import { Services } from "./components/Services";
 import Gallery from "./components/gallery";
 import WorkshopsSection from "./components/workshopsSection";
+import { ServicesCarousel } from "./components/servicesCarousel";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       <Hero />
       {/* <WorkshopCard /> */}
       {/* <WorkshopsSection /> */}
-      <Services />
+      <ServicesCarousel />
+      {/* <Services /> */}
       {/* <About /> */}
       {/* <Gallery /> */}
       {/* <Pricing /> */}
