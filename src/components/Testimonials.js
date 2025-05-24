@@ -36,7 +36,7 @@ export default function Testimonials() {
   const [expanded, setExpanded] = useState(null);
 
   return (
-    <section className="mx-auto px-4 py-10 flex flex-col gap-6 items-center">
+    <section className="mx-auto px-4 py-6 flex flex-col gap-6 items-center">
       <div>
         <h2 className="font-playfair font-bold  tracking-wider  text-3xl md:text-5xl text-center text-foreground mb-1">
           What Our Guests Say:
@@ -49,7 +49,7 @@ export default function Testimonials() {
         {testimonials.map((t, i) => (
           <Card
             key={i}
-            className=" bg-card/80 min-w-[400px] max-w-[500px] md:min-h-[350px] md:max-h-[400px] rounded-xl shadow gap-3 p-6 text-center font-serif text-lg text-muted-foreground flex-1 flex flex-col justify-center"
+            className=" bg-card/80 min-w-[350px] max-w-[500px] md:min-h-[200px] md:max-h-[400px] rounded-xl shadow gap-3 p-6 text-center font-serif text-lg text-muted-foreground flex-1 flex flex-col justify-center"
           >
             <div className="flex justify-center mb-2">
               {[...Array(5)].map((_, idx) => (
@@ -79,7 +79,7 @@ export default function Testimonials() {
               </span>
               <Button
                 variant="link"
-                className="mt-2 text-xs text-cool-accent inline-block"
+                className="mt-2 text-xs text-background/60 inline-block underline"
                 onClick={() => setExpanded(expanded === i ? null : i)}
               >
                 {expanded === i ? "Show less" : "Read more"}
@@ -92,7 +92,10 @@ export default function Testimonials() {
           </Card>
         ))}
       </div>
-      <Button variant="outline" className="w-fit border-2 border-foreground">
+      <Button
+        variant="outline"
+        className="w-fit border-2 rounded-full py-4 px-6 border-foreground"
+      >
         See All Testimonials
       </Button>
     </section>

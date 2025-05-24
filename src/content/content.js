@@ -16,7 +16,7 @@ export const hero = {
   description:
     "Unleash your creativity over coffee — Pottery, Tissage, Dreamcatchers, and more!",
 
-  image: "/images/Dreamcatcher-hero.jpg",
+  image: "/images/hero-image.avif",
   alt: "Dreamcatcher Hero Image",
   button: "Explore Workshops",
 };

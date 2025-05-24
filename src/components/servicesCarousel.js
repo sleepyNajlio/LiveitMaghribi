@@ -19,7 +19,7 @@ export const ServicesCarousel = () => {
   return (
     <div className="relative flex flex-col w-full items-center justify-center py-8">
       <div className="flex flex-col items-center justify-center gap-2">
-        <h2 className="text-xl md:text-3xl text-foreground font-extrabold font-playfair text-center tracking-wider">
+        <h2 className="text-3xl md:text-5xl text-foreground font-extrabold font-playfair text-center tracking-wider">
           {services.title}
         </h2>
         <p className=" text-base leading-relaxed font-light max-w-sm text-muted/80 text-center text-balance md:text-lg ">
@@ -73,13 +73,13 @@ export const ServicesCarousel = () => {
           whileInView={{ x: [0, 50, 0, -50, 0] }}
           transition={{ duration: 1, repeat: 2, repeatType: "loop" }}
           viewport={{ once: true }}
-          className="swiper-button-prev !bg-transparent border-0 border-foreground !text-cool-accent rounded-full !drop-shadow-xl transition-all duration-200 active:scale-75 hover:scale-100 !mt-1 !ml-10 md:!ml-0 "
+          className="swiper-button-prev !bg-transparent border-0 border-foreground !text-foreground rounded-full !drop-shadow-xl transition-all duration-200 active:scale-75 hover:scale-100  !ml-10 md:!ml-0 "
         ></motion.div>
         <motion.div
           whileInView={{ x: [0, -50, 0, 50, 0] }}
           transition={{ duration: 1, repeat: 2, repeatType: "loop" }}
           viewport={{ once: true }}
-          className="swiper-button-next !bg-transparent border-0 border-foreground !text-cool-accent rounded-full transition-all duration-200 active:scale-75 hover:scale-105 !mt-1 !mr-10 md:!mr-0"
+          className="swiper-button-next !bg-transparent border-0 border-foreground !text-foreground rounded-full transition-all duration-200 active:scale-75 hover:scale-105 !mr-10 md:!mr-0"
         >
           {/* <ChevronsRight /> */}
         </motion.div>

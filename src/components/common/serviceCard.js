@@ -3,11 +3,14 @@ import { Card, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 export default function ServiceCard({ service }) {
+  // SVG aspect ratio 2/3 (600x900), arch looks like a door
   const backgroundSvg = `
-    <svg width="400" height="600" viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 200C0 89.543 89.5431 0 200 0V0C310.457 0 400 89.5431 400 200V600H0V200Z" fill="#feebd6"/>
-</svg>
-`;
+    <svg width="600" height="900" viewBox="0 0 600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,900 V300 
+        A300,300 0 0,1 600,300 
+        V900 Z" fill="#feebd6"/>
+    </svg>
+  `;
   const encodedSvg = encodeURIComponent(backgroundSvg);
 
   return (
@@ -25,10 +28,8 @@ export default function ServiceCard({ service }) {
       />
       {/* content layer */}
       <div
-        className="w-full aspect-[2/3] flex flex-col items-center justify-between] relative z-10 overflow-hidden"
+        className="w-full aspect-[2/3] flex flex-col items-center relative z-10 overflow-hidden"
         style={{
-          // marginBottom: "-7rem",
-          // marginLeft: "4rem",
           maskImage: `url("data:image/svg+xml,${encodedSvg}")`,
           WebkitMaskImage: `url("data:image/svg+xml,${encodedSvg}")`,
           maskSize: "100%",
@@ -48,22 +49,25 @@ export default function ServiceCard({ service }) {
           className="object-cover shadow-lg"
           sizes="(max-width: 768px) 100vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-backgound/30 to-black/70">
-          <div className=" absolute inset-0 pb-2 flex flex-col justify-between items-center gap-10 ">
-            <h3 className=" text-primary-foreground text-xl  font-bold text-center  text-balance tracking-[0.2em] max-w-44 font-playfair mt-16">
-              {service.title}
-            </h3>
-            <div className="text-center text-balance text-md md:text-lg  tracking-widest italic font-playfair leading-relaxed w-full max-w-[200px] flex flex-col items-center min-h-14 justify-center gap-6">
-              <p>{service.description}</p>
-              <Button
-                variant="outline"
-                className="w-fit text-accent
-              border-accent rounded-xl shadow-xl tracking-wide mb-2 bg-accent-foreground/50"
-              >
-                Step Inside
-              </Button>
-            </div>
-          </div>
+        {/* Title at the bottom of the image */}
+        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/60 to-transparent pt-10 pb-6 flex flex-col items-center">
+          <h3 className="text-primary-foreground text-xl font-bold text-center text-balance tracking-[0.2em] max-w-44 font-playfair z-50 drop-shadow-lg">
+            {service.title}
+          </h3>
+        </div>
+      </div>
+      {/* Tagline and Button below the image */}
+      <div className="w-full flex flex-col items-center mt-2">
+        <div className="w-full  flex flex-col items-center justify-center gap-4">
+          <p className=" text-center text-balance text-md tracking-widest italic font-playfair leading-relaxed min-h-16 flex flex-col items-center justify-center ">
+            {service.description}
+          </p>
+          <Button
+            variant="outline"
+            className="w-fit font-sans text-accent border-accent rounded-full shadow-xl tracking-wide mb-2 px-8"
+          >
+            Step Inside
+          </Button>
         </div>
       </div>
       {/* <div className="text-center text-lg  italic font-playfair text-foreground min-h-11 md:min-h-14 flex flex-col items-center justify-center w-full">

@@ -53,7 +53,7 @@ export default function Navbar() {
       className={`${
         isScrolled
           ? "fixed top-0 left-0 w-full z-50 bg-background "
-          : "absolute top-0 left-0 w-full z-50"
+          : "absolute top-0 left-0 w-full z-50 bg-gradient-to-b from-background via-background/60 to-transparent"
       } h-20 ${isOpen ? "bg-background" : ""}`}
     >
       <div className="container mx-auto flex items-center justify-between px-4 pb-4 pt-2">
@@ -127,12 +127,12 @@ export default function Navbar() {
           ))}
         </div> */}
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-11">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-foreground font-bold hover:text-primary-foreground transition-colors"
+              className="text-foreground font-bold hover:text-accent transition-colors"
             >
               {link.label}
             </Link>
