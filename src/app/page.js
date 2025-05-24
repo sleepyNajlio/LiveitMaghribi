@@ -9,6 +9,8 @@ import Gallery from "../components/gallery";
 import WorkshopsSection from "../components/workshopsSection";
 import { ServicesCarousel } from "../components/servicesCarousel";
 import Testimonials from "../components/Testimonials";
+import { FaqSection } from "@/components/Faq";
+import MapComponent from "@/components/MapComponent";
 
 export default function Home() {
   return (
@@ -18,6 +20,9 @@ export default function Home() {
       {/* <WorkshopsSection /> */}
       <ServicesCarousel />
       <Testimonials />
+      <FaqSection />
+      <MapComponent />
+      {/* <Schedule /> */}
       {/* <Services /> */}
       {/* <About /> */}
       {/* <Gallery /> */}
