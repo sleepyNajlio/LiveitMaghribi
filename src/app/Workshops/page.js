@@ -1,7 +1,7 @@
-export const WorkshopPage = () => {
+export default function WorkshopPage() {
   return (
-    <>
-      <h1>Workshop Page</h1>
-    </>
+    <div>
+      <h1>Workshop</h1>
+    </div>
   );
-};
+}
