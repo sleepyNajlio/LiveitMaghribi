@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { LuCalendarClock, LuPhone } from "react-icons/lu";
 import { PiClockClockwiseLight } from "react-icons/pi";
-import { contact, about } from "@/app/content/content";
+import { contact, about } from "@/content/content";
 import Link from "next/link";
 
 const AboutUs = () => {

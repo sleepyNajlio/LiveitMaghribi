@@ -1,7 +1,9 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
 import { FaStar } from "react-icons/fa";
+import { useState } from "react";
 
 const testimonials = [
   {
@@ -31,8 +33,7 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  const backgroundSvg = ``;
-  const encodedSvg = encodeURIComponent(backgroundSvg);
+  const [expanded, setExpanded] = useState(null);
 
   return (
     <section className="mx-auto px-4 py-10 flex flex-col gap-6 items-center">
@@ -49,7 +50,6 @@ export default function Testimonials() {
           <Card
             key={i}
             className=" bg-card/80 min-w-[400px] max-w-[500px] md:min-h-[350px] md:max-h-[400px] rounded-xl shadow gap-3 p-6 text-center font-serif text-lg text-muted-foreground flex-1 flex flex-col justify-center"
-            style={{ backgroundImage: `url(data:image/svg+xml;base64,${encodedSvg})` }}
           >
             <div className="flex justify-center mb-2">
               {[...Array(5)].map((_, idx) => (
@@ -59,8 +59,31 @@ export default function Testimonials() {
                 />
               ))}
             </div>
-            <blockquote>
-              “{t.text}”
+            <blockquote className="block">
+              <span
+                className={
+                  expanded === i ? "" : "line-clamp-2 block transition-all duration-200"
+                }
+                style={
+                  expanded === i
+                    ? {}
+                    : {
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
+                      }
+                }
+              >
+                “{t.text}”
+              </span>
+              <Button
+                variant="link"
+                className="mt-2 text-xs text-cool-accent inline-block"
+                onClick={() => setExpanded(expanded === i ? null : i)}
+              >
+                {expanded === i ? "Show less" : "Read more"}
+              </Button>
               <br />
               <span className="block mt-2 text-sm text-primary font-bold">
                 — {t.name}

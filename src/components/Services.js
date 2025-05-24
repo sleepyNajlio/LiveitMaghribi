@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { services } from "@/app/content/content";
+import { services } from "@/content/content";
 import { useState } from "react"; // Add this
 import FlipCard from "./common/FlipCard";
 import ServiceCard from "./common/serviceCard";

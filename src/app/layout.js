@@ -2,9 +2,9 @@ import { Playfair_Display, Work_Sans } from "next/font/google";
 import { Montserrat } from "next/font/google";
 
 import "./globals.css";
-import Navbar from "./components/common/Navbar";
-import Footer from "./components/common/Footer";
-import { hero } from "./content/content";
+import Navbar from "../components/common/Navbar";
+import Footer from "../components/common/Footer";
+import { hero } from "../content/content";
 export const metadata = {
   title: hero.title,
   description: hero.description,

@@ -1,22 +1,24 @@
 "use client";
 
 import Image from "next/image";
-import { contact, about } from "@/app/content/content";
+import { contact, about } from "@/content/content";
 import { BsScissors } from "react-icons/bs";
 import { HiOutlineScissors } from "react-icons/hi2";
 import ReservationPopup from "./reservationpopup";
 import { useState } from "react";
-import { hero } from "@/app/content/content";
+import { hero } from "@/content/content";
+import { motion } from "framer-motion";
+import { ChevronsDown } from "lucide-react";
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
   const images = [{ src: hero.image, alt: hero.alt }];
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-background text-foreground">
-      <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
+    <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-background text-foreground">
+      <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 via-black/30 to-background/80"></div>
 
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full">
         {images.map((image, index) => (
           <div
             key={index}
@@ -39,11 +41,13 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="relative z-20 text-center text-white space-y-6">
-        <h1 className="text-5xl md:text-5xl max-w-3xl font-bold text-center">
+      <div className="relative z-20 text-center text-white space-y-6 px-2">
+        <h1 className=" font-playfair italic tracking-widest text-3xl md:text-5xl max-w-md font-bold text-center drop-shadow-lg">
           {hero.title}
         </h1>
-        <p className="text-l md:text-2xl max-w-2xl mx-auto mb-8">{hero.description}</p>
+        <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8 drop-shadow-lg font-light text-balance ">
+          {hero.description}
+        </p>
         <ReservationPopup
           trigger={
             <button
@@ -57,6 +61,14 @@ const Hero = () => {
           }
         />
       </div>
+      <motion.div
+        initial={{ opacity: 1, y: 50 }}
+        animate={{ y: [0, 20] }}
+        transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
+        className="absolute bottom-6 z-50"
+      >
+        <ChevronsDown className="text-cool-accent w-20 h-20 " />
+      </motion.div>
     </section>
   );
 };

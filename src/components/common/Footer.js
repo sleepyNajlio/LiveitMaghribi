@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
-import { contact, hero } from "@/app/content/content";
+import { contact, hero } from "@/content/content";
 import { motion } from "framer-motion";
 
 const Footer = () => {
