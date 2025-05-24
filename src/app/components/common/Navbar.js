@@ -63,7 +63,7 @@ export default function Navbar() {
               src="/images/NavlogoCream.png"
               alt="Live It Maghribi Logo"
               width={100}
-              height={70}
+              height={100}
               priority
               quality={100}
               className="h-[70px] w-auto"
@@ -126,6 +126,20 @@ export default function Navbar() {
             </Link>
           ))}
         </div> */}
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center space-x-6">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-foreground font-bold hover:text-primary-foreground transition-colors"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Mobile Navigation */}
         <AnimatePresence>
           {isOpen && (
             <motion.div

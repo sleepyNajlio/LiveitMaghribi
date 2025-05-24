@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { services as allServices, contact } from "../content";
+import { services as allServices, contact } from "../content/content";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -18,11 +18,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Command, CommandGroup, CommandItem } from "@/components/ui/command";
 import { Check, Scissors, User, Mail, Phone, X } from "lucide-react";
 import { GiPaintedPottery } from "react-icons/gi";
@@ -33,9 +29,7 @@ import { DatePicker } from "./DatePicker";
 
 // Zod schema for form validation
 const formSchema = z.object({
-  name: z
-    .string()
-    .min(2, { message: "Name must contain at least 2 characters." }),
+  name: z.string().min(2, { message: "Name must contain at least 2 characters." }),
   services: z
     .array(z.string())
     .min(1, { message: "Please select at least one service." }),
@@ -197,9 +191,7 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
                 name="services"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-ivory-cream">
-                      Workshop(s)
-                    </FormLabel>
+                    <FormLabel className="text-ivory-cream">Workshop(s)</FormLabel>
                     <Popover>
                       <PopoverTrigger asChild>
                         <Button
@@ -220,14 +212,10 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
                                 value={service.title}
                                 onSelect={() => {
                                   const current = field.value;
-                                  const exists = current.includes(
-                                    service.title
-                                  );
+                                  const exists = current.includes(service.title);
                                   field.onChange(
                                     exists
-                                      ? current.filter(
-                                          (s) => s !== service.title
-                                        )
+                                      ? current.filter((s) => s !== service.title)
                                       : [...current, service.title]
                                   );
                                 }}

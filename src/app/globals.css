@@ -10,49 +10,65 @@ body {
 @layer base {
   :root {
     /* Base colors */
-    --background: 12 45% 45%; /* #9f5744 - terracotta */
-    --foreground: 30 80% 92%; /* #feebd6 - cream */
+    --background: 12 45% 45%; /* Terracotta - #9f5744 */
+    --foreground: 30 80% 92%; /* Cream - #feebd6 */
 
     /* Card variants */
-    --card: 12 45% 98%; /* light terracotta background */
-    --card-foreground: 12 45% 25%; /* dark terracotta text */
+    --card: 12 45% 95%; /* Light terracotta */
+    --card-foreground: 12 45% 20%; /* Deep terracotta text */
 
     /* Popover */
-    --popover: 12 45% 98%;
-    --popover-foreground: 12 45% 25%;
+    --popover: 12 45% 95%;
+    --popover-foreground: 12 45% 20%;
 
     /* Primary - main brand color */
-    --primary: 12 45% 45%; /* #9f5744 - terracotta */
-    --primary-foreground: 30 80% 92%; /* #feebd6 - cream */
+    --primary: 12 45% 45%; /* Terracotta */
+    --primary-foreground: 30 80% 92%; /* Cream */
 
     /* Secondary - complementary */
-    --secondary: 30 35% 85%; /* muted warm beige */
+    --secondary: 30 35% 85%; /* Warm beige */
     --secondary-foreground: 12 45% 25%;
 
-    /* Muted variants */
-    --muted: 20 30% 90%; /* subtle beige */
-    --muted-foreground: 12 35% 35%;
+    /* Muted */
+    --muted: 20 30% 90%; /* Subtle beige */
+    --muted-foreground: 12 35% 35%; /* Soft brown */
 
-    /* Accent colors */
-    --accent: 35 40% 65%; /* warm sand */
+    /* Accent - sand */
+    --accent: 35 40% 65%; /* Warm sand */
     --accent-foreground: 12 45% 25%;
 
+    /* Cool accent - optional for hover/focus */
+    --cool-accent: 180 15% 55%; /* Eucalyptus blue-green */
+
     /* Destructive */
-    --destructive: 0 65% 45%; /* warm red */
+    --destructive: 0 65% 45%; /* Warm red */
     --destructive-foreground: 30 80% 92%;
+
+    /* Neutral grays */
+    --neutral: 30 10% 45%; /* Muted olive-gray */
+    --neutral-foreground: 30 10% 95%; /* Soft sand */
 
     /* UI elements */
     --border: 25 25% 80%;
     --input: 25 25% 80%;
-    --ring: 12 45% 45%;
+    --ring: 35 40% 65%; /* Focus ring - warm sand */
+    --focus-ring: 180 15% 55%; /* Optional: blue-green highlight */
+
+    /* Hover/disabled states */
+    --hover-bg: 12 45% 92%; /* Light clay */
+    --disabled-text: 12 25% 60%; /* Muted clay */
+
+    /* Tag backgrounds */
+    --tag-bg: 30 45% 85%; /* Beige */
 
     /* Chart colors */
-    --chart-1: 12 45% 45%; /* terracotta */
-    --chart-2: 35 40% 65%; /* sand */
-    --chart-3: 20 30% 55%; /* taupe */
-    --chart-4: 30 35% 75%; /* warm beige */
-    --chart-5: 15 40% 60%; /* rustic brown */
+    --chart-1: 12 45% 45%; /* Terracotta */
+    --chart-2: 35 40% 65%; /* Sand */
+    --chart-3: 20 30% 55%; /* Taupe */
+    --chart-4: 30 35% 75%; /* Warm beige */
+    --chart-5: 15 40% 60%; /* Rustic brown */
 
+    /* UI radius */
     --radius: 0.5rem;
   }
 
@@ -92,3 +108,4 @@ body {
     @apply bg-background text-foreground;
   }
 }
+

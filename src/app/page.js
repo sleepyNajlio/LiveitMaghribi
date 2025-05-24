@@ -8,6 +8,7 @@ import { Services } from "./components/Services";
 import Gallery from "./components/gallery";
 import WorkshopsSection from "./components/workshopsSection";
 import { ServicesCarousel } from "./components/servicesCarousel";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       {/* <WorkshopCard /> */}
       {/* <WorkshopsSection /> */}
       <ServicesCarousel />
+      <Testimonials />
       {/* <Services /> */}
       {/* <About /> */}
       {/* <Gallery /> */}

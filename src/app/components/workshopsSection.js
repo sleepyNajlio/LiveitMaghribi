@@ -1,5 +1,5 @@
 import WorkshopCard from "./common/workshopCard";
-import { services } from "../content";
+import { services } from "../content/content";
 
 export default function WorkshopsSection() {
   return (

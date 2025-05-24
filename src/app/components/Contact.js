@@ -1,14 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import {
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaGlobe,
-} from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGlobe } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { contact } from "../content";
+import { contact } from "../content/content";
 import Link from "next/link";
 
 const Contact = () => {

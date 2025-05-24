@@ -18,31 +18,31 @@ export const hero = {
 
   image: "/images/Dreamcatcher-hero.jpg",
   alt: "Dreamcatcher Hero Image",
-  button: "Book Now!",
+  button: "Explore Workshops",
 };
 
 export const about = {
   title: "About Us",
   description: (
     <>
-      <span className="font-bold text-sand">LIVE IT MAGHRIBI</span> is a cozy
-      creative space where you can explore Moroccan craftsmanship through
-      hands-on workshops like pottery, tissage, ceramic painting, dreamcatchers,
-      and zelij — all while enjoying a cup of coffee. Whether you're solo or
-      with friends, come as you are and book your spot via Instagram or WhatsApp
-      — we're open all week!
+      <span className="font-bold text-sand">LIVE IT MAGHRIBI</span> is a cozy creative
+      space where you can explore Moroccan craftsmanship through hands-on workshops like
+      pottery, tissage, ceramic painting, dreamcatchers, and zelij — all while enjoying a
+      cup of coffee. Whether you're solo or with friends, come as you are and book your
+      spot via Instagram or WhatsApp — we're open all week!
     </>
   ),
 };
 
 export const services = {
   title: "Our Workshops",
+  description: "Choose Your Next Experience... Pottery, Weaving, Painting, and beyond.",
   calUsername: "your-calendly-username", // replace with actual if needed
   items: [
     {
       title: "Traditional Pottery Workshop",
       description: "Spin the Clay. Shape the Tradition.",
-      image: "/images/services/Modern-Pottery.avif",
+      image: "/images/services/traditional-pottery.jpg",
       calEvent: "traditional-pottery",
     },
     {
@@ -54,13 +54,13 @@ export const services = {
     {
       title: "Mosaïque Workshop",
       description: "Piece by Piece, a Story Unfolds.",
-      image: "/images/services/Modern-Pottery.avif",
+      image: "/images/services/Zellige.jpg",
       calEvent: "mosaique",
     },
     {
       title: "Zelij Painting Workshop",
       description: "Brush Strokes of Heritage.",
-      image: "/images/services/Modern-Pottery.avif",
+      image: "/images/services/Zellige-painting.jpg",
       calEvent: "zelij-painting",
     },
     {

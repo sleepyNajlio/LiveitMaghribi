@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { contact, about } from "@/app/content";
+import { contact, about } from "@/app/content/content";
 import { BsScissors } from "react-icons/bs";
 import { HiOutlineScissors } from "react-icons/hi2";
 import ReservationPopup from "./reservationpopup";
 import { useState } from "react";
-import { hero } from "@/app/content";
+import { hero } from "@/app/content/content";
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +48,7 @@ const Hero = () => {
           trigger={
             <button
               onClick={() => setIsOpen(true)}
-              className="px-6 py-3 bg-primary text-primary-foreground text-lg rounded-2xl transition-all duration-300 inline-block cursor-pointer font-bold italic hover:scale-105 active:scale-98"
+              className="px-6 py-3 bg-accent text-accent-foreground tracking-wide  text-lg rounded-2xl transition-all duration-300 inline-block cursor-pointer font-bold italic hover:scale-105 active:scale-90"
               role="button"
               aria-label={hero.button}
             >
