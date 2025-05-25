@@ -12,7 +12,7 @@ export const contact = {
 };
 
 export const hero = {
-  title: "LIVE IT MAGHRIBI",
+  title: "Live It Maghribi",
   description:
     "Unleash your creativity over coffee — Pottery, Tissage, Dreamcatchers, and more!",
 

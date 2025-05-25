@@ -15,8 +15,8 @@ const Hero = () => {
   const images = [{ src: hero.image, alt: hero.alt }];
 
   return (
-    <section className="relative h-[80vh] md:h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-background text-foreground">
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-background/70 to-transparent"></div>
+    <section className="relative h-[90vh] md:h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-background text-foreground">
+      <div className="absolute inset-0 z-10 backdrop-blur-sm "></div>
 
       <div className="absolute inset-0 w-full">
         <video
@@ -33,11 +33,11 @@ const Hero = () => {
         </video>
       </div>
 
-      <div className="relative z-20 text-center text-white space-y-6 px-2 flex flex-col items-center justify-end">
-        <h1 className=" font-playfair italic tracking-widest text-3xl md:text-5xl max-w-lg font-bold text-center drop-shadow-lg">
+      <div className="relative z-20 text-center text-white  px-2 flex flex-col items-center justify-end">
+        <h1 className=" font-playfair italic tracking-widest text-3xl md:text-5xl max-w-lg font-extrabold leading-loose text-center drop-shadow-lg">
           {hero.title}
         </h1>
-        <p className="text-xl md:text-2xl max-w-lg mx-auto mb-8 drop-shadow-lg font-light text-balance ">
+        <p className="text-md md:text-2xl max-w-lg mx-auto mb-8 drop-shadow-lg font-light text-balance leading-relaxed ">
           {hero.description}
         </p>
         <ReservationPopup
@@ -57,7 +57,7 @@ const Hero = () => {
         initial={{ opacity: 1, y: 50 }}
         animate={{ y: [0, 20] }}
         transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
-        className="absolute bottom-6 z-20"
+        className="absolute bottom-10 z-20"
       >
         <ChevronsDown className="text-foreground w-20 h-20 " />
       </motion.div>

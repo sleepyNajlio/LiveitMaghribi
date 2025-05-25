@@ -7,14 +7,6 @@ import { useState } from "react";
 
 const testimonials = [
   {
-    name: "Natalie M",
-    text: "Last week I participated in a Zellige workshop here and had a great time! Fadoua made me feel welcome right away and supported me during the painting process with lots of good vibes and helpful advices. The atelier was easy to find and the organisation of the workshop was flawless and super fast. I would come back here any time :)",
-  },
-  {
-    name: "Sam Persch",
-    text: "My partner and I did a spinning wheel course and had the best time. We laughed, we learned and went home happy. We will be back and this time it won't take me 10 years lol. Thank you for having us.",
-  },
-  {
     name: "Abdo Andalussi",
     text: "It was a good dreamcatcher workshop, We had a nice time. Thanks to Ikram the best instructor",
   },
@@ -49,7 +41,7 @@ export default function Testimonials() {
         {testimonials.map((t, i) => (
           <Card
             key={i}
-            className=" bg-card/80 min-w-[350px] max-w-[500px] md:min-h-[200px] md:max-h-[400px] rounded-xl shadow gap-3 p-6 text-center font-serif text-lg text-muted-foreground flex-1 flex flex-col justify-center"
+            className=" bg-card/80 min-w-[350px] max-w-[500px] md:min-h-[150px] md:max-h-[400px] rounded-xl shadow  p-4 text-center font-serif text-lg text-muted-foreground flex-1 flex flex-col justify-center"
           >
             <div className="flex justify-center mb-2">
               {[...Array(5)].map((_, idx) => (
@@ -79,7 +71,7 @@ export default function Testimonials() {
               </span>
               <Button
                 variant="link"
-                className="mt-2 text-xs text-background/60 inline-block underline"
+                className=" text-xs text-background/60 inline-block underline"
                 onClick={() => setExpanded(expanded === i ? null : i)}
               >
                 {expanded === i ? "Show less" : "Read more"}
@@ -94,7 +86,7 @@ export default function Testimonials() {
       </div>
       <Button
         variant="outline"
-        className="w-fit border-2 rounded-full py-4 px-6 border-foreground"
+        className="w-fit !border-1 font-light rounded-full py-4 px-6 border-foreground text-foreground"
       >
         See All Testimonials
       </Button>

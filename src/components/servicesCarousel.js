@@ -22,7 +22,7 @@ export const ServicesCarousel = () => {
         <h2 className="text-3xl md:text-5xl text-foreground font-extrabold font-playfair text-center tracking-wider">
           {services.title}
         </h2>
-        <p className=" text-base leading-relaxed font-light max-w-sm text-muted/80 text-center text-balance md:text-lg ">
+        <p className="text-base leading-relaxed font-light max-w-sm text-muted/80 text-center text-balance md:text-lg ">
           {services.description}
         </p>
       </div>

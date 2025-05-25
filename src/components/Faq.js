@@ -54,7 +54,6 @@ export const FaqSection = () => {
           className="px-6 py-2 rounded-full"
           href={contact.whatsapp}
           target="_blank"
-          rel="noopener noreferrer"
         >
           <FaWhatsapp className="mr-2 w-5 h-6" />
           Send Us A Message
