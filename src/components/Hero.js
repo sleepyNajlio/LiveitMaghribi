@@ -16,7 +16,7 @@ const Hero = () => {
   const images = [{ src: hero.image, alt: hero.alt }];
 
   return (
-    <section className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-background text-foreground">
+    <section className="relative h-[91vh] w-full flex flex-col items-center justify-center overflow-hidden bg-background text-foreground">
       <div className="absolute inset-0 z-10 backdrop-blur-sm "></div>
 
       <div className="absolute inset-0 w-full">
@@ -29,7 +29,7 @@ const Hero = () => {
           poster={hero.image} // fallback image
         >
           {/* <source src="/videos/hero-video.webm" type="video/webm" /> */}
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
+          <source src="/videos/hero-16sc.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

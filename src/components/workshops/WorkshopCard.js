@@ -60,7 +60,7 @@ export const WorkshopCard = ({ workshop, Invert }) => {
             sizes="(max-width: 768px) 100vw, 33vw"
           />
         </div>
-        <h2 className=" text-xl font-extrabold italic mb-2 font-playfair w-1/3 md:w-full text-left tracking-[.15em] leading-loose text-balance drop-shadow-md md:text-center max-w-lg">
+        <h2 className=" text-lg font-extrabold italic mb-2 font-playfair w-1/3 md:w-full text-left tracking-[.15em] leading-loose text-balance drop-shadow-md md:text-center max-w-lg">
           {workshop.title}
         </h2>
       </div>
