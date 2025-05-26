@@ -9,6 +9,7 @@ import { useState } from "react";
 import { hero } from "@/content/content";
 import { motion } from "framer-motion";
 import { ChevronsDown } from "lucide-react";
+import { Button } from "./ui/button";
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,18 +41,24 @@ const Hero = () => {
         <p className="text-md md:text-2xl max-w-lg mx-auto mb-8 drop-shadow-lg font-light text-balance leading-relaxed ">
           {hero.description}
         </p>
-        <ReservationPopup
+        <Button
+          asChild
+          className="p-6 bg-foreground/70 border-1 border-background text-accent-foreground tracking-wide text-lg rounded-full transition-all duration-300 cursor-pointer italic hover:bg-accent/70 hover:scale-105 active:scale-90 "
+        >
+          <a href="/workshops">{hero.button}</a>
+        </Button>
+        {/* <ReservationPopup
           trigger={
             <button
               onClick={() => setIsOpen(true)}
-              className="px-6 py-2 bg-foreground/70 border-1 border-background text-accent-foreground tracking-wide  text-lg rounded-full transition-all duration-300 inline-block cursor-pointer font-bold italic hover:scale-105 active:scale-90"
+              className="px-6 py-2 bg-foreground/70 border-1 border-background text-accent-foreground tracking-wide  text-lg rounded-full transition-all duration-300 cursor-pointer font-bold italic hover:scale-105 active:scale-90 "
               role="button"
               aria-label={hero.button}
             >
               {hero.button}
             </button>
           }
-        />
+        /> */}
       </div>
       <motion.div
         initial={{ opacity: 1, y: 50 }}

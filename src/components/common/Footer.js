@@ -2,7 +2,8 @@
 import { useState } from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
-import { contact, hero } from "@/content/content";
+import { hero } from "@/content/content";
+import { contact } from "@/content/contact";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -55,7 +56,9 @@ const Footer = () => {
               <div className="flex space-x-6">
                 <a
                   aria-label="Suivez-nous sur Facebook"
-                  href="#"
+                  href={contact.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-ivory-cream hover:text-light-gold-accent transition duration-300"
                 >
                   <FaFacebook className="text-3xl" />
@@ -70,6 +73,8 @@ const Footer = () => {
                 <a
                   aria-label="Suivez-nous sur Instagram"
                   href={contact.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-ivory-cream hover:text-light-gold-accent transition duration-300"
                 >
                   <FaInstagram className="text-3xl" />
@@ -86,10 +91,10 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className="bg-black py-4">
+      <div className="bg-accent-foreground py-4">
         <div className="container mx-auto text-center">
           <p className="text-white text-sm">
-            &copy; {currentYear} - Tous droits réservés
+            &copy; {currentYear} - All rights reserved.
           </p>
         </div>
       </div>

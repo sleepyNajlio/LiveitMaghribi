@@ -32,7 +32,7 @@ export const WorkshopTabs = () => {
       <Tabs defaultValue={categories[0]} className="space-y-4">
         <TabsList className="grid w-full h-full grid-cols-2 lg:grid-cols-4 gap-2 text-accent-foreground bg-foreground/50">
           {categories.map((category) => (
-            <TabsTrigger key={category} value={category} className="text-lg ">
+            <TabsTrigger key={category} id={category} value={category.trim()} className="text-lg ">
               {category}
             </TabsTrigger>
           ))}

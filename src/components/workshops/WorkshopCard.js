@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaCheckCircle, FaWhatsapp } from "react-icons/fa";
 import { GiPaintedPottery, GiEmptyHourglass } from "react-icons/gi";
 import { LuCalendarFold } from "react-icons/lu";
+import { contact } from "@/content/contact";
 
 import { Pickaxe } from "lucide-react";
 import { Button } from "../ui/button";
@@ -136,9 +137,12 @@ export const WorkshopCard = ({ workshop, Invert }) => {
               <Button
                 variant="outline"
                 className=" bg-transparent border-accent-foreground px-6 py-4 rounded-full"
+                asChild
               >
-                <FaWhatsapp className="" />
-                {workshop.buttons.whatsapp}
+                <a href={contact.whatsapp} target="_blank" rel="noreferrer">
+                  <FaWhatsapp className="" />
+                  {workshop.buttons.whatsapp}
+                </a>
               </Button>
             </div>
           </div>

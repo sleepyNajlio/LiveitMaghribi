@@ -54,7 +54,9 @@ export default function Contact() {
         </div>
         <div className="flex flex-col items-center justify-center gap-2 md:flex-row ">
           <div className="mx-2 bg-accent/30 md:min-h-[350px] md:w-1/2 rounded-xl p-4 flex flex-col items-center justify-center gap-2">
-            <h2 className="font-bold text-lg tracking-wide text-center text-balance ">{contact.address}</h2>
+            <h2 className="font-bold text-lg tracking-wide text-center text-balance ">
+              {contact.address}
+            </h2>
             <div className="flex flex-row items-center justify-center gap-2">
               <PiWarningOctagonLight className="w-8 h-8 text-red-900" />
               <p className="italic text-balance">{contact.instructions}</p>
@@ -74,40 +76,40 @@ export default function Contact() {
           <div className="py-4 flex flex-row flex-wrap items-center justify-center gap-4">
             <Button
               variant="outline"
-              className="rounded-full bg-foreground text-accent-foreground border-accent-foreground px-6 w-full md:w-auto mx-2"
+              className="rounded-full bg-foreground text-accent-foreground border-accent-foreground px-6 w-full md:w-52 mx-2 "
               asChild
             >
-              <a href={contact.phone}>
+              <a href={contact.phone} target="_blank">
                 <LuPhone className="w-8 h-8 mr-1" />
                 Call
               </a>
             </Button>
             <Button
               variant="outline"
-              className="rounded-full bg-foreground text-accent-foreground border-accent-foreground px-6 w-full md:w-auto mx-2"
+              className="rounded-full bg-foreground text-accent-foreground border-accent-foreground px-6 w-full md:w-52 mx-2"
               asChild
             >
-              <a href={contact.phone}>
+              <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="w-8 h-8 mr-1" />
                 WhatsApp
               </a>
             </Button>
             <Button
               variant="outline"
-              className="rounded-full bg-foreground text-accent-foreground border-accent-foreground px-6 w-full md:w-auto mx-2"
+              className="rounded-full bg-foreground text-accent-foreground border-accent-foreground px-6 w-full md:w-52 mx-2"
               asChild
             >
-              <a href={contact.phone}>
+              <a href={contact.email} target="_blank" rel="noopener noreferrer">
                 <MdOutlineAlternateEmail className="w-8 h-8 mr-1" />
                 Email
               </a>
             </Button>
             <Button
               variant="outline"
-              className="rounded-full bg-foreground text-accent-foreground border-accent-foreground px-6 w-full md:w-auto mx-2"
+              className="rounded-full bg-foreground text-accent-foreground border-accent-foreground px-6 w-full md:w-52 mx-2"
               asChild
             >
-              <a href={contact.phone}>
+              <a href={contact.instagram} target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="w-8 h-8 mr-1" />
                 Instagram
               </a>

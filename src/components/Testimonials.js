@@ -66,12 +66,12 @@ export default function Testimonials() {
           </Card>
         ))}
       </div>
-      <Button
+      {/* <Button
         variant="outline"
         className="w-fit !border-1 font-light rounded-full py-4 px-6 border-foreground text-foreground"
       >
         See All Testimonials
-      </Button>
+      </Button> */}
     </section>
   );
 }

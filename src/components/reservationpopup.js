@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { services as allServices, contact } from "../content/content";
+import { services as allServices } from "../content/content";
+import { contact } from "../content/contact";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,

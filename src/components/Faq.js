@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "./ui/button";
 import { FaWhatsapp } from "react-icons/fa";
-import { contact } from "@/content/content";
+import { contact } from "@/content/contact";
 import { Faq } from "@/content/Faq";
 
 export const FaqSection = () => {
@@ -31,14 +31,11 @@ export const FaqSection = () => {
       </div>
       <div className="flex flex-col items-center justify-center mt-8">
         <p className="text-lg font-medium text-foreground mb-4">Still Have Questions?</p>
-        <Button
-          variant="outline"
-          className="px-6 py-2 rounded-full"
-          href={contact.whatsapp}
-          target="_blank"
-        >
-          <FaWhatsapp className="mr-2 w-5 h-6" />
-          Send Us A Message
+        <Button variant="outline" className="px-6 py-2 rounded-full" asChild>
+          <a href="/contact">
+            {/* <FaWhatsapp className="mr-2 w-5 h-6" /> */}
+            Contact Us
+          </a>
         </Button>
       </div>
     </section>

@@ -6,6 +6,7 @@ export const Workshops = {
   items: [
     {
       title: "Traditional Pottery Workshop – On the Wheel",
+      tagline: "Spin the Clay. Shape the Tradition.",
       subline: "From Mud to Masterpiece: Experience Morocco’s Living Clay Traditions.",
       image: "/images/services/traditional-pottery.jpg",
       calEvent: "traditional-pottery",
@@ -38,6 +39,7 @@ export const Workshops = {
     },
     {
       title: "Modern Pottery Workshop – Handbuilding at the Table",
+      tagline: "Craft with Your Hands. Create from the Heart.",
       subline: "Craft with Your Hands. Create from the Heart.",
       image: "/images/services/Modern-Pottery.avif",
       calEvent: "modern-pottery",
@@ -70,6 +72,7 @@ export const Workshops = {
     },
     {
       title: "Ceramic Painting Workshop – Coloring Clay with Culture",
+      tagline: "Coloring Clay with Culture.",
       subline: "Glaze Your Story in Color.",
       image: "/images/services/Ceramic-Painting.avif",
       calEvent: "ceramic-painting",
@@ -102,6 +105,7 @@ export const Workshops = {
     },
     {
       title: "Concrete Workshop – Solid Foundations, Creative Expressions",
+      tagline: "Solid Foundations, Creative Expressions.",
       subline: "From Rough to Refined.",
       image: "/images/services/Concrete-Workshop.avif",
       calEvent: "concrete-workshop",
@@ -129,6 +133,7 @@ export const Workshops = {
     },
     {
       title: "Mosaic Workshop – Traditional Moroccan Style",
+      tagline: "Piece by Piece, a Story Unfolds.",
       subline: "Piece by Piece, a Story Unfolds.",
       image: "/images/services/mosaic-workshop.jpg",
       calEvent: "mosaic-workshop",
@@ -156,6 +161,7 @@ export const Workshops = {
     },
     {
       title: "Weaving Workshop – Threads of Tradition",
+      tagline: "Threads of Tradition.",
       subline: "Where Stories Are Woven, Thread by Thread.",
       image: "/images/services/Weaving-Workshop.avif",
       calEvent: "weaving-workshop",
@@ -183,6 +189,7 @@ export const Workshops = {
     },
     {
       title: "Dreamcatcher Workshop – Catch the Dreams, Craft the Magic",
+      tagline: "Catch the Dreams, Craft the Magic.",
       subline: "Woven Whimsy with a Moroccan Touch.",
       image: "/images/services/Dreamcatcher-Workshop.avif",
       calEvent: "dreamcatcher-workshop",
@@ -210,6 +217,7 @@ export const Workshops = {
     },
     {
       title: "Embroidery Workshop – Stitching Stories",
+      tagline: "Stitching Stories.",
       subline: "Threaded Art with Soul.",
       image: "/images/services/Embroidery-Workshop.avif",
       calEvent: "embroidery-workshop",
@@ -237,6 +245,7 @@ export const Workshops = {
     },
     {
       title: "Crochet Workshop – Loops of Love",
+      tagline: "Loops of Love.",
       subline: "Relax. Create. Connect.",
       image: "/images/services/Crochet-Workshop.avif",
       calEvent: "crochet-workshop",
@@ -264,6 +273,7 @@ export const Workshops = {
     },
     {
       title: "Jewelry Workshop – Make It, Wear It",
+      tagline: "Wear What You Create.",
       subline: "Crafted Adornments by You.",
       image: "/images/services/Jewelry-Workshop.avif",
       calEvent: "jewelry-workshop",
@@ -296,6 +306,7 @@ export const Workshops = {
     },
     {
       title: "Cake Decoration Workshop – Deliciously Designed",
+      tagline: "Deliciously Designed.",
       subline: "Sweet Creativity, One Frosting Swipe at a Time.",
       image: "/images/services/Cake-Decoration.avif",
       calEvent: "cake-decoration",
@@ -328,6 +339,7 @@ export const Workshops = {
     },
     {
       title: "Moroccan Cooking Class – Flavors You’ll Never Forget",
+      tagline: "Flavors You’ll Never Forget.",
       subline: "Cook, Taste, and Connect with Culture.",
       image: "/images/services/Moroccan-Cooking.avif",
       calEvent: "moroccan-cooking",
