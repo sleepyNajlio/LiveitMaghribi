@@ -10,7 +10,7 @@ const links = [
     label: "Home",
   },
   {
-    href: "/workshops",
+    href: "/Workshops",
     label: "Workshops",
   },
   {

@@ -67,7 +67,7 @@ export default function ServiceCard({ service }) {
             className="w-fit font-sans text-accent border-accent rounded-full shadow-xl tracking-wide mb-2 px-8"
             asChild
           >
-            <a href={`/workshops#${encodeURIComponent(service.category)}`}>Step Inside</a>
+            <a href={`/Workshops#${encodeURIComponent(service.category)}`}>Step Inside</a>
           </Button>
         </div>
       </div>

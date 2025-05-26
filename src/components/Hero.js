@@ -45,7 +45,7 @@ const Hero = () => {
           asChild
           className="p-6 bg-foreground/70 border-1 border-background text-accent-foreground tracking-wide text-lg rounded-full transition-all duration-300 cursor-pointer italic hover:bg-accent/70 hover:scale-105 active:scale-90 "
         >
-          <a href="/workshops">{hero.button}</a>
+          <a href="/Workshops">{hero.button}</a>
         </Button>
         {/* <ReservationPopup
           trigger={
