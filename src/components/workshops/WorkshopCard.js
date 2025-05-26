@@ -9,11 +9,11 @@ import { Pickaxe } from "lucide-react";
 import { Button } from "../ui/button";
 
 export const WorkshopCard = ({ workshop, Invert }) => {
-  const backgroundSvg = `<svg width="600" height="900" viewBox="0 0 600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,900 V300 
-        A300,300 0 0,1 600,300 
-        V900 Z" fill="#feebd6"/>
-    </svg>
+  const backgroundSvg = `<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 H400 
+      A200,200 0 0,1 400,400 
+      H0 Z" fill="#feebd6"/>
+  </svg>
   `;
   const encodedSvg = encodeURIComponent(backgroundSvg);
 
@@ -33,12 +33,12 @@ export const WorkshopCard = ({ workshop, Invert }) => {
       }}
     >
       <div
-        className={`w-full h-full md:w-1/2 md:gap-11  flex flex-row  justify-center items-center md:flex-col-reverse  ${
+        className={`w-full md:w-1/2 md:gap-11  flex flex-row  justify-start overflow-clip items-center md:flex-col-reverse  ${
           Invert ? "" : "flex-row-reverse pl-4"
         }`}
       >
         <div
-          className="w-1/2 md:w-full aspect-[2/3] max-w-sm flex flex-col items-center justify-center relative z-10 overflow-hidden "
+          className="w-1/2 md:w-full aspect-[2/3] max-w-sm flex flex-col items-center justify-end relative z-10 overflow-clip "
           style={{
             maskImage: `url("data:image/svg+xml,${encodedSvg}")`,
             WebkitMaskImage: `url("data:image/svg+xml,${encodedSvg}")`,
@@ -48,7 +48,7 @@ export const WorkshopCard = ({ workshop, Invert }) => {
             WebkitMaskRepeat: "no-repeat",
             maskPosition: "center",
             WebkitMaskPosition: "center",
-            transform: "scale(0.96)",
+            // transform: "scale(0.96)",
           }}
         >
           <Image
@@ -60,7 +60,7 @@ export const WorkshopCard = ({ workshop, Invert }) => {
             sizes="(max-width: 768px) 100vw, 33vw"
           />
         </div>
-        <h2 className="text-xl font-extrabold italic mb-2 font-playfair w-1/2 md:w-full text-left tracking-[.15em] leading-loose text-balance drop-shadow-md md:text-center max-w-lg">
+        <h2 className=" text-xl font-extrabold italic mb-2 font-playfair w-1/3 md:w-full text-left tracking-[.15em] leading-loose text-balance drop-shadow-md md:text-center max-w-lg">
           {workshop.title}
         </h2>
       </div>
