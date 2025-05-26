@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import { contact, hero } from "@/content/content";
 import { motion } from "framer-motion";
@@ -21,13 +21,13 @@ const Footer = () => {
               transition={{ duration: 0.4, ease: "easeOut" }}
             >
               <Image
-                src="/images/NavLogoCream.png"
+                src="/images/Logoo.png"
                 alt="Logo"
-                width={300}
-                height={300}
+                width={500}
+                height={500}
                 className="w-2/3 object-contain mx-auto"
                 loading="lazy"
-                quality={85}
+                quality={100}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <p className="text-ivory-cream tracking-wider text-center mb-4 italic">

@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
   {
-    href: "#hero",
+    href: "/",
     label: "Home",
   },
   {
@@ -18,7 +18,7 @@ const links = [
     label: "About",
   },
   {
-    href: "#contact",
+    href: "/contact",
     label: "Contact",
   },
 ];
@@ -60,10 +60,10 @@ export default function Navbar() {
         <div className="text-xl font-bold ">
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/NavlogoCream.png"
+              src="/images/NavLogo.png"
               alt="Live It Maghribi Logo"
-              width={100}
-              height={100}
+              width={400}
+              height={400}
               priority
               quality={100}
               className="h-[70px] w-auto"

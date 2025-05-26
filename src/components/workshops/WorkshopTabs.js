@@ -9,7 +9,7 @@ import { WorkshopZ } from "./WorkshopZ";
 const categories = [
   "Clay & Earth",
   "Pattern & Heritage",
-  "Textile & Fiber Arts",
+  "Textile & Thread",
   "Tastes & Tabletop",
 ];
 
@@ -28,14 +28,6 @@ export const WorkshopTabs = () => {
 
   return (
     <div className="w-full space-y-4">
-      {/* <div className="flex items-center justify-between">
-        <Input
-          placeholder="Search workshops..."
-          className="max-w-sm"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-      </div> */}
 
       <Tabs defaultValue={categories[0]} className="space-y-4">
         <TabsList className="grid w-full h-full grid-cols-2 lg:grid-cols-4 gap-2 text-accent-foreground bg-foreground/50">

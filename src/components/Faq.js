@@ -9,6 +9,7 @@ import {
 import { Button } from "./ui/button";
 import { FaWhatsapp } from "react-icons/fa";
 import { contact } from "@/content/content";
+import { Faq } from "@/content/Faq";
 
 export const FaqSection = () => {
   return (
@@ -18,33 +19,14 @@ export const FaqSection = () => {
       </h2>
       <div>
         <Accordion type="single" collapsible className="space-y-4">
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="text-lg font-medium text-foreground">
-              What is Liveit Maghribi?
-            </AccordionTrigger>
-            <AccordionContent>
-              Liveit Maghribi is your go-to platform for discovering and sharing authentic
-              Moroccan experiences, events, and stories.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger className="text-lg font-medium">
-              How can I submit my event?
-            </AccordionTrigger>
-            <AccordionContent>
-              Simply click on the "Submit Event" button on our homepage and fill out the
-              form with your event details. Our team will review and publish it shortly.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-3">
-            <AccordionTrigger className="text-lg font-medium">
-              Is there a fee to join?
-            </AccordionTrigger>
-            <AccordionContent>
-              No, joining Liveit Maghribi and browsing events is completely free for
-              everyone.
-            </AccordionContent>
-          </AccordionItem>
+          {Faq.map((item, index) => (
+            <AccordionItem value={`item-${index}`} key={index}>
+              <AccordionTrigger className="text-lg font-medium text-foreground">
+                {item.question}
+              </AccordionTrigger>
+              <AccordionContent>{item.answer}</AccordionContent>
+            </AccordionItem>
+          ))}
         </Accordion>
       </div>
       <div className="flex flex-col items-center justify-center mt-8">

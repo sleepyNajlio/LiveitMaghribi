@@ -4,25 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
 import { FaStar } from "react-icons/fa";
 import { useState } from "react";
-
-const testimonials = [
-  {
-    name: "Abdo Andalussi",
-    text: "It was a good dreamcatcher workshop, We had a nice time. Thanks to Ikram the best instructor",
-  },
-  {
-    name: "Ana Felino",
-    text: "Very good experience for the kids, and the staff was very nice :) They where a little sad because we couldn't bring the pottery they made, since we are leaving soon, but they let them choose another that was ready and let them paint it, and bring. Recomend for a different activity for kids, and to see lots of hamdcraft things there",
-  },
-  {
-    name: "El mehdi El bakri",
-    text: "Cet atelier est une occasion précieuse de découvrir la richesse du patrimoine culturel marocain et de renforcer l'identité nationale fondée sur la diversité et l'ouverture.",
-  },
-  {
-    name: "Wiame Lafraoui",
-    text: "The cutest place to have fun with your friends and to express your creativity with the sweetest instructors ❤️❤️",
-  },
-];
+import { testimonials } from "@/content/testimonials";
 
 export default function Testimonials() {
   const [expanded, setExpanded] = useState(null);
@@ -37,11 +19,11 @@ export default function Testimonials() {
           Real voices from hands-on moments woven with clay, color, and connection.
         </p>
       </div>
-      <div className="flex flex-row flex-wrap gap-6 items-start justify-center">
+      <div className="flex flex-col md:flex-row md:flex-wrap gap-6 items-start justify-center">
         {testimonials.map((t, i) => (
           <Card
             key={i}
-            className=" bg-card/80 min-w-[350px] max-w-[500px] md:min-h-[150px] md:max-h-[400px] rounded-xl shadow  p-4 text-center font-serif text-lg text-muted-foreground flex-1 flex flex-col justify-center"
+            className=" bg-card/80 w-full max-w-sm  rounded-xl shadow  p-4 text-center font-serif text-lg text-muted-foreground flex-1 flex flex-col justify-center"
           >
             <div className="flex justify-center mb-2">
               {[...Array(5)].map((_, idx) => (
