@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { hero } from "@/content/content";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
