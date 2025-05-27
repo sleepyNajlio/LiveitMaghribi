@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <div>
-      <footer className="bg-accent-foreground py-16 rounded-t-3xl mx-1">
+      <footer className="bg-accent-foreground/60 py-16 rounded-t-3xl mx-1">
         <div className="container mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className="bg-accent-foreground py-4">
+      <div className="bg-accent-foreground/60 py-4 mx-1">
         <div className="container mx-auto text-center">
           <p className="text-white text-sm">
             &copy; {currentYear} - All rights reserved.
