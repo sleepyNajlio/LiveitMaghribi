@@ -5,7 +5,6 @@ import { hero } from "@/content/content";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { LuChevronsDown } from "react-icons/lu";
-import Image from "next/image";
 
 const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -13,7 +12,7 @@ const Hero = () => {
   useEffect(() => {
     // Defer video loading until after page is interactive
     const onLoad = () => {
-      setTimeout(() => setShowVideo(true), 2000); // 1s after load
+      setTimeout(() => setShowVideo(true), 2500); // 1s after load
     };
     if (document.readyState === "complete") {
       onLoad();
@@ -29,11 +28,9 @@ const Hero = () => {
 
       <div className="absolute inset-0 w-full">
         {!showVideo ? (
-          <Image
+          <img
             src="/images/hero-image.avif"
             alt="Hero"
-            fill
-            priority
             className="absolute inset-0 w-full h-full object-cover opacity-70"
             style={{ objectFit: "cover", width: "100%", height: "100%" }}
           />
