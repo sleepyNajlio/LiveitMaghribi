@@ -3,9 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import ServiceCard from "./common/serviceCard";
 import { services } from "../content/content";
-import { ChevronsRight, ChevronsLeft } from "lucide-react";
 import { motion } from "framer-motion";
-import { Workshops } from "@/content/workshops";
 
 // Import Swiper styles
 import "swiper/css";

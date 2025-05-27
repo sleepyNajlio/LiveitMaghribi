@@ -21,7 +21,8 @@ import {
 } from "@/components/ui/form";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Command, CommandGroup, CommandItem } from "@/components/ui/command";
-import { Check, Scissors, User, Mail, Phone, X } from "lucide-react";
+import { LuX, LuCheck, LuUser} from "react-icons/lu";
+
 import { GiPaintedPottery } from "react-icons/gi";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -222,7 +223,7 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
                                 }}
                                 className="text-ivory-cream hover:bg-black/50 cursor-pointer transition-colors rounded-lg"
                               >
-                                <Check
+                                <LuCheck
                                   className={
                                     field.value.includes(service.title)
                                       ? "mr-2 h-4 w-4 text-sand opacity-100"
@@ -250,7 +251,7 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
                             className="ml-1 text-light-gold-accent hover:text-red-400"
                             aria-label={`Retirer ${service}`}
                           >
-                            <X className="w-4 h-4" />
+                            <LuX className="w-4 h-4" />
                           </button>
                         </span>
                       ))}

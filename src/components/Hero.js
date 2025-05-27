@@ -1,37 +1,45 @@
 "use client";
 
-import Image from "next/image";
-import { contact, about } from "@/content/content";
-import { BsScissors } from "react-icons/bs";
-import { HiOutlineScissors } from "react-icons/hi2";
-import ReservationPopup from "./reservationpopup";
 import { useState } from "react";
 import { hero } from "@/content/content";
 import { motion } from "framer-motion";
-import { ChevronsDown } from "lucide-react";
 import { Button } from "./ui/button";
+import { LuChevronsDown } from "react-icons/lu";
 
 const Hero = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const images = [{ src: hero.image, alt: hero.alt }];
+  const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    // Defer video loading until after page is interactive
+    const timeout = setTimeout(() => setShowVideo(true), 1000); // or use requestIdleCallback
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <section className="relative h-[91vh] w-full flex flex-col items-center justify-center overflow-hidden bg-background text-foreground">
       <div className="absolute inset-0 z-10 backdrop-blur-sm "></div>
 
       <div className="absolute inset-0 w-full">
-        <video
-          className="absolute inset-0 w-full h-full object-cover opacity-70"
-          autoPlay
-          loop
-          muted
-          playsInline
-          poster={hero.image} // fallback image
-        >
-          {/* <source src="/videos/hero-video.webm" type="video/webm" /> */}
-          <source src="/videos/hero-16sc.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        {!showVideo ? (
+          <img
+            src="/images/hero-image.avif"
+            alt="Hero"
+            className="absolute inset-0 w-full h-full object-cover opacity-70"
+            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+          />
+        ) : (
+          <video
+            className="absolute inset-0 w-full h-full object-cover opacity-70"
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/images/hero-image.avif"
+          >
+            <source src="/videos/hero-9sc.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        )}
       </div>
 
       <div className="relative z-20 text-center text-white  px-2 flex flex-col items-center justify-end">
@@ -66,7 +74,7 @@ const Hero = () => {
         transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
         className="absolute bottom-10 z-20"
       >
-        <ChevronsDown className="text-foreground w-20 h-20 " />
+        <LuChevronsDown className="text-foreground w-20 h-20 " />
       </motion.div>
     </section>
   );

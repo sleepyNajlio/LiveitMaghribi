@@ -1,12 +1,10 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Star } from "lucide-react";
 import { FaStar } from "react-icons/fa";
 import { useState } from "react";
 import { testimonials, googleReviews } from "@/content/testimonials";
 import { FcGoogle } from "react-icons/fc";
-import { FaGoogle } from "react-icons/fa";
 
 export default function Testimonials() {
   const [expanded, setExpanded] = useState(null);

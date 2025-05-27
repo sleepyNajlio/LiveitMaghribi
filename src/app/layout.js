@@ -30,12 +30,9 @@ const work_sans = Work_Sans({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <head>
-        <link
-          href="https://assets.calendly.com/assets/external/widget.css"
-          rel="stylesheet"
-        />
+        <link rel="preload" as="image" href="/images/hero-image.avif" type="image/avif" />
       </head>
       <body className={`${playfair.variable} font-work-sans bg-background `}>
         <Navbar />

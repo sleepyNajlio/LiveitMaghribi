@@ -20,7 +20,7 @@ const nextConfig = {
       "framer-motion",
       "react-icons",
       "gsap",
-      "lucide-react",
+      "lucide-react"
     ],
   },
   async headers() {

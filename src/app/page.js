@@ -8,8 +8,6 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      {/* <WorkshopCard /> */}
-      {/* <WorkshopsSection /> */}
       <ServicesCarousel />
       <Testimonials />
       <FaqSection />
@@ -19,13 +17,6 @@ export default function Home() {
         </h1>
         <MapComponent />
       </div>
-      {/* <Schedule /> */}
-      {/* <Services /> */}
-      {/* <About /> */}
-      {/* <Gallery /> */}
-      {/* <Pricing /> */}
-      {/* <CTA /> */}
-      {/* <Contact /> */}
     </div>
   );
 }
