@@ -25,7 +25,6 @@ export const about = {
 export const services = {
   title: "Our Workshops",
   description: "Choose Your Next Experience... Pottery, Weaving, Painting, and beyond.",
-  calUsername: "your-calendly-username", // replace with actual if needed
   items: [
     {
       title: "Traditional Pottery",
@@ -70,10 +69,10 @@ export const services = {
       category: "Textile & Thread",
     },
     {
-      title: "Brodery",
+      title: "Embroidery",
       description: "Stitching Stories.",
       image: "/images/services/Modern-Pottery.avif",
-      calEvent: "brodery",
+      calEvent: "embroidery",
       category: "Textile & Thread",
     },
     {

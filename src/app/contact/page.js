@@ -24,10 +24,10 @@ export default function Contact() {
           }}
         ></div>
         <div className="relative z-10 flex flex-col justify-center items-center text-center w-full h-full bg-gradient-to-t from-transparent via-black/40 to-transparent backdrop-blur-sm gap-2">
-          <h1 className="text-3xl font-bold text-white font-playfair italic tracking-widest leading-normal ">
+          <h1 className="text-3xl md:text-5xl font-bold text-white font-playfair italic tracking-widest leading-normal text-pretty ">
             {contact.headline}
           </h1>
-          <p className="font-light text-lg max-w-md tracking-wide text-foreground/80 leading-relaxed px-2">
+          <p className="font-light text-md md:text-xl max-w-xl tracking-wide text-foreground/80 leading-relaxed px-2">
             {contact.subline}
           </p>
           <div className="mt-2 py-1 px-4 bg-background/10 backdrop-blur-3xl rounded-2xl">
@@ -54,12 +54,15 @@ export default function Contact() {
         </div>
         <div className="flex flex-col items-center justify-center gap-2 md:flex-row ">
           <div className="mx-2 bg-accent/30 md:min-h-[350px] md:w-1/2 rounded-xl p-4 flex flex-col items-center justify-center gap-2">
-            <h2 className="font-bold text-lg tracking-wide text-center text-balance ">
-              {contact.address}
-            </h2>
-            <div className="flex flex-row items-center justify-center gap-2">
-              <PiWarningOctagonLight className="w-8 h-8 text-red-900" />
-              <p className="italic text-balance">{contact.instructions}</p>
+            <div className="flex flex-col items-center justify-center gap-2">
+              <PiWarningOctagonLight className="w-11 h-11 text-foreground" />
+              <div className="flex flex-col items-center justify-center gap-4">
+                {contact.instructions.map((ins, id) => (
+                  <p className=" text-pretty text-center" key={id}>
+                    {ins}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
           <div className="md:w-1/2 w-full flex items-center justify-center">

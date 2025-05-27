@@ -91,11 +91,6 @@ export const Workshops = {
       ],
       notice: {
         offer: "No wait time — your painted piece goes home with you",
-        problem: "Want a more complex design?",
-        options: [
-          "Our artists can sketch a base for you to build upon",
-          "Or choose a simpler pattern to relax and enjoy the flow",
-        ],
       },
       calltoAction: "Paint with tradition. Leave with color and joy.",
       buttons: {
@@ -157,6 +152,89 @@ export const Workshops = {
       buttons: {
         booking: "Book Your Spot",
         whatsapp: "More Details",
+      },
+    },
+    {
+      title: "Zellij Painting Workshop – Brush Strokes of Heritage",
+      subline: "Bring Moroccan Tiles to Life, One Stroke at a Time.",
+      image: "/images/services/Zellij-Painting.avif",
+      calEvent: "zellij-painting",
+      category: "Pattern & Heritage",
+      description:
+        "Discover the elegance of Moroccan zellij through tile painting. Guided by artisans, you’ll paint your own traditional tile using geometric patterns and natural pigments — a meditative and expressive art form.",
+      creation:
+        "In 1.5 hours, you’ll design and hand-paint a ceramic tile that reflects your style and honors Moroccan craftsmanship. It becomes your own personal souvenir of color, heritage, and creativity.",
+      process: [
+        "Choose your tile and explore traditional Moroccan designs",
+        "Sketch your motif and select your palette of natural pigments",
+        "Learn traditional brush techniques for precise painting",
+        "Paint your tile with the guidance of our artisan team",
+        "Finish with a Moroccan tea or coffee of your choice",
+        "Take home your tile — no firing needed, it's ready today",
+      ],
+      notice: {
+        offer: "Your tile is ready to go home the same day",
+      },
+      calltoAction: "Add your touch to a timeless tradition — one brushstroke at a time.",
+      buttons: {
+        booking: "Book Your Spot",
+        whatsapp: "Have Questions?",
+      },
+    },
+    {
+      title: "Canvas Painting Workshop – Your Canvas, Your Story",
+      subline: "Paint What You Feel. Express Who You Are.",
+      image: "/images/services/Canvas-Painting.avif",
+      calEvent: "canvas-painting",
+      category: "Pattern & Heritage",
+      description:
+        "Bring your ideas to life on canvas in this expressive, beginner-friendly painting workshop. Explore color, composition, and creativity in a warm, welcoming space guided by local artists.",
+      creation:
+        "In just 2 hours, you’ll create a unique painting using acrylics — abstract, geometric, or nature-inspired — with plenty of room for self-expression. It’s art that reflects you.",
+      process: [
+        "Choose your canvas size and painting theme",
+        "Get introduced to basic color theory and design balance",
+        "Sketch or free-paint your vision using acrylics",
+        "Layer colors and textures with guidance from our instructors",
+        "Add final details and personal touches",
+        "Relax post-session with Moroccan tea or coffee",
+      ],
+      notice: {
+        offer: "Take your finished canvas home the same day",
+      },
+      calltoAction:
+        "Unleash your creativity and leave with a masterpiece that’s truly yours.",
+      buttons: {
+        booking: "Book Your Spot",
+        whatsapp: "Have Questions?",
+      },
+    },
+    {
+      title: "Candle Painting Workshop – Light Up Your Creativity",
+      subline: "From Flame to Frame. Design with Soul.",
+      image: "/images/services/Candle-Painting.avif",
+      calEvent: "candle-painting",
+      category: "Pattern & Heritage",
+      description:
+        "Transform a simple candle into a glowing piece of art using traditional Moroccan motifs and heat-resistant paints. This hands-on workshop blends creativity with cultural charm.",
+      creation:
+        "In just 1.5 to 2 hours, you’ll hand-paint one or more Moroccan candles with vibrant patterns — arabesques, florals, or abstract lines. The final result is a beautiful, usable artwork you’ll be proud to display or gift.",
+      process: [
+        "Choose your candle size and shape",
+        "Get inspired by Moroccan decorative styles",
+        "Sketch your design using pencil or stencils",
+        "Paint using safe, heat-resistant colors",
+        "Add finishing details and accents",
+        "Wrap up with Moroccan tea or coffee in a relaxed setting",
+      ],
+      notice: {
+        offer: "Take your hand-painted candle home the same day",
+      },
+      calltoAction:
+        "Paint with passion. Light with meaning. Join the flame of creativity.",
+      buttons: {
+        booking: "Book Your Spot",
+        whatsapp: "Have Questions?",
       },
     },
     {
@@ -292,11 +370,6 @@ export const Workshops = {
       ],
       notice: {
         offer: "Your jewelry is ready to wear or gift immediately",
-        problem: "Overwhelmed with choices? You can also:",
-        options: [
-          "Use a pre-made kit with limited selections",
-          "Get hands-on help or pair up with a friend",
-        ],
       },
       calltoAction: "Create pieces that tell your story — and wear them proudly.",
       buttons: {
@@ -325,11 +398,6 @@ export const Workshops = {
       ],
       notice: {
         offer: "Your cake is ready to enjoy or gift right away",
-        problem: "Want to take it home safely?",
-        options: [
-          "We’ll provide a takeaway box for easy transport",
-          "Or enjoy it here with your fellow creatives and a drink",
-        ],
       },
       calltoAction: "Frost it, decorate it, and indulge in your creation.",
       buttons: {
@@ -358,11 +426,6 @@ export const Workshops = {
       ],
       notice: {
         offer: "You’ll eat what you create — fresh and hot",
-        problem: "Want to share it later?",
-        options: [
-          "Ask for a takeaway container to bring your meal home",
-          "Or enjoy it on-site in our cozy dining area",
-        ],
       },
       calltoAction: "From prep to plate — savor every step with us.",
       buttons: {

@@ -4,7 +4,9 @@ import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
 import { FaStar } from "react-icons/fa";
 import { useState } from "react";
-import { testimonials } from "@/content/testimonials";
+import { testimonials, googleReviews } from "@/content/testimonials";
+import { FcGoogle } from "react-icons/fc";
+import { FaGoogle } from "react-icons/fa";
 
 export default function Testimonials() {
   const [expanded, setExpanded] = useState(null);
@@ -66,12 +68,20 @@ export default function Testimonials() {
           </Card>
         ))}
       </div>
-      {/* <Button
+      <Button
         variant="outline"
-        className="w-fit !border-1 font-light rounded-full py-4 px-6 border-foreground text-foreground"
+        className="w-fit !border-1 rounded-full py-4 px-6 border-foreground text-background  bg-foreground italic  "
       >
-        See All Testimonials
-      </Button> */}
+        <a
+          href={googleReviews.link}
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center gap-2 text-lg  "
+        >
+          <FcGoogle className="!w-6 !h-6" />
+          See All Testimonials
+        </a>
+      </Button>
     </section>
   );
 }

@@ -14,7 +14,7 @@ const links = [
     label: "Workshops",
   },
   {
-    href: "#about",
+    href: "/about",
     label: "About",
   },
   {
