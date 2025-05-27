@@ -11,8 +11,15 @@ const Hero = () => {
 
   useEffect(() => {
     // Defer video loading until after page is interactive
-    const timeout = setTimeout(() => setShowVideo(true), 1000); // or use requestIdleCallback
-    return () => clearTimeout(timeout);
+    const onLoad = () => {
+      setTimeout(() => setShowVideo(true), 1000); // 1s after load
+    };
+    if (document.readyState === "complete") {
+      onLoad();
+    } else {
+      window.addEventListener("load", onLoad);
+      return () => window.removeEventListener("load", onLoad);
+    }
   }, []);
 
   return (
