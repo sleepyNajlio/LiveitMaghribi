@@ -108,7 +108,7 @@ export const Workshops = {
       tagline: "Solid Foundations, Creative Expressions.",
       subline: "From Rough to Refined.",
       image: "/images/services/Concrete-Workshop.avif",
-      calEvent: "concrete-workshop",
+      calEvent: "concrete",
       category: "Clay & Earth",
       description:
         "Discover the artistic side of concrete by creating your own decor item — like a planter, tray, or candle base. Mix, mold, and personalize your piece with raw texture or elegant finishes.",
@@ -136,7 +136,7 @@ export const Workshops = {
       tagline: "Piece by Piece, a Story Unfolds.",
       subline: "Piece by Piece, a Story Unfolds.",
       image: "/images/services/mosaic-workshop.jpg",
-      calEvent: "mosaic-workshop",
+      calEvent: "mosaic",
       category: "Pattern & Heritage",
       description:
         "Step into the world of traditional Moroccan mosaic art and discover the rich beauty of zellige. In this hands-on workshop, you’ll learn how to assemble vibrant ceramic tiles into a unique geometric pattern. Our artisans will guide you through the basics of design, tile placement, and the cultural meaning behind the patterns.",
@@ -164,7 +164,7 @@ export const Workshops = {
       tagline: "Threads of Tradition.",
       subline: "Where Stories Are Woven, Thread by Thread.",
       image: "/images/services/Weaving-Workshop.avif",
-      calEvent: "weaving-workshop",
+      calEvent: "weaving",
       category: "Textile & Thread",
       description:
         "Get hands-on with one of Morocco’s oldest crafts — weaving on a traditional loom using natural threads and ancient techniques passed down through generations.",
@@ -192,7 +192,7 @@ export const Workshops = {
       tagline: "Catch the Dreams, Craft the Magic.",
       subline: "Woven Whimsy with a Moroccan Touch.",
       image: "/images/services/Dreamcatcher-Workshop.avif",
-      calEvent: "dreamcatcher-workshop",
+      calEvent: "dreamcatcher",
       category: "Textile & Thread",
       description:
         "Design your own dreamcatcher using wooden hoops, cotton threads, beads, and feathers — a boho classic with cultural soul.",
@@ -220,7 +220,7 @@ export const Workshops = {
       tagline: "Stitching Stories.",
       subline: "Threaded Art with Soul.",
       image: "/images/services/Embroidery-Workshop.avif",
-      calEvent: "embroidery-workshop",
+      calEvent: "embroidery",
       category: "Textile & Thread",
       description:
         "Explore the delicate craft of Moroccan embroidery using traditional motifs and colorful threads. You'll stitch your own design on fabric with the help of a skilled artisan.",
@@ -248,7 +248,7 @@ export const Workshops = {
       tagline: "Loops of Love.",
       subline: "Relax. Create. Connect.",
       image: "/images/services/Crochet-Workshop.avif",
-      calEvent: "crochet-workshop",
+      calEvent: "crochet",
       category: "Textile & Thread",
       description:
         "Learn the art of crochet in a cozy, beginner-friendly setting. You'll create a small project like a keychain, motif, or pouch using colorful yarn and a hook.",
@@ -276,7 +276,7 @@ export const Workshops = {
       tagline: "Wear What You Create.",
       subline: "Crafted Adornments by You.",
       image: "/images/services/Jewelry-Workshop.avif",
-      calEvent: "jewelry-workshop",
+      calEvent: "jewelry",
       category: "Pattern & Heritage",
       description:
         "Design and create your own jewelry piece — from dainty earrings to bold necklaces — using quality beads, charms, cords, and metal findings.",
@@ -342,7 +342,7 @@ export const Workshops = {
       tagline: "Flavors You’ll Never Forget.",
       subline: "Cook, Taste, and Connect with Culture.",
       image: "/images/services/Moroccan-Cooking.avif",
-      calEvent: "moroccan-cooking",
+      calEvent: "cooking-class",
       category: "Tastes & Tabletop",
       description:
         "Step into a Moroccan kitchen and uncover the secrets of traditional dishes like tagine, couscous, and pastries. Guided by local chefs, you’ll cook, taste, and connect over food.",

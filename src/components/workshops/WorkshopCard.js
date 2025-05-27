@@ -4,9 +4,15 @@ import { FaCheckCircle, FaWhatsapp } from "react-icons/fa";
 import { GiPaintedPottery, GiEmptyHourglass } from "react-icons/gi";
 import { LuCalendarFold } from "react-icons/lu";
 import { contact } from "@/content/contact";
+import { Workshops } from "@/content/workshops";
 
 import { Pickaxe } from "lucide-react";
 import { Button } from "../ui/button";
+
+const generateCalLink = (workshop) => {
+  const link = `https://cal.com/${Workshops.calUsername}/${workshop.calEvent}`;
+  return link;
+};
 
 export const WorkshopCard = ({ workshop, Invert }) => {
   const backgroundSvg = `<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,14 +21,21 @@ export const WorkshopCard = ({ workshop, Invert }) => {
       H0 Z" fill="#feebd6"/>
   </svg>
   `;
-  const encodedSvg = encodeURIComponent(backgroundSvg);
+  const backgroundSvgInverted = `<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g transform="rotate(180,300,200)">
+      <path d="M0,0 H400 
+        A200,200 0 0,1 400,400 
+        H0 Z" fill="#feebd6"/>
+    </g>
+  </svg>`;
+  const encodedSvg = encodeURIComponent(Invert ? backgroundSvg : backgroundSvgInverted);
 
   const PatternSvg = `<svg width='400' height='440' viewBox='0 0 80 88' xmlns='http://www.w3.org/2000/svg'><path d='M22 21.91V26h-2c-9.94 0-18 8.06-18 18 0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73 3.212-6.99 9.983-12.008 18-12.73V62h2c9.94 0 18-8.06 18-18 0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73-3.212 6.99-9.983 12.008-18 12.73zM54 58v4.696c-5.574 1.316-10.455 4.428-14 8.69-3.545-4.262-8.426-7.374-14-8.69V58h-5.993C12.27 58 6 51.734 6 44c0-7.732 6.275-14 14.007-14H26v-4.696c5.574-1.316 10.455-4.428 14-8.69 3.545 4.262 8.426 7.374 14 8.69V30h5.993C67.73 30 74 36.266 74 44c0 7.732-6.275 14-14.007 14H54zM42 88c0-9.94 8.06-18 18-18h2v-4.09c8.016-.722 14.787-5.738 18-12.73v7.434c-3.545 4.262-8.426 7.374-14 8.69V74h-5.993C52.275 74 46 80.268 46 88h-4zm-4 0c0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73v7.434c3.545 4.262 8.426 7.374 14 8.69V74h5.993C27.73 74 34 80.266 34 88h4zm4-88c0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73v-7.434c-3.545-4.262-8.426-7.374-14-8.69V14h-5.993C52.27 14 46 7.734 46 0h-4zM0 34.82c3.213-6.992 9.984-12.008 18-12.73V18h2c9.94 0 18-8.06 18-18h-4c0 7.732-6.275 14-14.007 14H14v4.696c-5.574 1.316-10.455 4.428-14 8.69v7.433z' fill='#3d211bebd6' fill-opacity='0.05' fill-rule='evenodd'/></svg>`;
   const encodedPattern = encodeURIComponent(PatternSvg);
   return (
     <div
-      className={`relative flex flex-col md:flex-row md:justify-start  items-center justify-center  rounded-2xl text-card-foreground overflow-hidden ${
-        Invert ? "md:flex-row-reverse bg-foreground" : " bg-foreground/80"
+      className={`relative flex flex-col md:justify-start  items-center justify-center  rounded-2xl text-card-foreground overflow-hidden ${
+        Invert ? "md:flex-row bg-foreground" : " md:flex-row-reverse bg-foreground/80"
       }`}
       style={{
         // backgroundColor: "var(--card-foreground))",
@@ -33,12 +46,12 @@ export const WorkshopCard = ({ workshop, Invert }) => {
       }}
     >
       <div
-        className={`w-full md:w-1/2 md:gap-11  flex flex-row  justify-start overflow-clip items-center md:flex-col-reverse  ${
+        className={`w-full md:w-1/2 md:gap-11  flex flex-row  justify-center overflow-clip items-center md:flex-col-reverse  ${
           Invert ? "" : "flex-row-reverse pl-4"
         }`}
       >
         <div
-          className="w-1/2 md:w-full aspect-[2/3] max-w-sm flex flex-col items-center justify-end relative z-10 overflow-clip "
+          className="w-1/2 md:w-full aspect-[3/2] flex flex-col items-center justify-center relative z-10 overflow-clip "
           style={{
             maskImage: `url("data:image/svg+xml,${encodedSvg}")`,
             WebkitMaskImage: `url("data:image/svg+xml,${encodedSvg}")`,
@@ -60,7 +73,7 @@ export const WorkshopCard = ({ workshop, Invert }) => {
             sizes="(max-width: 768px) 100vw, 33vw"
           />
         </div>
-        <h2 className=" text-lg font-extrabold italic mb-2 font-playfair w-1/3 md:w-full text-left tracking-[.15em] leading-loose text-balance drop-shadow-md md:text-center max-w-lg">
+        <h2 className=" text-lg md:text-3xl font-extrabold italic font-playfair w-1/2 md:w-full text-center tracking-[.15em] leading-loose text-pretty drop-shadow-md md:text-center max-w-lg">
           {workshop.title}
         </h2>
       </div>
@@ -126,20 +139,32 @@ export const WorkshopCard = ({ workshop, Invert }) => {
             <p className="font-bold font-playfair italic text-lg text-center leading-relaxed tracking-wide text-balance w-full">
               {workshop.calltoAction}
             </p>
-            <div className="flex flex-row items-center justify-between gap-4 ">
+            <div className="flex flex-row items-center justify-between gap-4 text-xl ">
               <Button
                 variant="default"
                 className=" px-6 py-4 rounded-full hover:bg-accent/60 hover:text-accent-foreground drop-shadow-md "
               >
-                <LuCalendarFold className="" />
-                {workshop.buttons.booking}
+                <a
+                  href={generateCalLink(workshop)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className=" flex flex-row items-center justify-center gap-2"
+                >
+                  <LuCalendarFold className="" />
+                  {workshop.buttons.booking}
+                </a>
               </Button>
               <Button
                 variant="outline"
                 className=" bg-transparent border-accent-foreground px-6 py-4 rounded-full"
                 asChild
               >
-                <a href={contact.whatsapp} target="_blank" rel="noreferrer">
+                <a
+                  href={contact.whatsapp}
+                  target="_blank"
+                  rel="noreferrer"
+                  className=" flex flex-row items-center justify-center gap-2"
+                >
                   <FaWhatsapp className="" />
                   {workshop.buttons.whatsapp}
                 </a>

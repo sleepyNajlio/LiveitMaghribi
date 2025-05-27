@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,6 +15,16 @@ const categories = [
 
 export const WorkshopTabs = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [activeTab, setActiveTab] = useState(categories[0]);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const hash = decodeURIComponent(window.location.hash.replace("#", ""));
+      if (categories.includes(hash)) {
+        setActiveTab(hash);
+      }
+    }
+  }, []);
 
   const filterWorkshopsByCategory = (category) => {
     return Workshops.items
@@ -28,11 +38,15 @@ export const WorkshopTabs = () => {
 
   return (
     <div className="w-full space-y-4">
-
       <Tabs defaultValue={categories[0]} className="space-y-4">
         <TabsList className="grid w-full h-full grid-cols-2 lg:grid-cols-4 gap-2 text-accent-foreground bg-foreground/50">
           {categories.map((category) => (
-            <TabsTrigger key={category} id={category} value={category.trim()} className="text-lg ">
+            <TabsTrigger
+              key={category}
+              id={category}
+              value={category.trim()}
+              className="text-lg "
+            >
               {category}
             </TabsTrigger>
           ))}
