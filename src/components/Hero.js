@@ -12,7 +12,7 @@ const Hero = () => {
   useEffect(() => {
     // Defer video loading until after page is interactive
     const onLoad = () => {
-      setTimeout(() => setShowVideo(true), 5000); // 1s after load
+      setTimeout(() => setShowVideo(true), 3000); // 1s after load
     };
     if (document.readyState === "complete") {
       onLoad();
