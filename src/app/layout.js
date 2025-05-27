@@ -1,5 +1,6 @@
 import { Playfair_Display, Work_Sans } from "next/font/google";
 import { Montserrat } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "./globals.css";
 import Navbar from "../components/common/Navbar";
@@ -12,18 +13,16 @@ export const metadata = {
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
   weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-playfair",
 });
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-montserrat",
-});
-
 const work_sans = Work_Sans({
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-work-sans",
 });
@@ -38,6 +37,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
