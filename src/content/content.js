@@ -9,13 +9,14 @@ export const hero = {
 };
 
 export const about = {
-  headline: "Rooted in Craft, Designed for Connection",
+  headline: "LiveItMaghribi – A Creative Moroccan Space",
   subline: "Where Moroccan tradition meets your creative spirit.",
   heroImage: "/images/hero-image.avif",
   story: [
-    "Live It Maghribi was born from a love for culture that doesn’t just sit in books — it lives, breathes, and moves through clay, pigment, thread, and taste.",
-    "We built this space to slow down, to connect with heritage in the most human way: by making something with our hands. Each workshop is a window into Morocco’s artistic soul, led by local artisans who carry centuries of knowledge with grace and joy.",
-    "Here, tradition is not a thing of the past — it’s a living invitation.",
+    "LiveItMaghribi began on March 3rd, 2024, with a simple goal: to share the beauty of Moroccan traditions and handmade art with everyone.",
+    "Inspired by the richness of Moroccan crafts like pottery, weaving, mosaics, and painting, this workshop is more than just a place to learn. It's a calm, welcoming space where you can relax, create, and enjoy a drink all at once.",
+    "Whether you're a traveler, an artist, or someone simply looking for a new experience, LiveItMaghribi is open to you. We aim to help people discover the depth of Moroccan artistry — and to remind both locals and visitors just how special our traditions truly are.",
+    "Come create, discover, and feel the Moroccan spirit — one handmade piece at a time.",
   ],
   ethos: [
     "Every workshop is hands-on — you don’t watch, you *do*.",
@@ -26,9 +27,9 @@ export const about = {
     "This isn’t a tour. It’s a shared moment in time.",
   ],
   hostImage: "/images/host-image.webp",
-  bio:[
+  bio: [
     "Meet the heart behind the workshops — a cultural connector and lifelong creative, who believes beauty lives in the details.",
-    "With a background in design and deep ties to Moroccan heritage, your host brings a thoughtful, warm presence to every session. From the scent of clay to the rhythm of thread, they guide you through more than a craft — they open a door into the Moroccan way of being."
+    "With a background in design and deep ties to Moroccan heritage, your host brings a thoughtful, warm presence to every session. From the scent of clay to the rhythm of thread, they guide you through more than a craft — they open a door into the Moroccan way of being.",
   ],
   invitation: `
 Whether you’re here for a few hours or a few days, Live It Maghribi is your place to make, feel, and remember.

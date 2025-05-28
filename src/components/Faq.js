@@ -14,7 +14,7 @@ import { Faq } from "@/content/Faq";
 export const FaqSection = () => {
   return (
     <section className="max-w-2xl mx-auto py-4 px-4">
-      <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-foreground font-playfair tracking-widest ">
+      <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-foreground font-playfair   ">
         Frequently Asked Questions
       </h2>
       <div>
@@ -24,7 +24,9 @@ export const FaqSection = () => {
               <AccordionTrigger className="text-lg font-medium text-foreground">
                 {item.question}
               </AccordionTrigger>
-              <AccordionContent>{item.answer}</AccordionContent>
+              <AccordionContent className="text-base font-light tracking-wide">
+                {item.answer}
+              </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>

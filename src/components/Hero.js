@@ -50,7 +50,7 @@ const Hero = () => {
       </div>
 
       <div className="relative z-20 text-center text-white  px-2 flex flex-col items-center justify-end">
-        <h1 className=" font-playfair italic tracking-widest text-3xl md:text-5xl max-w-lg font-extrabold leading-loose text-center drop-shadow-lg">
+        <h1 className=" font-playfair italic   text-3xl md:text-5xl max-w-lg font-extrabold leading-loose text-center drop-shadow-lg">
           {hero.title}
         </h1>
         <p className="text-md md:text-2xl max-w-lg mx-auto mb-8 drop-shadow-lg font-light text-balance leading-relaxed ">

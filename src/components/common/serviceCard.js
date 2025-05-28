@@ -59,7 +59,7 @@ export default function ServiceCard({ service }) {
       {/* Tagline and Button below the image */}
       <div className="w-full flex flex-col items-center mt-2">
         <div className="w-full  flex flex-col items-center justify-center gap-4">
-          <p className=" text-center text-balance text-md tracking-widest italic font-playfair leading-relaxed min-h-16 flex flex-col items-center justify-center ">
+          <p className=" text-center text-balance text-md   italic font-playfair leading-relaxed min-h-16 flex flex-col items-center justify-center ">
             {service.description}
           </p>
           <Button

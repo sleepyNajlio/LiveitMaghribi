@@ -15,7 +15,7 @@ const links = [
   },
   {
     href: "/about",
-    label: "About",
+    label: "About Us",
   },
   {
     href: "/contact",
@@ -62,8 +62,8 @@ export default function Navbar() {
             <Image
               src="/images/NavLogo.png"
               alt="Live It Maghribi Logo"
-              width={400}
-              height={400}
+              width={200}
+              height={200}
               priority
               quality={100}
               className="h-[70px] w-auto"
@@ -157,7 +157,7 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block py-4 px-4 hover:text-primary-foreground transition-colors text-xl"
+                    className="block px-2 hover:text-primary-foreground transition-colors text-xl text-center tracking-wide"
                     onClick={closeMenu}
                   >
                     {link.label}

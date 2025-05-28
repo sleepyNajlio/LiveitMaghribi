@@ -26,7 +26,7 @@ export const ServicesCarousel = () => {
         </p>
       </div>
       <Swiper
-        slidesPerView={1.6}
+        slidesPerView={1.5}
         centeredSlides={true}
         spaceBetween={10}
         breakpoints={{
