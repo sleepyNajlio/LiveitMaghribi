@@ -1,6 +1,6 @@
 import { Playfair_Display, Work_Sans } from "next/font/google";
-import { Montserrat } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.css";
 import Navbar from "../components/common/Navbar";
@@ -38,6 +38,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
