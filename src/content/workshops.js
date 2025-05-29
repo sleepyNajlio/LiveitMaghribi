@@ -8,7 +8,7 @@ export const Workshops = {
       title: "Traditional Pottery Workshop – On the Wheel",
       tagline: "Spin the Clay. Shape the Tradition.",
       subline: "From Mud to Masterpiece: Experience Morocco’s Living Clay Traditions.",
-      image: "/images/services/traditional-pottery.jpg",
+      image: "/images/services/traditionsl-pottery-hor.webp",
       calEvent: "traditional-pottery",
       category: "Clay & Earth",
       description:
@@ -41,7 +41,7 @@ export const Workshops = {
       title: "Modern Pottery Workshop – Handbuilding at the Table",
       tagline: "Craft with Your Hands. Create from the Heart.",
       subline: "Craft with Your Hands. Create from the Heart.",
-      image: "/images/services/Modern-Pottery.avif",
+      image: "public/images/services/modern-pottery-ver.webp",
       calEvent: "modern-pottery",
       category: "Clay & Earth",
       description:
@@ -74,7 +74,7 @@ export const Workshops = {
       title: "Ceramic Painting Workshop – Coloring Clay with Culture",
       tagline: "Coloring Clay with Culture.",
       subline: "Glaze Your Story in Color.",
-      image: "/images/services/Ceramic-Painting.avif",
+      image: "/images/services/ceramic-paint.jpg",
       calEvent: "ceramic-painting",
       category: "Clay & Earth",
       description:
@@ -157,7 +157,7 @@ export const Workshops = {
     {
       title: "Zellij Painting Workshop – Brush Strokes of Heritage",
       subline: "Bring Moroccan Tiles to Life, One Stroke at a Time.",
-      image: "/images/services/Zellij-Painting.avif",
+      image: "/images/services/Zellige-Painting.avif",
       calEvent: "zellij-painting",
       category: "Pattern & Heritage",
       description:
