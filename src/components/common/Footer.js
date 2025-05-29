@@ -6,6 +6,25 @@ import { hero } from "@/content/content";
 import { contact } from "@/content/contact";
 import { motion } from "framer-motion";
 
+const NavLinks = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Workshops",
+    href: "/Workshops",
+  },
+  {
+    name: "About Us",
+    href: "/about",
+  },
+  {
+    name: "Contact Us",
+    href: "/contact",
+  },
+];
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -13,7 +32,7 @@ const Footer = () => {
     <div>
       <footer className="bg-accent-foreground/60 py-16 rounded-t-3xl mx-1">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <motion.div
               className="w-full lg:w-2/3 mb-4"
               initial={{ opacity: 0 }}
@@ -34,16 +53,15 @@ const Footer = () => {
               <p className="text-ivory-cream tracking-wider text-center mb-4 italic">
                 {hero.description}
               </p>
+              <div className="flex flex-row flex-wrap items-center justify-center gap-4 underline ">
+                {NavLinks.map((link, index) => (
+                  <a key={index} href={link.href} className="font-bold text-foreground ">
+                    {link.name}
+                  </a>
+                ))}
+              </div>
             </motion.div>
-
-            {/* <div className="space-y-4 animate__animated animate__fadeIn animate__delay-1s">
-              <h3 className="text-2xl font-bold text-ivory-cream">Contact</h3>
-              <ul className="space-y-2 text-ivory-cream">
-                <li>Email : contact@gym-next.com</li>
-                <li>Téléphone : +213 123 456 789</li>
-                <li>Adresse : 123 Rue de la Salle, Alger</li>
-              </ul>
-            </div> */}
+            {/* nav menu */}
 
             <motion.div
               className="flex flex-col items-center justify-center space-y-4"

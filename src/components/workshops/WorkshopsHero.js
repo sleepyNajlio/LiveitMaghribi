@@ -22,10 +22,10 @@ export const WorkshopsHero = () => {
       }}
     >
       <div className="w-full h-full flex flex-col items-center justify-center text-center bg-gradient-to-t from-background/70 to-transparent">
-        <h1 className="font-playfair text-3xl md:text-4xl  font-bold  text-balance py-6">
+        <h1 className="font-playfair text-3xl md:text-4xl  font-bold  text-balance py-3 ">
           {Workshops.title}
         </h1>
-        <p className="max-w-md px-1 text-pretty">{Workshops.tagline}</p>
+        <p className="max-w-md px-4 text-pretty">{Workshops.tagline}</p>
       </div>
     </div>
   );

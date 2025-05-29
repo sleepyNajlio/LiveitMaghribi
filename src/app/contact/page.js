@@ -75,46 +75,21 @@ export default function Contact() {
             A moment away — by voice, by word, or by glance.
           </p>
           <div className="py-4 flex flex-row flex-wrap items-center justify-center gap-4">
-            <Button
-              variant="outline"
-              className="rounded-full bg-foreground text-accent-foreground border-accent-foreground px-6 w-full md:w-52 mx-2 "
-              asChild
-            >
-              <a href={contact.phone} target="_blank">
-                <LuPhone className="w-8 h-8 mr-1" />
-                Call
-              </a>
-            </Button>
-            <Button
-              variant="outline"
-              className="rounded-full bg-foreground text-accent-foreground border-accent-foreground px-6 w-full md:w-52 mx-2"
-              asChild
-            >
-              <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
-                <FaWhatsapp className="w-8 h-8 mr-1" />
-                WhatsApp
-              </a>
-            </Button>
-            <Button
-              variant="outline"
-              className="rounded-full bg-foreground text-accent-foreground border-accent-foreground px-6 w-full md:w-52 mx-2"
-              asChild
-            >
-              <a href={contact.email} target="_blank" rel="noopener noreferrer">
-                <MdOutlineAlternateEmail className="w-8 h-8 mr-1" />
-                Email
-              </a>
-            </Button>
-            <Button
-              variant="outline"
-              className="rounded-full bg-foreground text-accent-foreground border-accent-foreground px-6 w-full md:w-52 mx-2"
-              asChild
-            >
-              <a href={contact.instagram} target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="w-8 h-8 mr-1" />
-                Instagram
-              </a>
-            </Button>
+            {contact.contactLinks.map((link, id) => (
+              <Button
+                key={id}
+                variant="outline"
+                className="rounded-full bg-foreground text-accent-foreground border-accent-foreground py-4  px-11  mx-2 "
+                asChild
+              >
+                <a href={link.href} target="_blank" rel="noreferrer">
+                  <div className="min-w-24 flex flex-row items-center justify-center gap-1  ">
+                    <link.icon className="w-8 h-8 mr-1" />
+                    {link.text}
+                  </div>
+                </a>
+              </Button>
+            ))}
           </div>
         </div>
       </div>

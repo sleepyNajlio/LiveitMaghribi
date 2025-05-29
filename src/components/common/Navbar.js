@@ -62,8 +62,8 @@ export default function Navbar() {
             <Image
               src="/images/NavLogo.png"
               alt="Live It Maghribi Logo"
-              width={200}
-              height={200}
+              width={400}
+              height={400}
               priority
               quality={100}
               className="h-[70px] w-auto"
@@ -152,12 +152,12 @@ export default function Navbar() {
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.5 }}
             >
-              <div className="flex flex-col space-y-4 p-8">
+              <div className="flex flex-col space-y-2 p-4">
                 {links.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block px-2 hover:text-primary-foreground transition-colors text-xl text-center tracking-wide"
+                    className="block p-2 hover:text-primary-foreground transition-colors text-xl text-center tracking-wide"
                     onClick={closeMenu}
                   >
                     {link.label}
