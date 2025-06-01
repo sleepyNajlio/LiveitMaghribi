@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="preload" as="image" href="/images/hero-image.avif" type="image/avif" />
+        {/* <link rel="preload" as="image" href="/images/hero-image.avif" type="image/avif" /> */}
       </head>
       <body className={`${playfair.variable} font-work-sans bg-background `}>
         <Navbar />

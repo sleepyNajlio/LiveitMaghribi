@@ -8,7 +8,7 @@ export const Workshops = {
       title: "Traditional Pottery Workshop – On the Wheel",
       tagline: "Spin the Clay. Shape the Tradition.",
       subline: "From Mud to Masterpiece: Experience Morocco’s Living Clay Traditions.",
-      image: "/images/services/traditionsl-pottery-hor.webp",
+      image: "/images/workshops/traditional-pottery-workshop.webp",
       calEvent: "traditional-pottery",
       category: "Clay & Earth",
       description:
@@ -41,7 +41,7 @@ export const Workshops = {
       title: "Modern Pottery Workshop – Handbuilding at the Table",
       tagline: "Craft with Your Hands. Create from the Heart.",
       subline: "Craft with Your Hands. Create from the Heart.",
-      image: "public/images/services/modern-pottery-ver.webp",
+      image: "/images/workshops/modern-pottery-workshop1.webp",
       calEvent: "modern-pottery",
       category: "Clay & Earth",
       description:
@@ -74,7 +74,7 @@ export const Workshops = {
       title: "Ceramic Painting Workshop – Coloring Clay with Culture",
       tagline: "Coloring Clay with Culture.",
       subline: "Glaze Your Story in Color.",
-      image: "/images/services/ceramic-paint.jpg",
+      image: "/images/workshops/ceramic-painting-workshop.webp",
       calEvent: "ceramic-painting",
       category: "Clay & Earth",
       description:
@@ -102,7 +102,7 @@ export const Workshops = {
       title: "Concrete Workshop – Solid Foundations, Creative Expressions",
       tagline: "Solid Foundations, Creative Expressions.",
       subline: "From Rough to Refined.",
-      image: "/images/services/Concrete-Workshop.avif",
+      image: "/images/workshops/concrete-workshop.webp",
       calEvent: "concrete",
       category: "Clay & Earth",
       description:
@@ -130,7 +130,7 @@ export const Workshops = {
       title: "Mosaic Workshop – Traditional Moroccan Style",
       tagline: "Piece by Piece, a Story Unfolds.",
       subline: "Piece by Piece, a Story Unfolds.",
-      image: "/images/services/mosaic-workshop.jpg",
+      image: "/images/workshops/Mosaic-workshop.webp",
       calEvent: "mosaic",
       category: "Pattern & Heritage",
       description:
@@ -157,7 +157,7 @@ export const Workshops = {
     {
       title: "Zellij Painting Workshop – Brush Strokes of Heritage",
       subline: "Bring Moroccan Tiles to Life, One Stroke at a Time.",
-      image: "/images/services/Zellige-Painting.avif",
+      image: "/images/services/Zellige-Painting.webp",
       calEvent: "zellij-painting",
       category: "Pattern & Heritage",
       description:
@@ -184,7 +184,7 @@ export const Workshops = {
     {
       title: "Canvas Painting Workshop – Your Canvas, Your Story",
       subline: "Paint What You Feel. Express Who You Are.",
-      image: "/images/services/Canvas-Painting.avif",
+      image: "/images/workshops/canvas-painting-workshop.webp",
       calEvent: "canvas-painting",
       category: "Pattern & Heritage",
       description:
@@ -212,7 +212,7 @@ export const Workshops = {
     {
       title: "Candle Painting Workshop – Light Up Your Creativity",
       subline: "From Flame to Frame. Design with Soul.",
-      image: "/images/services/Candle-Painting.avif",
+      image: "/images/workshops/candle-painting-workshop.webp",
       calEvent: "candle-painting",
       category: "Pattern & Heritage",
       description:
@@ -241,7 +241,7 @@ export const Workshops = {
       title: "Weaving Workshop – Threads of Tradition",
       tagline: "Threads of Tradition.",
       subline: "Where Stories Are Woven, Thread by Thread.",
-      image: "/images/services/Weaving-Workshop.avif",
+      image: "/images/workshops/tissage-weaving-workshop.webp",
       calEvent: "weaving",
       category: "Textile & Thread",
       description:
@@ -269,7 +269,7 @@ export const Workshops = {
       title: "Dreamcatcher Workshop – Catch the Dreams, Craft the Magic",
       tagline: "Catch the Dreams, Craft the Magic.",
       subline: "Woven Whimsy with a Moroccan Touch.",
-      image: "/images/services/Dreamcatcher-Workshop.avif",
+      image: "/images/workshops/dreamcatcher-workshop.webp",
       calEvent: "dreamcatcher",
       category: "Textile & Thread",
       description:
@@ -297,7 +297,7 @@ export const Workshops = {
       title: "Embroidery Workshop – Stitching Stories",
       tagline: "Stitching Stories.",
       subline: "Threaded Art with Soul.",
-      image: "/images/services/Embroidery-Workshop.avif",
+      image: "/images/workshops/embroidery-workshop.webp",
       calEvent: "embroidery",
       category: "Textile & Thread",
       description:
@@ -325,7 +325,7 @@ export const Workshops = {
       title: "Crochet Workshop – Loops of Love",
       tagline: "Loops of Love.",
       subline: "Relax. Create. Connect.",
-      image: "/images/services/Crochet-Workshop.avif",
+      image: "/images/workshops/crochet-workshop.webp",
       calEvent: "crochet",
       category: "Textile & Thread",
       description:
@@ -353,7 +353,7 @@ export const Workshops = {
       title: "Jewelry Workshop – Make It, Wear It",
       tagline: "Wear What You Create.",
       subline: "Crafted Adornments by You.",
-      image: "/images/services/Jewelry-Workshop.avif",
+      image: "/images/workshops/jewelry-workshop.webp",
       calEvent: "jewelry",
       category: "Pattern & Heritage",
       description:
@@ -381,7 +381,7 @@ export const Workshops = {
       title: "Cake Decoration Workshop – Deliciously Designed",
       tagline: "Deliciously Designed.",
       subline: "Sweet Creativity, One Frosting Swipe at a Time.",
-      image: "/images/services/Cake-Decoration.avif",
+      image: "/images/workshops/cake-decoration-workshop.webp",
       calEvent: "cake-decoration",
       category: "Tastes & Tabletop",
       description:
@@ -409,7 +409,7 @@ export const Workshops = {
       title: "Moroccan Cooking Class – Flavors You’ll Never Forget",
       tagline: "Flavors You’ll Never Forget.",
       subline: "Cook, Taste, and Connect with Culture.",
-      image: "/images/services/Moroccan-Cooking.avif",
+      image: "/images/workshops/cooking-class-workshop.webp",
       calEvent: "cooking-class",
       category: "Tastes & Tabletop",
       description:

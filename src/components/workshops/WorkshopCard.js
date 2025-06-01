@@ -32,7 +32,7 @@ export const WorkshopCard = ({ workshop, Invert }) => {
 
   return (
     <div
-      className={`relative flex flex-col md:justify-start  items-center justify-center  rounded-2xl text-card-foreground overflow-hidden ${
+      className={`relative flex flex-col md:justify-start  items-center justify-center  rounded-2xl text-card-foreground overflow-hidden mx-1 md:mx-4 ${
         Invert ? "md:flex-row bg-foreground" : " md:flex-row-reverse bg-foreground/80"
       }`}
     >
@@ -42,7 +42,7 @@ export const WorkshopCard = ({ workshop, Invert }) => {
         }`}
       >
         <div
-          className="w-1/2 md:w-full aspect-[3/2] flex flex-col items-center justify-center relative z-10 overflow-clip "
+          className="w-1/2 md:w-full aspect-[3/2] flex flex-col items-center justify-center relative z-10 overflow-clip  "
           style={{
             maskImage: `url("data:image/svg+xml,${encodedSvg}")`,
             WebkitMaskImage: `url("data:image/svg+xml,${encodedSvg}")`,
@@ -62,6 +62,14 @@ export const WorkshopCard = ({ workshop, Invert }) => {
             quality={100}
             className="object-cover "
             sizes="(max-width: 768px) 100vw, 33vw"
+          />
+          {/* Gradient overlay */}
+          <div
+            className={`absolute inset-0 z-20 pointer-events-none ${
+              Invert
+                ? "bg-gradient-to-r from-background/60 via-transparent to-transparent"
+                : "bg-gradient-to-l from-background/50 to-transparent"
+            }`}
           />
         </div>
         <h2 className=" text-lg md:text-3xl font-extrabold italic font-playfair w-1/2 md:w-full text-center tracking-[.15em] leading-loose text-pretty drop-shadow-md md:text-center max-w-lg">
@@ -151,7 +159,7 @@ export const WorkshopCard = ({ workshop, Invert }) => {
                 asChild
               >
                 <a
-                  href={contact.whatsapp}
+                  href={contact.contactLinks[1].href}
                   target="_blank"
                   rel="noreferrer"
                   className=" flex flex-row items-center justify-center gap-2"

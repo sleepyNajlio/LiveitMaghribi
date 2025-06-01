@@ -42,7 +42,7 @@ export const services = {
     {
       title: "Traditional Pottery",
       description: "Spin the Clay. Shape the Tradition.",
-      image: "/images/services/traditional-pottery.webp",
+      image: "/images/services/traditional-pottery1.webp",
       calEvent: "traditional-pottery",
       category: "Clay & Earth",
     },
