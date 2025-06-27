@@ -8,9 +8,10 @@ import { Workshops } from "@/content/workshops";
 
 import { Pickaxe } from "lucide-react";
 import { Button } from "../ui/button";
+import CalButton from "@/components/common/calButton";
 
 const generateCalLink = (workshop) => {
-  const link = `https://cal.com/${Workshops.calUsername}/${workshop.calEvent}`;
+  const link = `${Workshops.calUsername}/${workshop.calEvent}`;
   return link;
 };
 
@@ -60,7 +61,7 @@ export const WorkshopCard = ({ workshop, Invert }) => {
             alt={workshop.title}
             fill
             quality={100}
-            className="object-cover "
+            className="object-cover"
             sizes="(max-width: 768px) 100vw, 33vw"
           />
           {/* Gradient overlay */}
@@ -139,20 +140,16 @@ export const WorkshopCard = ({ workshop, Invert }) => {
               {workshop.calltoAction}
             </p>
             <div className="flex flex-row items-center justify-between gap-4 text-xl ">
-              <Button
-                variant="default"
-                className=" px-6 py-4 rounded-full hover:bg-accent/60 hover:text-accent-foreground drop-shadow-md "
-              >
-                <a
-                  href={generateCalLink(workshop)}
-                  target="_blank"
-                  rel="noreferrer"
-                  className=" flex flex-row items-center justify-center gap-2"
-                >
+              {/*<Button*/}
+              {/*  variant="default"*/}
+              {/*  className=" px-6 py-4 rounded-full hover:bg-accent/60 hover:text-accent-foreground drop-shadow-md "*/}
+              {/*>*/}
+                <CalButton calLink={`${Workshops.calUsername}/${workshop.calNamespace}`} calNamespace={workshop.calNamespace} className='flex flex-row items-center justify-center gap-2' >
+
                   <LuCalendarFold className="" />
                   {workshop.buttons.booking}
-                </a>
-              </Button>
+                </CalButton>
+              {/*</Button>*/}
               <Button
                 variant="outline"
                 className=" bg-transparent border-accent-foreground px-6 py-4 rounded-full"

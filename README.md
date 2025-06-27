@@ -1,23 +1,19 @@
-# Modern Barbershop Website
+# Liveit Maghribi
 
-A sleek, modern barbershop website built with Next.js 15, React 19, and Tailwind CSS. This project showcases a professional barbershop's services with smooth animations, responsive design, and an engaging user experience.
+A modern, creative platform for workshops and artistic experiences in Morocco. Built with Next.js 15, React 19, and Tailwind CSS, this project features a dynamic, responsive design, smooth animations, and a rich set of UI components.
 
 ## 🚀 Features
 
 - **Modern Tech Stack**
-
-  - Next.js 15 for optimal performance and SEO
-  - React 19 for cutting-edge UI components
-  - Tailwind CSS for responsive and beautiful styling
-  - Framer Motion for smooth animations
-  - GSAP for advanced animations and transitions
+  - Next.js 15 for SSR, routing, and performance
+  - React 19 for UI development
+  - Tailwind CSS for utility-first styling
+  - Framer Motion & GSAP for advanced animations
 
 - **UI Components**
-
-  - Radix UI components for accessible and customizable UI elements
-  - Animate.css for additional animation effects
-  - Lucide React for beautiful icons
-  - React Icons for comprehensive icon support
+  - Radix UI for accessible, customizable UI
+  - Custom components for workshops, services, and more
+  - Lucide React & React Icons for iconography
 
 - **Form Handling**
   - React Hook Form for efficient form management
@@ -56,7 +52,8 @@ npm run clean
 - Radix UI
 - React Hook Form
 - Zod
-- And more...
+- Lucide React
+- React Icons
 
 ## 🎨 Design
 

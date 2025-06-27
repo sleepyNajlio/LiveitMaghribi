@@ -9,7 +9,7 @@ export const Workshops = {
       tagline: "Spin the Clay. Shape the Tradition.",
       subline: "From Mud to Masterpiece: Experience Morocco’s Living Clay Traditions.",
       image: "/images/workshops/traditional-pottery-workshop.webp",
-      calEvent: "traditional-pottery",
+      calNamespace: "traditional-pottery",
       category: "Clay & Earth",
       description:
         "Step into the cool, sunlit courtyard of a traditional Moroccan atelier, where ancient pottery wheels turn and the earth comes alive in your hands…",
@@ -42,7 +42,7 @@ export const Workshops = {
       tagline: "Craft with Your Hands. Create from the Heart.",
       subline: "Craft with Your Hands. Create from the Heart.",
       image: "/images/workshops/modern-pottery-workshop1.webp",
-      calEvent: "modern-pottery",
+      calNamespace: "modern-pottery",
       category: "Clay & Earth",
       description:
         "Pull up a seat at our creative table and discover the beauty of pottery — no wheel, no stress. Just your hands, natural tools, and a blank canvas of clay ready to become something uniquely yours…",
@@ -75,7 +75,7 @@ export const Workshops = {
       tagline: "Coloring Clay with Culture.",
       subline: "Glaze Your Story in Color.",
       image: "/images/workshops/ceramic-painting-workshop.webp",
-      calEvent: "ceramic-painting",
+      calNamespace: "ceramic-painting",
       category: "Clay & Earth",
       description:
         "Unleash your creativity on ceramic plates, bowls, or tiles, using Moroccan patterns and vibrant glazes. It’s a colorful dive into tradition, guided by local artists.",
@@ -103,7 +103,7 @@ export const Workshops = {
       tagline: "Solid Foundations, Creative Expressions.",
       subline: "From Rough to Refined.",
       image: "/images/workshops/concrete-workshop.webp",
-      calEvent: "concrete",
+      calNamespace: "concrete",
       category: "Clay & Earth",
       description:
         "Discover the artistic side of concrete by creating your own decor item — like a planter, tray, or candle base. Mix, mold, and personalize your piece with raw texture or elegant finishes.",
@@ -131,7 +131,7 @@ export const Workshops = {
       tagline: "Piece by Piece, a Story Unfolds.",
       subline: "Piece by Piece, a Story Unfolds.",
       image: "/images/workshops/Mosaic-workshop.webp",
-      calEvent: "mosaic",
+      calNamespace: "mosaic",
       category: "Pattern & Heritage",
       description:
         "Step into the world of traditional Moroccan mosaic art and discover the rich beauty of zellige. In this hands-on workshop, you’ll learn how to assemble vibrant ceramic tiles into a unique geometric pattern. Our artisans will guide you through the basics of design, tile placement, and the cultural meaning behind the patterns.",
@@ -158,7 +158,7 @@ export const Workshops = {
       title: "Zellij Painting Workshop – Brush Strokes of Heritage",
       subline: "Bring Moroccan Tiles to Life, One Stroke at a Time.",
       image: "/images/services/Zellige-Painting.webp",
-      calEvent: "zellij-painting",
+      calNamespace: "zellij-painting",
       category: "Pattern & Heritage",
       description:
         "Discover the elegance of Moroccan zellij through tile painting. Guided by artisans, you’ll paint your own traditional tile using geometric patterns and natural pigments — a meditative and expressive art form.",
@@ -185,7 +185,7 @@ export const Workshops = {
       title: "Canvas Painting Workshop – Your Canvas, Your Story",
       subline: "Paint What You Feel. Express Who You Are.",
       image: "/images/workshops/canvas-painting-workshop.webp",
-      calEvent: "canvas-painting",
+      calNamespace: "canvas-painting",
       category: "Pattern & Heritage",
       description:
         "Bring your ideas to life on canvas in this expressive, beginner-friendly painting workshop. Explore color, composition, and creativity in a warm, welcoming space guided by local artists.",
@@ -213,7 +213,7 @@ export const Workshops = {
       title: "Candle Painting Workshop – Light Up Your Creativity",
       subline: "From Flame to Frame. Design with Soul.",
       image: "/images/workshops/candle-painting-workshop.webp",
-      calEvent: "candle-painting",
+      calNamespace: "candle-painting",
       category: "Pattern & Heritage",
       description:
         "Transform a simple candle into a glowing piece of art using traditional Moroccan motifs and heat-resistant paints. This hands-on workshop blends creativity with cultural charm.",
@@ -242,7 +242,7 @@ export const Workshops = {
       tagline: "Threads of Tradition.",
       subline: "Where Stories Are Woven, Thread by Thread.",
       image: "/images/workshops/tissage-weaving-workshop.webp",
-      calEvent: "weaving",
+      calNamespace: "weaving",
       category: "Textile & Thread",
       description:
         "Get hands-on with one of Morocco’s oldest crafts — weaving on a traditional loom using natural threads and ancient techniques passed down through generations.",
@@ -270,7 +270,7 @@ export const Workshops = {
       tagline: "Catch the Dreams, Craft the Magic.",
       subline: "Woven Whimsy with a Moroccan Touch.",
       image: "/images/workshops/dreamcatcher-workshop.webp",
-      calEvent: "dreamcatcher",
+      calNamespace: "dreamcatcher",
       category: "Textile & Thread",
       description:
         "Design your own dreamcatcher using wooden hoops, cotton threads, beads, and feathers — a boho classic with cultural soul.",
@@ -298,7 +298,7 @@ export const Workshops = {
       tagline: "Stitching Stories.",
       subline: "Threaded Art with Soul.",
       image: "/images/workshops/embroidery-workshop.webp",
-      calEvent: "embroidery",
+      calNamespace: "embroidery",
       category: "Textile & Thread",
       description:
         "Explore the delicate craft of Moroccan embroidery using traditional motifs and colorful threads. You'll stitch your own design on fabric with the help of a skilled artisan.",
@@ -326,7 +326,7 @@ export const Workshops = {
       tagline: "Loops of Love.",
       subline: "Relax. Create. Connect.",
       image: "/images/workshops/crochet-workshop.webp",
-      calEvent: "crochet",
+      calNamespace: "crochet",
       category: "Textile & Thread",
       description:
         "Learn the art of crochet in a cozy, beginner-friendly setting. You'll create a small project like a keychain, motif, or pouch using colorful yarn and a hook.",
@@ -354,7 +354,7 @@ export const Workshops = {
       tagline: "Wear What You Create.",
       subline: "Crafted Adornments by You.",
       image: "/images/workshops/jewelry-workshop.webp",
-      calEvent: "jewelry",
+      calNamespace: "jewelry",
       category: "Pattern & Heritage",
       description:
         "Design and create your own jewelry piece — from dainty earrings to bold necklaces — using quality beads, charms, cords, and metal findings.",
@@ -382,7 +382,7 @@ export const Workshops = {
       tagline: "Deliciously Designed.",
       subline: "Sweet Creativity, One Frosting Swipe at a Time.",
       image: "/images/workshops/cake-decoration-workshop.webp",
-      calEvent: "cake-decoration",
+      calNamespace: "cake-decoration",
       category: "Tastes & Tabletop",
       description:
         "Discover the joy of cake decoration through piping, fondant modeling, and creative toppings. It’s a flavorful workshop that turns your dessert into a piece of edible art.",
@@ -410,7 +410,7 @@ export const Workshops = {
       tagline: "Flavors You’ll Never Forget.",
       subline: "Cook, Taste, and Connect with Culture.",
       image: "/images/workshops/cooking-class-workshop.webp",
-      calEvent: "cooking-class",
+      calNamespace: "cooking-class",
       category: "Tastes & Tabletop",
       description:
         "Step into a Moroccan kitchen and uncover the secrets of traditional dishes like tagine, couscous, and pastries. Guided by local chefs, you’ll cook, taste, and connect over food.",
