@@ -12,7 +12,12 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-export function DatePicker({ date, setDate }) {
+interface DatePickerProps {
+  date: Date | null;
+  setDate: (date: Date | null) => void;
+}
+
+export function DatePicker({ date, setDate }: DatePickerProps): JSX.Element {
   return (
     <Popover>
       <PopoverTrigger asChild>

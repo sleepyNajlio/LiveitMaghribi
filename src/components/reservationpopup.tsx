@@ -59,14 +59,20 @@ const formSchema = z.object({
     ),
 });
 
+type FormData = z.infer<typeof formSchema>;
+
+interface ReservationPopupProps {
+  trigger: React.ReactNode;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
+}
+
 // Main ReservationPopup component
-const ReservationPopup = ({ trigger, open, onOpenChange }) => {
-  const form = useForm({
+const ReservationPopup = ({ trigger, open, onOpenChange }: ReservationPopupProps): JSX.Element => {
+  const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
-      email: "",
-      phone: "",
       date: "",
       time: "",
       services: [],
@@ -74,7 +80,7 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
   });
 
   // Handle form submission
-  const onSubmit = (data) => {
+  const onSubmit = (data: FormData) => {
     // Format the message
     const message = `\nHello, I want to book :\nName : ${
       data.name
@@ -84,14 +90,11 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
 
     console.log(message);
 
-    // WhatsApp number from content.js (remove + and spaces)
-    // const whatsappNumber = contact.phone.replace(/[^0-9]/g, "");
-
     // Encode the message for URL
     const encodedMessage = encodeURIComponent(message);
 
     // WhatsApp URL
-    const whatsappUrl = `${contact.whatsapp}?text=${encodedMessage}`;
+    const whatsappUrl = `${contact.contactLinks[1].href}?text=${encodedMessage}`;
 
     // Log WhatsApp URL to console
     console.log("WhatsApp URL:", whatsappUrl);
@@ -100,7 +103,7 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
   };
 
   // Helper to remove a selected service
-  const removeService = (service) => {
+  const removeService = (service: string) => {
     const current = form.getValues("services");
     form.setValue(
       "services",
@@ -132,7 +135,7 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
                   <FormItem>
                     <FormLabel className="text-ivory-cream">Name</FormLabel>
                     <div className="relative">
-                      <User className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+                      <LuUser className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
                       <FormControl>
                         <Input
                           placeholder="Your Name"
@@ -154,12 +157,12 @@ const ReservationPopup = ({ trigger, open, onOpenChange }) => {
                     <FormLabel className="text-cream">Date</FormLabel>
                     <div className="relative">
                       <FormControl>
-                        {/* <DatePicker
+                        <DatePicker
                           date={field.value ? new Date(field.value) : null}
                           setDate={(date) =>
                             field.onChange(date ? date.toISOString() : "")
                           }
-                        /> */}
+                        />
                       </FormControl>
                     </div>
                     <FormMessage className="text-red-400" />

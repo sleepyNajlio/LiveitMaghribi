@@ -7,7 +7,7 @@ import { PiClockClockwiseLight } from "react-icons/pi";
 import { contact, about } from "@/content/content";
 import Link from "next/link";
 
-const AboutUs = () => {
+const AboutUs = (): JSX.Element => {
   return (
     <section
       id="about"
@@ -66,14 +66,12 @@ const AboutUs = () => {
                 <PiClockClockwiseLight className="inline-block mb-1 ml-3 text-secondary" />
                 <span className="text-secondary"> 7 / 7</span> Days:
               </span>{" "}
-              {/* <PiClockClockwiseLight className="inline-block mb-1 ml-3 text-ivory-cream" /> */}
-              {contact.hours}
+              {contact.openHours}
             </motion.p>
-            <Link href={contact.whatsapp}>
+            <Link href={contact.contactLinks[1].href}>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href={contact.whatsapp}
                 className="text-foreground border border-muted rounded-2xl px-4 py-2 w-fit mx-auto my-4 hover:text-secondary transition-colors duration-300"
               >
                 <LuPhone className="inline-block mb-1 text-ivory-cream" />

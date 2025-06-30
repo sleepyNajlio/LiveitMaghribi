@@ -3,10 +3,18 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaCalendarAlt, FaUserAlt } from 'react-icons/fa';
 
-const Schedule = () => {
+interface ScheduleEntry {
+  day: string;
+  time: string;
+  course: string;
+  coach: string;
+  id: number;
+}
+
+const Schedule = (): JSX.Element => {
   const [activeTab, setActiveTab] = useState('Lundi');
 
-  const scheduleData = [
+  const scheduleData: ScheduleEntry[] = [
     { day: 'Lundi', time: '09:00 - 10:00', course: 'Yoga', coach: 'Sarah', id: 1 },
     { day: 'Lundi', time: '10:00 - 11:00', course: 'Pilates', coach: 'Amina', id: 2 },
     { day: 'Lundi', time: '12:00 - 13:00', course: 'Cardio', coach: 'Imène', id: 3 },

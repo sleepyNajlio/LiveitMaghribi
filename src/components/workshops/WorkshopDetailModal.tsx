@@ -1,10 +1,11 @@
 import React from "react";
 import { Dialog, DialogContent, DialogTitle, DialogClose } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import type { WorkshopDetailModalProps } from "@/types";
 
-export const WorkshopDetailModal = ({ workshop, open, onClose }) => {
+export const WorkshopDetailModal = ({ workshop, open, onClose }: WorkshopDetailModalProps): JSX.Element | null => {
   if (!workshop) return null;
-  const calendlyUrl = `https://calendly.com/${workshop.calUsername}/${workshop.calEvent}`;
+  const calendlyUrl = `https://calendly.com/liveitmaghribi/${workshop.calNamespace}`;
 
   return (
     <Dialog open={open} onOpenChange={onClose}>
@@ -32,18 +33,15 @@ export const WorkshopDetailModal = ({ workshop, open, onClose }) => {
           <div>
             <h3 className="font-semibold mb-1">Highlights</h3>
             <ul className="list-disc ml-5">
-              {workshop.highlights?.map((h, i) => (
+              {workshop.process?.map((h, i) => (
                 <li key={i}>{h}</li>
               ))}
             </ul>
             <div className="mt-2 text-sm text-gray-500">
-              Duration: {workshop.duration}
+              Duration: 2 hours
               <br />
-              Level: {workshop.level}
+              Level: Beginner friendly
             </div>
-            {workshop.testimonials && (
-              <div className="mt-2 italic text-xs">"{workshop.testimonials[0]}"</div>
-            )}
           </div>
           {/* Bottom left: Booking button */}
           <div>
@@ -55,9 +53,7 @@ export const WorkshopDetailModal = ({ workshop, open, onClose }) => {
           </div>
           {/* Bottom right: Reinforcement */}
           <div className="flex items-end">
-            {workshop.reinforcement && (
-              <div className="text-sm text-gray-700 italic">{workshop.reinforcement}</div>
-            )}
+            <div className="text-sm text-gray-700 italic">{workshop.calltoAction}</div>
           </div>
         </div>
         <DialogClose asChild>

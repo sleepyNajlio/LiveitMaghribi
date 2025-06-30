@@ -1,8 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import CalButton from "../calButton";
+import CalButton from "./calButton";
 import Image from "next/image";
+
+interface FlipCardProps {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  onFlip: () => void;
+  isFlipped: boolean;
+  calUsername: string;
+  calEvent: string;
+}
 
 const FlipCard = ({
   title,
@@ -13,9 +24,7 @@ const FlipCard = ({
   isFlipped,
   calUsername,
   calEvent,
-}) => {
-  // const [isFlipped, setIsFlipped] = useState(false);
-
+}: FlipCardProps): JSX.Element => {
   return (
     <div className="group relative w-full h-auto cursor-pointer " onClick={onFlip}>
       <div
@@ -45,7 +54,12 @@ const FlipCard = ({
         <div className="absolute inset-0 [transform:rotateY(180deg)] [backface-visibility:hidden] bg-black/80 rounded-xl p-6 flex flex-col justify-between">
           <h3 className="text-cream text-xl font-bold mb-4 text-center">{title}</h3>
           <p className="text-cream/80 text-center">{description}</p>
-          <CalButton username={calUsername} event={calEvent} />
+          <CalButton 
+            calLink={`${calUsername}/${calEvent}`} 
+            calNamespace={calEvent}
+          >
+            Book Now
+          </CalButton>
         </div>
       </div>
     </div>

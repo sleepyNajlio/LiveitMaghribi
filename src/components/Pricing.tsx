@@ -3,8 +3,18 @@
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
 
-const Pricing = () => {
-  const plans = [
+interface PriceItem {
+  frequency: string;
+  price: string;
+}
+
+interface Plan {
+  title: string;
+  prices: PriceItem[];
+}
+
+const Pricing = (): JSX.Element => {
+  const plans: Plan[] = [
     {
       title: "Cours Collectifs (60 min)",
       prices: [

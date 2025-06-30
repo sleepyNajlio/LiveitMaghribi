@@ -3,8 +3,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const Gallery = () => {
-  const galleryImages = [
+interface GalleryImage {
+  src: string;
+  alt: string;
+}
+
+const Gallery = (): JSX.Element => {
+  const galleryImages: GalleryImage[] = [
     {
       src: "/images/gallery/cut1.jpg",
       alt: "Modern fade haircut"

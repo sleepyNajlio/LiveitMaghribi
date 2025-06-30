@@ -9,27 +9,40 @@ import {
 } from "@/components/ui/accordion";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import dynamic from "next/dynamic";
+import type { Workshop, FAQ } from "@/types";
 
 // Dummy data for workshops and FAQs
-const workshops = [
+const workshops: Workshop[] = [
   // Fill with your 15 workshops
   {
     title: "Zellige Tile Art",
     tagline: "Piece by piece, a mosaic of tradition.",
     image: "/images/workshops/zellige.jpg",
-    calendly: "https://calendly.com/liveitmaghribi/zellige",
+    calNamespace: "zellige",
+    category: "Pattern & Heritage",
+    description: "Traditional Moroccan tile art workshop",
+    creation: "Create beautiful zellige patterns",
+    process: ["Learn traditional techniques", "Create your own design"],
+    notice: {
+      offer: "Take home your creation",
+    },
+    calltoAction: "Book your spot now",
+    buttons: {
+      booking: "Book Now",
+      whatsapp: "Contact Us",
+    },
   },
   // ...add 14 more
 ];
 
-const faqs = [
+const faqs: FAQ[] = [
   {
-    q: "Do I need prior experience?",
-    a: "No! All workshops are beginner-friendly and guided by local artisans.",
+    question: "Do I need prior experience?",
+    answer: "No! All workshops are beginner-friendly and guided by local artisans.",
   },
   {
-    q: "How do I book?",
-    a: "Just tap 'Book Now' on any workshop or use our Calendly link.",
+    question: "How do I book?",
+    answer: "Just tap 'Book Now' on any workshop or use our Calendly link.",
   },
   // ...add more
 ];
@@ -37,7 +50,7 @@ const faqs = [
 // Lazy load map for performance
 // const MapComponent = dynamic(() => import("./MapComponent"), { ssr: false });
 
-export default function HomePage() {
+export default function HomePage(): JSX.Element {
   return (
     <main className="bg-background text-foreground font-sans min-h-screen">
       {/* Hero */}
@@ -105,7 +118,7 @@ export default function HomePage() {
                 asChild
                 className="w-full rounded-full bg-primary text-primary-foreground shadow hover:shadow-lg active:scale-95 transition"
               >
-                <a href={ws.calendly} target="_blank" rel="noopener noreferrer">
+                <a href={`https://calendly.com/liveitmaghribi/${ws.calNamespace}`} target="_blank" rel="noopener noreferrer">
                   Book Now
                 </a>
               </Button>
@@ -121,7 +134,7 @@ export default function HomePage() {
         </h2>
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
           <blockquote className="bg-card rounded-xl shadow p-6 text-center font-serif text-lg text-muted-foreground">
-            “A magical space! I learned so much and felt so welcome.”
+            "A magical space! I learned so much and felt so welcome."
             <br />
             <span className="block mt-2 text-sm text-primary">— Sofia, Spain</span>
           </blockquote>
@@ -176,10 +189,10 @@ export default function HomePage() {
           {faqs.map((faq, i) => (
             <AccordionItem key={i} value={`faq-${i}`}>
               <AccordionTrigger className="font-bold text-left text-primary">
-                {faq.q}
+                {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                {faq.a}
+                {faq.answer}
               </AccordionContent>
             </AccordionItem>
           ))}
