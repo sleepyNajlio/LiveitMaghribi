@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import { contact } from "@/content/contact";
 import { LuClock10, LuPhone } from "react-icons/lu";

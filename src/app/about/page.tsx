@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import { about } from "@/content/content";
 import { RiFilePaper2Fill } from "react-icons/ri";
