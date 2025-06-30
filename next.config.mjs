@@ -19,8 +19,7 @@ const nextConfig = {
       "@heroicons/react",
       "framer-motion",
       "react-icons",
-      "gsap",
-      "lucide-react"
+      "gsap"
     ],
   },
   async headers() {
