@@ -13,7 +13,7 @@ const AboutUs = (): JSX.Element => {
       id="about"
       className="py-8 px-6 lg:px-24 bg-background text-foreground scroll-margin-top"
     >
-      <div className="container mx-auto space-y-16 ">
+      <div className="container mx-auto space-y-16">
         <motion.div
           className="flex flex-col items-center justify-between space-y-8 lg:space-y-0 lg:space-x-12"
           initial={{ opacity: 0, y: 50 }}
@@ -28,12 +28,12 @@ const AboutUs = (): JSX.Element => {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
           >
-            {about.title}
+            About Us
           </motion.h2>
           <div className="flex flex-col lg:flex-row items-center justify-between lg:space-y-0 lg:space-x-12">
             <div className="w-full lg:w-1/2">
               <Image
-                src="/full-logo.png"
+                src="/images/Logoo.png"
                 alt="Live It Maghribi"
                 width={600}
                 height={400}
@@ -43,7 +43,7 @@ const AboutUs = (): JSX.Element => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="lg:w-1/2 space-y-4 items-center ">
+            <div className="lg:w-1/2 space-y-4 items-center">
               <motion.p
                 className="text-lg leading-relaxed text-center"
                 initial={{ opacity: 0 }}
@@ -51,7 +51,7 @@ const AboutUs = (): JSX.Element => {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
               >
-                {about.description}
+                {about.story[0]}
               </motion.p>
             </div>
           </div>
@@ -62,7 +62,7 @@ const AboutUs = (): JSX.Element => {
             </motion.h3>
             <hr className="w-1/2 border-t border-muted mx-auto" />
             <motion.p className="text-xl leading-relaxed my-4 text-center text-foreground">
-              <span className="font-bold ">
+              <span className="font-bold">
                 <PiClockClockwiseLight className="inline-block mb-1 ml-3 text-secondary" />
                 <span className="text-secondary"> 7 / 7</span> Days:
               </span>{" "}

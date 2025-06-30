@@ -162,3 +162,19 @@ export interface WorkshopFilters {
   category?: WorkshopCategory;
   searchQuery?: string;
 }
+
+// Motion iframe props
+export interface MotionIframeProps {
+  title: string;
+  src: string;
+  width: string;
+  height: string;
+  style: React.CSSProperties;
+  allowFullScreen?: boolean;
+  loading?: "lazy" | "eager";
+  referrerPolicy?: string;
+  initial?: any;
+  whileInView?: any;
+  transition?: any;
+  className?: string;
+}

@@ -72,16 +72,7 @@ const Footer = (): JSX.Element => {
               <h3 className="text-2xl font-bold text-mustard">Follow Us</h3>
               <div className="flex space-x-6">
                 <a
-                  aria-label="Suivez-nous sur Facebook"
-                  href={contact.contactLinks.find(link => link.text === "Facebook")?.href || "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-ivory-cream hover:text-light-gold-accent transition duration-300"
-                >
-                  <FaFacebook className="text-3xl" />
-                </a>
-                <a
-                  aria-label="Suivez-nous sur Instagram"
+                  aria-label="Follow us on Instagram"
                   href={contact.contactLinks.find(link => link.text === "Instagram")?.href || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
