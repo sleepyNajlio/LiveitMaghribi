@@ -1,31 +1,31 @@
 "use client";
-import { useState } from "react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import Image from "next/image";
 import { hero } from "@/content/content";
 import { contact } from "@/content/contact";
 import { motion } from "framer-motion";
+import type { NavLink } from "@/types";
 
-const NavLinks = [
+const NavLinks: NavLink[] = [
   {
-    name: "Home",
     href: "/",
+    label: "Home",
   },
   {
-    name: "Workshops",
     href: "/Workshops",
+    label: "Workshops",
   },
   {
-    name: "About Us",
     href: "/about",
+    label: "About Us",
   },
   {
-    name: "Contact Us",
     href: "/contact",
+    label: "Contact Us",
   },
 ];
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -53,15 +53,14 @@ const Footer = () => {
               <p className="text-ivory-cream tracking-wider text-center mb-4 italic">
                 {hero.description}
               </p>
-              <div className="flex flex-row flex-wrap items-center justify-center gap-4 underline ">
+              <div className="flex flex-row flex-wrap items-center justify-center gap-4 underline">
                 {NavLinks.map((link, index) => (
-                  <a key={index} href={link.href} className="font-bold text-foreground ">
-                    {link.name}
+                  <a key={index} href={link.href} className="font-bold text-foreground">
+                    {link.label}
                   </a>
                 ))}
               </div>
             </motion.div>
-            {/* nav menu */}
 
             <motion.div
               className="flex flex-col items-center justify-center space-y-4"
@@ -74,35 +73,22 @@ const Footer = () => {
               <div className="flex space-x-6">
                 <a
                   aria-label="Suivez-nous sur Facebook"
-                  href={contact.facebook}
+                  href={contact.contactLinks.find(link => link.text === "Facebook")?.href || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-ivory-cream hover:text-light-gold-accent transition duration-300"
                 >
                   <FaFacebook className="text-3xl" />
                 </a>
-                {/* <a
-                  aria-label="Suivez-nous sur Twitter"
-                  href="#"
-                  className="text-ivory-cream hover:text-light-gold-accent transition duration-300"
-                >
-                  <FaTwitter className="text-3xl" />
-                </a> */}
                 <a
                   aria-label="Suivez-nous sur Instagram"
-                  href={contact.instagram}
+                  href={contact.contactLinks.find(link => link.text === "Instagram")?.href || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-ivory-cream hover:text-light-gold-accent transition duration-300"
                 >
                   <FaInstagram className="text-3xl" />
                 </a>
-                {/* <a
-                  href="#"
-                  className="text-ivory-cream hover:text-light-gold-accent transition duration-300"
-                >
-                  <FaLinkedin className="text-3xl" />
-                </a> */}
               </div>
             </motion.div>
           </div>

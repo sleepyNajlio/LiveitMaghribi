@@ -1,12 +1,14 @@
 import { Playfair_Display, Work_Sans } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import type { Metadata } from "next";
 
 import "./globals.css";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
 import { hero } from "../content/content";
-export const metadata = {
+
+export const metadata: Metadata = {
   title: hero.title,
   description: hero.description,
 };
@@ -27,7 +29,11 @@ const work_sans = Work_Sans({
   variable: "--font-work-sans",
 });
 
-export default function RootLayout({ children }) {
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>

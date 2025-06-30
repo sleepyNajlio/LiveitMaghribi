@@ -1,4 +1,6 @@
-export const Workshops = {
+import type { WorkshopsContent } from "@/types";
+
+export const Workshops: WorkshopsContent = {
   title: "Create. Connect. Live It Maghribi.",
   tagline:
     "Experience the heart of Morocco through hands-on crafts, age-old stories, and creative joy.",
@@ -7,14 +9,14 @@ export const Workshops = {
     {
       title: "Traditional Pottery Workshop – On the Wheel",
       tagline: "Spin the Clay. Shape the Tradition.",
-      subline: "From Mud to Masterpiece: Experience Morocco’s Living Clay Traditions.",
+      subline: "From Mud to Masterpiece: Experience Morocco's Living Clay Traditions.",
       image: "/images/workshops/traditional-pottery-workshop.webp",
       calNamespace: "traditional-pottery",
       category: "Clay & Earth",
       description:
         "Step into the cool, sunlit courtyard of a traditional Moroccan atelier, where ancient pottery wheels turn and the earth comes alive in your hands…",
       creation:
-        "In just 2 hours, you’ll learn to throw clay on a traditional pottery wheel — and walk away with 2 to 3 handcrafted Moroccan pieces, like a tea cup, vase, or decorative dish.",
+        "In just 2 hours, you'll learn to throw clay on a traditional pottery wheel — and walk away with 2 to 3 handcrafted Moroccan pieces, like a tea cup, vase, or decorative dish.",
       process: [
         "Begin with grounding: learn how to center and shape clay",
         "Follow step-by-step guidance from skilled Moroccan artisans",
@@ -28,7 +30,7 @@ export const Workshops = {
         problem: "Not staying that long? You can:",
         options: [
           "Pick a finished artisan piece on the spot",
-          "Or we’ll ship your creations to you",
+          "Or we'll ship your creations to you",
         ],
       },
       calltoAction: "Reserve your seat now → Small class, big memories.",
@@ -47,7 +49,7 @@ export const Workshops = {
       description:
         "Pull up a seat at our creative table and discover the beauty of pottery — no wheel, no stress. Just your hands, natural tools, and a blank canvas of clay ready to become something uniquely yours…",
       creation:
-        "In just 2 hours, you’ll shape and sculpt your own modern pottery piece — a candle holder, floral form, or whatever speaks to your imagination. It’s all about expression, mindfulness, and handmade design.",
+        "In just 2 hours, you'll shape and sculpt your own modern pottery piece — a candle holder, floral form, or whatever speaks to your imagination. It's all about expression, mindfulness, and handmade design.",
       process: [
         "Start with raw clay and basic techniques for handbuilding",
         "Use simple tools to shape, flatten, or carve your vision",
@@ -61,7 +63,7 @@ export const Workshops = {
         problem: "Short on time? No worries — you can:",
         options: [
           "Take home a beautiful, finished studio piece",
-          "Or we’ll ship your unique item directly to you",
+          "Or we'll ship your unique item directly to you",
         ],
       },
       calltoAction: "Hands in clay, heart in the moment. Join us.",
@@ -78,9 +80,9 @@ export const Workshops = {
       calNamespace: "ceramic-painting",
       category: "Clay & Earth",
       description:
-        "Unleash your creativity on ceramic plates, bowls, or tiles, using Moroccan patterns and vibrant glazes. It’s a colorful dive into tradition, guided by local artists.",
+        "Unleash your creativity on ceramic plates, bowls, or tiles, using Moroccan patterns and vibrant glazes. It's a colorful dive into tradition, guided by local artists.",
       creation:
-        "In just 2 hours, you’ll transform a plain ceramic piece into a personal work of art. No kiln needed — your masterpiece is ready to take home the same day.",
+        "In just 2 hours, you'll transform a plain ceramic piece into a personal work of art. No kiln needed — your masterpiece is ready to take home the same day.",
       process: [
         "Choose from a variety of pre-fired ceramic pieces",
         "Learn about traditional Moroccan patterns and layout techniques",
@@ -134,9 +136,9 @@ export const Workshops = {
       calNamespace: "mosaic",
       category: "Pattern & Heritage",
       description:
-        "Step into the world of traditional Moroccan mosaic art and discover the rich beauty of zellige. In this hands-on workshop, you’ll learn how to assemble vibrant ceramic tiles into a unique geometric pattern. Our artisans will guide you through the basics of design, tile placement, and the cultural meaning behind the patterns.",
+        "Step into the world of traditional Moroccan mosaic art and discover the rich beauty of zellige. In this hands-on workshop, you'll learn how to assemble vibrant ceramic tiles into a unique geometric pattern. Our artisans will guide you through the basics of design, tile placement, and the cultural meaning behind the patterns.",
       creation:
-        "In just 2 hours, you’ll design and build your own Moroccan-style mosaic using pre-cut ceramic tiles, traditional tools, and cement base panels — and leave with a beautiful, ready-to-display 20x20cm piece.",
+        "In just 2 hours, you'll design and build your own Moroccan-style mosaic using pre-cut ceramic tiles, traditional tools, and cement base panels — and leave with a beautiful, ready-to-display 20x20cm piece.",
       process: [
         "Learn the cultural roots of Moroccan zellige patterns",
         "Work with pre-cut tiles and Moroccan cement base panels",
@@ -161,9 +163,9 @@ export const Workshops = {
       calNamespace: "zellij-painting",
       category: "Pattern & Heritage",
       description:
-        "Discover the elegance of Moroccan zellij through tile painting. Guided by artisans, you’ll paint your own traditional tile using geometric patterns and natural pigments — a meditative and expressive art form.",
+        "Discover the elegance of Moroccan zellij through tile painting. Guided by artisans, you'll paint your own traditional tile using geometric patterns and natural pigments — a meditative and expressive art form.",
       creation:
-        "In 1.5 hours, you’ll design and hand-paint a ceramic tile that reflects your style and honors Moroccan craftsmanship. It becomes your own personal souvenir of color, heritage, and creativity.",
+        "In 1.5 hours, you'll design and hand-paint a ceramic tile that reflects your style and honors Moroccan craftsmanship. It becomes your own personal souvenir of color, heritage, and creativity.",
       process: [
         "Choose your tile and explore traditional Moroccan designs",
         "Sketch your motif and select your palette of natural pigments",
@@ -190,7 +192,7 @@ export const Workshops = {
       description:
         "Bring your ideas to life on canvas in this expressive, beginner-friendly painting workshop. Explore color, composition, and creativity in a warm, welcoming space guided by local artists.",
       creation:
-        "In just 2 hours, you’ll create a unique painting using acrylics — abstract, geometric, or nature-inspired — with plenty of room for self-expression. It’s art that reflects you.",
+        "In just 2 hours, you'll create a unique painting using acrylics — abstract, geometric, or nature-inspired — with plenty of room for self-expression. It's art that reflects you.",
       process: [
         "Choose your canvas size and painting theme",
         "Get introduced to basic color theory and design balance",
@@ -203,7 +205,7 @@ export const Workshops = {
         offer: "Take your finished canvas home the same day",
       },
       calltoAction:
-        "Unleash your creativity and leave with a masterpiece that’s truly yours.",
+        "Unleash your creativity and leave with a masterpiece that's truly yours.",
       buttons: {
         booking: "Book Your Spot",
         whatsapp: "Have Questions?",
@@ -218,7 +220,7 @@ export const Workshops = {
       description:
         "Transform a simple candle into a glowing piece of art using traditional Moroccan motifs and heat-resistant paints. This hands-on workshop blends creativity with cultural charm.",
       creation:
-        "In just 1.5 to 2 hours, you’ll hand-paint one or more Moroccan candles with vibrant patterns — arabesques, florals, or abstract lines. The final result is a beautiful, usable artwork you’ll be proud to display or gift.",
+        "In just 1.5 to 2 hours, you'll hand-paint one or more Moroccan candles with vibrant patterns — arabesques, florals, or abstract lines. The final result is a beautiful, usable artwork you'll be proud to display or gift.",
       process: [
         "Choose your candle size and shape",
         "Get inspired by Moroccan decorative styles",
@@ -245,7 +247,7 @@ export const Workshops = {
       calNamespace: "weaving",
       category: "Textile & Thread",
       description:
-        "Get hands-on with one of Morocco’s oldest crafts — weaving on a traditional loom using natural threads and ancient techniques passed down through generations.",
+        "Get hands-on with one of Morocco's oldest crafts — weaving on a traditional loom using natural threads and ancient techniques passed down through generations.",
       creation:
         "Create a small woven piece like a coaster or pouch while learning to warp, weft, and pattern. Discover Berber, Arab, and Saharan textile traditions along the way.",
       process: [
@@ -257,7 +259,7 @@ export const Workshops = {
         "Suitable for ages 12+",
       ],
       notice: {
-        offer: "You’ll leave with your handmade textile, ready to use or gift",
+        offer: "You'll leave with your handmade textile, ready to use or gift",
       },
       calltoAction: "Every thread tells a story. Come weave yours.",
       buttons: {
@@ -385,9 +387,9 @@ export const Workshops = {
       calNamespace: "cake-decoration",
       category: "Tastes & Tabletop",
       description:
-        "Discover the joy of cake decoration through piping, fondant modeling, and creative toppings. It’s a flavorful workshop that turns your dessert into a piece of edible art.",
+        "Discover the joy of cake decoration through piping, fondant modeling, and creative toppings. It's a flavorful workshop that turns your dessert into a piece of edible art.",
       creation:
-        "In just 90 minutes, you’ll design and decorate your own small cake or cupcakes — using professional techniques in a relaxed, playful setting.",
+        "In just 90 minutes, you'll design and decorate your own small cake or cupcakes — using professional techniques in a relaxed, playful setting.",
       process: [
         "Learn the basics of fondant shaping and piping styles",
         "Choose your dessert canvas — a mini cake or cupcakes",
@@ -406,16 +408,16 @@ export const Workshops = {
       },
     },
     {
-      title: "Moroccan Cooking Class – Flavors You’ll Never Forget",
-      tagline: "Flavors You’ll Never Forget.",
+      title: "Moroccan Cooking Class – Flavors You'll Never Forget",
+      tagline: "Flavors You'll Never Forget.",
       subline: "Cook, Taste, and Connect with Culture.",
       image: "/images/workshops/cooking-class-workshop.webp",
       calNamespace: "cooking-class",
       category: "Tastes & Tabletop",
       description:
-        "Step into a Moroccan kitchen and uncover the secrets of traditional dishes like tagine, couscous, and pastries. Guided by local chefs, you’ll cook, taste, and connect over food.",
+        "Step into a Moroccan kitchen and uncover the secrets of traditional dishes like tagine, couscous, and pastries. Guided by local chefs, you'll cook, taste, and connect over food.",
       creation:
-        "In this immersive session, you’ll prepare an authentic Moroccan meal from scratch — from savory starters to spiced mains or sweet finishes — using real ingredients and time-honored techniques.",
+        "In this immersive session, you'll prepare an authentic Moroccan meal from scratch — from savory starters to spiced mains or sweet finishes — using real ingredients and time-honored techniques.",
       process: [
         "Choose a dish to prepare: tagine, couscous, salads, or desserts",
         "Chop, season, and simmer under expert guidance",
@@ -425,7 +427,7 @@ export const Workshops = {
         "Great for all skill levels — solo, couples, or groups",
       ],
       notice: {
-        offer: "You’ll eat what you create — fresh and hot",
+        offer: "You'll eat what you create — fresh and hot",
       },
       calltoAction: "From prep to plate — savor every step with us.",
       buttons: {

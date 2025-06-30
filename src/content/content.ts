@@ -1,14 +1,15 @@
-export const hero = {
+import type { HeroContent, AboutContent, ServicesContent } from "@/types";
+
+export const hero: HeroContent = {
   title: "Live It Maghribi",
   description:
     "Unleash your creativity over coffee — Pottery, Tissage, Dreamcatchers, and more!",
-
   image: "/images/hero-image.avif",
   alt: "Dreamcatcher Hero Image",
   button: "Explore Workshops",
 };
 
-export const about = {
+export const about: AboutContent = {
   headline: "LiveItMaghribi – A Creative Moroccan Space",
   subline: "Where Moroccan tradition meets your creative spirit.",
   heroImage: "/images/hero-image.avif",
@@ -19,12 +20,12 @@ export const about = {
     "Come create, discover, and feel the Moroccan spirit — one handmade piece at a time.",
   ],
   ethos: [
-    "Every workshop is hands-on — you don’t watch, you *do*.",
+    "Every workshop is hands-on — you don't watch, you *do*.",
     "All materials are locally sourced and rich in cultural value.",
-    "Our artisans are not instructors — they’re storytellers.",
+    "Our artisans are not instructors — they're storytellers.",
     "We honor both ancient craft and contemporary creativity.",
     "We keep it small, personal, and deeply rooted.",
-    "This isn’t a tour. It’s a shared moment in time.",
+    "This isn't a tour. It's a shared moment in time.",
   ],
   hostImage: "/images/host-image.webp",
   bio: [
@@ -32,10 +33,11 @@ export const about = {
     "With a background in design and deep ties to Moroccan heritage, your host brings a thoughtful, warm presence to every session. From the scent of clay to the rhythm of thread, they guide you through more than a craft — they open a door into the Moroccan way of being.",
   ],
   invitation: `
-Whether you’re here for a few hours or a few days, Live It Maghribi is your place to make, feel, and remember.
+Whether you're here for a few hours or a few days, Live It Maghribi is your place to make, feel, and remember.
 `,
 };
-export const services = {
+
+export const services: ServicesContent = {
   title: "Our Workshops",
   description: "Choose Your Next Experience... Pottery, Weaving, Painting, and beyond.",
   items: [
@@ -139,7 +141,7 @@ export const services = {
     },
     {
       title: "Cooking Class",
-      description: "Flavors You’ll Never Forget.",
+      description: "Flavors You'll Never Forget.",
       image: "/images/services/cooking-class.webp",
       calEvent: "cooking-class",
       category: "Tastes & Tabletop",

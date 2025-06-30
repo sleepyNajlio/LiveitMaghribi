@@ -14,14 +14,14 @@ import "swiper/css/pagination";
 // import required modules
 import { Navigation, Scrollbar, Pagination, Autoplay } from "swiper/modules";
 
-export const ServicesCarousel = () => {
+export const ServicesCarousel = (): JSX.Element => {
   return (
     <div className="relative flex flex-col w-full items-center justify-center py-8">
       <div className="flex flex-col items-center justify-center gap-2">
         <h2 className="text-3xl md:text-5xl text-foreground font-extrabold font-playfair text-center tracking-wider">
           {services.title}
         </h2>
-        <p className="text-base leading-relaxed font-light max-w-sm text-muted/80 text-center text-balance md:text-lg ">
+        <p className="text-base leading-relaxed font-light max-w-sm text-muted/80 text-center text-balance md:text-lg">
           {services.description}
         </p>
       </div>
@@ -80,7 +80,6 @@ export const ServicesCarousel = () => {
           viewport={{ once: true }}
           className="swiper-button-next !bg-transparent border-0 border-foreground !text-foreground rounded-full transition-all duration-200 active:scale-75 hover:scale-105 !mr-10 md:!mr-0"
         >
-          {/* <ChevronsRight /> */}
         </motion.div>
         {services.items.map((item, index) => (
           <SwiperSlide

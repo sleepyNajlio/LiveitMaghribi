@@ -5,17 +5,12 @@ import { GiPaintedPottery, GiEmptyHourglass } from "react-icons/gi";
 import { LuCalendarFold } from "react-icons/lu";
 import { contact } from "@/content/contact";
 import { Workshops } from "@/content/workshops";
-
 import { Pickaxe } from "lucide-react";
 import { Button } from "../ui/button";
 import CalButton from "@/components/common/calButton";
+import type { WorkshopCardProps } from "@/types";
 
-const generateCalLink = (workshop) => {
-  const link = `${Workshops.calUsername}/${workshop.calEvent}`;
-  return link;
-};
-
-export const WorkshopCard = ({ workshop, Invert }) => {
+export const WorkshopCard = ({ workshop, Invert }: WorkshopCardProps): JSX.Element => {
   const backgroundSvg = `<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0,0 H400 
       A200,200 0 0,1 400,400 
@@ -53,7 +48,6 @@ export const WorkshopCard = ({ workshop, Invert }) => {
             WebkitMaskRepeat: "no-repeat",
             maskPosition: "center",
             WebkitMaskPosition: "center",
-            // transform: "scale(0.96)",
           }}
         >
           <Image
@@ -78,9 +72,6 @@ export const WorkshopCard = ({ workshop, Invert }) => {
         </h2>
       </div>
       <div className="w-full md:w-fit h-full flex flex-col items-center justify-center  rounded-xl px-4 md:py-4 mt-6 text-pretty text-left gap-4">
-        {/* <h2 className="text-2xl font-bold mb-2 font-playfair place-self-end max-w-[1/2]">
-              {workshop.subline}
-            </h2> */}
         <p className="tracking-wide text-lg md:text-xl md:leading-loose leading-relaxed drop-shadow-lg text-center font-playfair max-w-2xl">
           {workshop.description}
         </p>
@@ -102,14 +93,6 @@ export const WorkshopCard = ({ workshop, Invert }) => {
             </div>
           ))}
         </div>
-        {/* <div className="flex relative items-end justify-end w-1/2 aspect-[2/1] ">
-          <Image
-            src="/images/services/traditional-pottery.jpg"
-            fill
-            loading="lazy"
-            className="object-cover  rounded-3xl"
-          />
-        </div> */}
         <div className="w-full flex flex-col flex-center items-center justify-center leading-relaxed">
           <div className="flex flex-col items-center justify-center leading-relaxed">
             <GiEmptyHourglass className=" text-accent  min-w-11 min-h-11 max-w-11 max-h-11 ml-[-5px] mr-2 mt-1 " />
@@ -140,16 +123,14 @@ export const WorkshopCard = ({ workshop, Invert }) => {
               {workshop.calltoAction}
             </p>
             <div className="flex flex-row items-center justify-between gap-4 text-xl ">
-              {/*<Button*/}
-              {/*  variant="default"*/}
-              {/*  className=" px-6 py-4 rounded-full hover:bg-accent/60 hover:text-accent-foreground drop-shadow-md "*/}
-              {/*>*/}
-                <CalButton calLink={`${Workshops.calUsername}/${workshop.calNamespace}`} calNamespace={workshop.calNamespace} className='flex flex-row items-center justify-center gap-2' >
-
-                  <LuCalendarFold className="" />
-                  {workshop.buttons.booking}
-                </CalButton>
-              {/*</Button>*/}
+              <CalButton 
+                calLink={`${Workshops.calUsername}/${workshop.calNamespace}`} 
+                calNamespace={workshop.calNamespace} 
+                className='flex flex-row items-center justify-center gap-2'
+              >
+                <LuCalendarFold className="" />
+                {workshop.buttons.booking}
+              </CalButton>
               <Button
                 variant="outline"
                 className=" bg-transparent border-accent-foreground px-6 py-4 rounded-full"

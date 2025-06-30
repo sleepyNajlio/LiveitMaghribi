@@ -1,4 +1,6 @@
-export const Faq = [
+import type { FAQ } from "@/types";
+
+export const Faq: FAQ[] = [
   {
     question: "What kind of activities can I do at LiveItMaghribi?",
     answer:
@@ -22,7 +24,7 @@ export const Faq = [
   {
     question: "Can I take my creation home the same day?",
     answer:
-      "It depends on the workshop: For ceramic painting or zellij tiles, yes — you’ll take it home that day. For pottery and fired pieces, it takes about 1–2 weeks for firing, but we can ship it to you or offer a finished studio piece if you're short on time",
+      "It depends on the workshop: For ceramic painting or zellij tiles, yes — you'll take it home that day. For pottery and fired pieces, it takes about 1–2 weeks for firing, but we can ship it to you or offer a finished studio piece if you're short on time",
   },
   {
     question: "How can I book a spot in a workshop?",
@@ -32,11 +34,11 @@ export const Faq = [
   {
     question: "Do you accept group bookings or private sessions?",
     answer:
-      "Absolutely! We host private sessions, birthdays, team-building, and more. Just reach out through WhatsApp or our booking Links, and we’ll tailor the experience for your group.",
+      "Absolutely! We host private sessions, birthdays, team-building, and more. Just reach out through WhatsApp or our booking Links, and we'll tailor the experience for your group.",
   },
   {
     question: "How do I find your workshop?",
     answer:
-      "We’re located right next to the Museum at Kasbat Sous. Just follow the wall signs. You can enter through the main gate or the back entrance, which has parking available.",
+      "We're located right next to the Museum at Kasbat Sous. Just follow the wall signs. You can enter through the main gate or the back entrance, which has parking available.",
   },
 ];

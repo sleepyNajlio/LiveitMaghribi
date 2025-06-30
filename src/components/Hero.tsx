@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { LuChevronsDown } from "react-icons/lu";
 
-const Hero = () => {
+const Hero = (): JSX.Element => {
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
@@ -62,18 +62,6 @@ const Hero = () => {
         >
           <a href="/Workshops">{hero.button}</a>
         </Button>
-        {/* <ReservationPopup
-          trigger={
-            <button
-              onClick={() => setIsOpen(true)}
-              className="px-6 py-2 bg-foreground/70 border-1 border-background text-accent-foreground tracking-wide  text-lg rounded-full transition-all duration-300 cursor-pointer font-bold italic hover:scale-105 active:scale-90 "
-              role="button"
-              aria-label={hero.button}
-            >
-              {hero.button}
-            </button>
-          }
-        /> */}
       </div>
       <motion.div
         initial={{ opacity: 1, y: 50 }}

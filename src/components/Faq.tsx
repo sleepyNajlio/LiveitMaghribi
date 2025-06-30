@@ -7,14 +7,12 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import { Button } from "./ui/button";
-import { FaWhatsapp } from "react-icons/fa";
-import { contact } from "@/content/contact";
 import { Faq } from "@/content/Faq";
 
-export const FaqSection = () => {
+export const FaqSection = (): JSX.Element => {
   return (
     <section className="max-w-2xl mx-auto py-4 px-4">
-      <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-foreground font-playfair   ">
+      <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-foreground font-playfair">
         Frequently Asked Questions
       </h2>
       <div>
@@ -34,10 +32,7 @@ export const FaqSection = () => {
       <div className="flex flex-col items-center justify-center mt-8">
         <p className="text-lg font-medium text-foreground mb-4">Still Have Questions?</p>
         <Button variant="outline" className="px-6 py-2 rounded-full" asChild>
-          <a href="/contact">
-            {/* <FaWhatsapp className="mr-2 w-5 h-6" /> */}
-            Contact Us
-          </a>
+          <a href="/contact">Contact Us</a>
         </Button>
       </div>
     </section>

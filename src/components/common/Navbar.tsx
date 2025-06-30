@@ -3,8 +3,9 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import type { NavLink } from "@/types";
 
-const links = [
+const links: NavLink[] = [
   {
     href: "/",
     label: "Home",
@@ -23,7 +24,7 @@ const links = [
   },
 ];
 
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -52,12 +53,12 @@ export default function Navbar() {
     <nav
       className={`${
         isScrolled
-          ? "fixed top-0 left-0 w-full z-50 bg-background "
+          ? "fixed top-0 left-0 w-full z-50 bg-background"
           : "absolute top-0 left-0 w-full z-50 bg-gradient-to-b from-background via-background/60 to-transparent"
       } h-20 ${isOpen ? "bg-background" : ""}`}
     >
       <div className="container mx-auto flex items-center justify-between px-4 pb-4 pt-2">
-        <div className="text-xl font-bold ">
+        <div className="text-xl font-bold">
           <Link href="/" className="flex items-center">
             <Image
               src="/images/NavLogo.png"
@@ -107,25 +108,6 @@ export default function Navbar() {
           />
         </button>
 
-        {/* <div
-          id="mobile-menu"
-          role="navigation"
-          aria-label="Menu principal"
-          className={`${
-            isOpen ? "block" : "hidden"
-          } font-bold md:flex md:items-center md:space-x-6 bg-background md:bg-transparent w-full md:w-auto absolute md:relative top-20 left-0 md:top-0 md:left-0 md:z-auto text-white h-screen lg:h-auto py-4`}
-        >
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="block py-4 pl-3 px-4 hover:text-sand"
-              onClick={closeMenu}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div> */}
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-11">
           {links.map((link) => (

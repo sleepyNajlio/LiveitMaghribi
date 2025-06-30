@@ -7,7 +7,7 @@ import MapComponent from "@/components/MapComponent";
 import { Button } from "@/components/ui/button";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
-export default function Contact() {
+export default function Contact(): JSX.Element {
   return (
     <div>
       {/* Stacked section */}
@@ -32,7 +32,6 @@ export default function Contact() {
           </p>
           <div className="mt-2 py-1 px-4 rounded-2xl">
             <div className="flex flex-row items-center justify-center gap-2">
-              {/* <IoCalendar className="w-8 h-8 text-foreground" /> */}
               <h2 className="text-2xl md:text-3xl tracking-wide font-bold text-foreground font-playfair">
                 {contact.openDays}
               </h2>
@@ -69,7 +68,7 @@ export default function Contact() {
         </div>
         <div className="flex flex-col items-center justify-center gap-2">
           <h2 className="text-3xl font-playfair font-bold   italic text-center ">
-            Let’s Stay in Touch
+            Let's Stay in Touch
           </h2>
           <p className="font-light text-lg text-foreground/80 text-center text-balance">
             A moment away — by voice, by word, or by glance.

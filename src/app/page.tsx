@@ -4,7 +4,7 @@ import Testimonials from "../components/Testimonials";
 import { FaqSection } from "@/components/Faq";
 import MapComponent from "@/components/MapComponent";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <div>
       <Hero />

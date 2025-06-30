@@ -3,10 +3,10 @@ import { about } from "@/content/content";
 import { RiFilePaper2Fill } from "react-icons/ri";
 import { GiSparkles } from "react-icons/gi";
 import { IoSparklesSharp } from "react-icons/io5";
-import { LuHandshake, LuBrush, LuHeartHandshake, LuUserRound } from "react-icons/lu";
+import { LuBrush, LuHeartHandshake } from "react-icons/lu";
 import { Button } from "@/components/ui/button";
 
-export default function About() {
+export default function About(): JSX.Element {
   const backgroundSvg = `
   <svg width="600" height="900" viewBox="0 0 600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0,900 V300 
@@ -35,9 +35,6 @@ export default function About() {
           <h1 className="text-3xl md:text-5xl font-bold text-white font-playfair italic  max-w-3xl text-pretty ">
             {about.headline}
           </h1>
-          {/* <p className="font-light text-lg md:text-2xl max-w-lg tracking-wide text-foreground/90 leading-relaxed px-2 text-pretty">
-            {about.subline}
-          </p> */}
         </div>
       </div>
       {/* The rest of your page flows normally */}
@@ -77,47 +74,6 @@ export default function About() {
             </div>
           ))}
         </div>
-        {/* <div className="flex flex-row items-center justify-center ">
-          <LuUserRound className="w-8 h-8 text-accent mr-2 " />
-          <h2 className="text-3xl md:text-4xl font-playfair font-bold   italic">
-            Meet The Host
-          </h2>
-        </div>
-        <div className="w-full flex flex-col md:flex-row items-center justify-center">
-          <div
-            className="w-2/3 aspect-[2/3] md:w-1/3 flex flex-col items-center relative z-10 overflow-hidden"
-            style={{
-              maskImage: `url("data:image/svg+xml,${encodedSvg}")`,
-              WebkitMaskImage: `url("data:image/svg+xml,${encodedSvg}")`,
-              maskSize: "100%",
-              WebkitMaskSize: "100%",
-              maskRepeat: "no-repeat",
-              WebkitMaskRepeat: "no-repeat",
-              maskPosition: "center",
-              WebkitMaskPosition: "center",
-              transform: "scale(0.96)",
-            }}
-          >
-            <Image
-              src={about.hostImage}
-              alt={about.headline}
-              fill
-              quality={100}
-              className="object-cover shadow-lg"
-              sizes="(max-width: 768px) 100vw, 33vw"
-            />
-          </div>
-          <div className="flex flex-col items-center justify-end gap-6 max-w-2xl">
-            {about.bio.map((paragraph, index) => (
-              <p
-                key={index}
-                className="text-lg md:text-xl italic font-light tracking-wide text-center text-pretty "
-              >
-                {paragraph}
-              </p>
-            ))}
-          </div>
-        </div> */}
         <div className="flex flex-row items-center justify-center ">
           <LuHeartHandshake className="w-8 h-8 text-accent mr-2 " />
           <h2 className="text-3xl md:text-4xl font-playfair font-bold   italic *:">

@@ -1,4 +1,6 @@
-export const testimonials = [
+import type { Testimonial, GoogleReviewsData } from "@/types";
+
+export const testimonials: Testimonial[] = [
   {
     name: "Abdo Andalussi",
     text: "It was a good dreamcatcher workshop, We had a nice time. Thanks to Ikram the best instructor",
@@ -17,6 +19,6 @@ export const testimonials = [
   },
 ];
 
-export const googleReviews = {
+export const googleReviews: GoogleReviewsData = {
   link: "https://www.google.fr/search?q=live+it+maghribi&sca_esv=63da0d7b448ad6d2&biw=2277&bih=1326&ei=nyA1aIyjKpKPxc8PwdKYcA&gs_ssp=eJzj4tVP1zc0rDQ3raqyKCg2YLRSMahISTJOMjcwMEs0MDFLNLW0MqgwTkuzNDI2MjVJSUsyM0gz9RLIySxLVcgsUchNTM8oykzKBADRZhUN&oq=live+it+&gs_lp=Egxnd3Mtd2l6LXNlcnAiCGxpdmUgaXQgKgIIADILEC4YgAQYxwEYrwEyCxAuGIAEGMcBGK8BMgUQLhiABDIHEAAYgAQYCjIHEAAYgAQYCjIHEAAYgAQYCjIHEAAYgAQYCjIHEAAYgAQYCjIHEAAYgAQYCjIHEAAYgAQYCjIaEC4YgAQYxwEYrwEYlwUY3AQY3gQY4ATYAQFI5y9QsQlY2iVwBHgBkAEAmAF4oAGAB6oBAzUuNLgBA8gBAPgBAZgCDqACwBHCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICChAAGIAEGEMYigXCAhEQLhiABBixAxjRAxiDARjHAcICDhAuGIAEGLEDGIMBGIoFwgIIEC4YgAQYsQPCAggQABiABBixA8ICCxAuGIAEGLEDGIMBwgILEAAYgAQYsQMYigXCAhYQLhiABBixAxjRAxhDGIMBGMcBGIoFwgIQEC4YgAQYQxjHARiKBRivAcICBBAAGAPCAgUQABiABMICFxAuGIAEGLEDGJcFGNwEGN4EGOAE2AEBwgILEAAYgAQYsQMYgwHCAgoQABiABBjJAxgKwgIHEC4YgAQYCsICDhAAGIAEGJIDGLgEGIoFwgILEAAYgAQYkgMYigXCAgoQABiABBixAxgKwgINEC4YgAQYxwEYChivAcICDhAuGIAEGLEDGNEDGMcBmAMAiAYBkAYJugYGCAEQARgUkgcHOC41LjctMaAH4niyBwM0LjW4B7UH&sclient=gws-wiz-serp#lrd=0xdb3b7006a046a59:0x3ff923254dfb60f5,1,,,,",
 };

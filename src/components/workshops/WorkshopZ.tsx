@@ -1,7 +1,12 @@
 import React from "react";
 import { WorkshopCard } from "./WorkshopCard";
+import type { Workshop } from "@/types";
 
-export const WorkshopZ = ({ workshops }) => {
+interface WorkshopZProps {
+  workshops: Workshop[];
+}
+
+export const WorkshopZ = ({ workshops }: WorkshopZProps): JSX.Element => {
   return (
     <div className="flex flex-col justify-start gap-6 p-1">
       {workshops.map((workshop, idx) => (

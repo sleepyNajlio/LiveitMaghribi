@@ -1,32 +1,31 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Input } from "@/components/ui/input";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Card, CardContent } from "@/components/ui/card";
 import { Workshops } from "@/content/workshops";
 import { WorkshopZ } from "./WorkshopZ";
+import type { WorkshopCategory } from "@/types";
 
-const categories = [
+const categories: WorkshopCategory[] = [
   "Clay & Earth",
   "Pattern & Heritage",
   "Textile & Thread",
   "Tastes & Tabletop",
 ];
 
-export const WorkshopTabs = () => {
+export const WorkshopTabs = (): JSX.Element => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [activeTab, setActiveTab] = useState(categories[0]);
+  const [activeTab, setActiveTab] = useState<WorkshopCategory>(categories[0]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const hash = decodeURIComponent(window.location.hash.replace("#", ""));
-      if (categories.includes(hash)) {
-        setActiveTab(hash);
+      if (categories.includes(hash as WorkshopCategory)) {
+        setActiveTab(hash as WorkshopCategory);
       }
     }
   }, []);
 
-  const filterWorkshopsByCategory = (category) => {
+  const filterWorkshopsByCategory = (category: WorkshopCategory) => {
     return Workshops.items
       .filter((workshop) => workshop.category === category)
       .filter(
@@ -45,7 +44,7 @@ export const WorkshopTabs = () => {
               key={category}
               id={category}
               value={category.trim()}
-              className="text-lg "
+              className="text-lg"
             >
               {category}
             </TabsTrigger>
@@ -55,31 +54,6 @@ export const WorkshopTabs = () => {
         {categories.map((category) => (
           <TabsContent key={category} value={category}>
             <WorkshopZ workshops={filterWorkshopsByCategory(category)} />
-            {/* <Card>
-              <CardContent className="grid grid-cols-2 gap-4 p-4">
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold">{category}</h3>
-                  <div className="space-y-2">
-                    {filterWorkshopsByCategory(category).map((workshop) => (
-                      <div
-                        key={workshop.calEvent}
-                        className="p-4 border rounded-lg hover:bg-gray-50"
-                      >
-                        <h4 className="font-semibold">{workshop.title}</h4>
-                        <p className="text-sm text-gray-600">{workshop.description}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="aspect-video relative">
-                  <img
-                    src={filterWorkshopsByCategory(category)[0]?.image}
-                    alt={category}
-                    className="object-cover rounded-lg w-full h-full"
-                  />
-                </div>
-              </CardContent>
-            </Card> */}
           </TabsContent>
         ))}
       </Tabs>
