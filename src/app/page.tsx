@@ -17,7 +17,6 @@ const DynamicFaqSection = dynamic(() => import("@/components/Faq").then(mod => (
 
 const DynamicMapComponent = dynamic(() => import("@/components/MapComponent"), {
   loading: () => <div className="h-96 bg-muted/20 animate-pulse rounded-xl" />,
-  ssr: false,
 });
 
 // JSON-LD Schema Markup
