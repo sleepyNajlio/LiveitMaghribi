@@ -74,7 +74,7 @@ export default function Home() {
         </section>
 
         {/* Main Content Grid */}
-        <main className="py-8 space-y-8 lg:space-y-16">
+        <div className="py-8 space-y-8 lg:space-y-16">
           {/* Workshop Showcase Section */}
           <section 
             aria-labelledby="workshops-heading" 
@@ -205,7 +205,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-        </main>
+        </div>
       </div>
     </>
   );

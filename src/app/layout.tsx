@@ -94,6 +94,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={`${playfair.variable} ${work_sans.variable}`}>
       <head>
+        <title>Live It Maghribi: Authentic Moroccan Workshops in Agadir</title>
         {/* Preload critical resources */}
         <link rel="preload" as="image" href="/images/hero-image.avif" type="image/avif" />
         <link rel="preload" as="image" href="/images/NavLogo.png" type="image/png" />

@@ -72,21 +72,21 @@ export const FaqSection = ()  => {
         <div className="flex flex-col sm:flex-row gap-4">
           <Button 
             variant="outline" 
-            className="px-8 py-3 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300" 
+            className="px-8 py-3 rounded-full border-2 border-foreground text-foreground  hover:scale-105 transition-all duration-300"
             asChild
           >
             <a href="/contact" aria-label="Contact Live It Maghribi for more information">
               Contact Us
             </a>
           </Button>
-          <Button 
-            className="px-8 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300" 
-            asChild
-          >
-            <a href="tel:+212610714670" aria-label="Call Live It Maghribi directly">
-              Call Now
-            </a>
-          </Button>
+          {/*<Button */}
+          {/*  className="px-8 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300" */}
+          {/*  asChild*/}
+          {/*>*/}
+          {/*  <a href="tel:+212610714670" aria-label="Call Live It Maghribi directly">*/}
+          {/*    Call Now*/}
+          {/*  </a>*/}
+          {/*</Button>*/}
         </div>
       </motion.div>
     </section>

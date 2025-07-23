@@ -24,14 +24,14 @@ export default function Contact()  {
             zIndex: 0,
           }}
         ></div>
-        <div className="relative z-10 flex flex-col justify-center items-center text-center w-full h-full backdrop-blur-sm   gap-2">
+        <div className="relative z-10 flex flex-col justify-center items-center text-center w-full h-full gap-2">
           <h1 className="text-3xl md:text-5xl font-bold text-white font-playfair italic text-pretty ">
             {contact.headline}
           </h1>
           <p className="font-light text-md md:text-xl max-w-xl tracking-wide text-foreground/90 leading-relaxed px-2">
             {contact.subline}
           </p>
-          <div className="mt-2 py-1 px-4 rounded-2xl bg-primary/50 backdrop-blur-sm">
+          <div className="mt-2 py-1 px-4 rounded-2xl bg-primary/30 backdrop-blur-sm">
             <div className="flex flex-row items-center justify-center gap-2">
               <h2 className="text-2xl md:text-3xl tracking-wide font-bold text-foreground font-playfair">
                 {contact.openDays}
