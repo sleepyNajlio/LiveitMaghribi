@@ -74,45 +74,45 @@ export default function Home() {
         </section>
 
         {/* Main Content Grid */}
-        <main className="space-y-16 lg:space-y-24">
+        <main className="py-8 space-y-8 lg:space-y-16">
           {/* Workshop Showcase Section */}
           <section 
             aria-labelledby="workshops-heading" 
-            className="py-8 lg:py-16"
+            className=""
           >
-            <div className="container mx-auto px-4">
-              <header className="text-center mb-12 lg:mb-16 max-w-4xl mx-auto">
-                <h2 
-                  id="workshops-heading"
-                  className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-playfair mb-4"
-                >
-                  Authentic Moroccan Workshops
-                </h2>
-                <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                  Immerse yourself in centuries-old traditions through hands-on experiences in pottery, zellige, cooking, and more
-                </p>
-              </header>
+            {/*<div className="container mx-auto px-4">*/}
+            {/*  <header className="text-center mb-12 lg:mb-16 max-w-4xl mx-auto">*/}
+            {/*    <h2 */}
+            {/*      id="workshops-heading"*/}
+            {/*      className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-playfair mb-4"*/}
+            {/*    >*/}
+            {/*      Authentic Moroccan Workshops*/}
+            {/*    </h2>*/}
+            {/*    <p className="text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed">*/}
+            {/*      Immerse yourself in centuries-old traditions through hands-on experiences in pottery, zellige, cooking, and more*/}
+            {/*    </p>*/}
+            {/*  </header>*/}
               <ServicesCarousel />
-            </div>
+            {/*</div>*/}
           </section>
 
           {/* Testimonials Section - Dynamically loaded */}
           <section 
             aria-labelledby="testimonials-heading"
-            className="py-8 lg:py-16 bg-gradient-to-b from-background to-muted/10"
+            className=" bg-background "
           >
             <div className="container mx-auto px-4">
-              <header className="text-center mb-12">
-                <h2 
-                  id="testimonials-heading"
-                  className="text-3xl md:text-4xl font-bold text-foreground font-playfair mb-4"
-                >
-                  What Our Guests Say
-                </h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Real experiences from visitors who discovered the magic of Moroccan craftsmanship
-                </p>
-              </header>
+              {/*<header className="text-center mb-12">*/}
+              {/*  <h2 */}
+              {/*    id="testimonials-heading"*/}
+              {/*    className="text-3xl md:text-4xl font-bold text-foreground font-playfair mb-4"*/}
+              {/*  >*/}
+              {/*    What Our Guests Say*/}
+              {/*  </h2>*/}
+              {/*  <p className="text-lg text-muted max-w-2xl mx-auto">*/}
+              {/*    Real experiences from visitors who discovered the magic of Moroccan craftsmanship*/}
+              {/*  </p>*/}
+              {/*</header>*/}
               <DynamicTestimonials />
             </div>
           </section>
@@ -120,7 +120,7 @@ export default function Home() {
           {/* FAQ Section - Dynamically loaded */}
           <section 
             aria-labelledby="faq-heading"
-            className="py-8 lg:py-16"
+            className=""
           >
             <div className="container mx-auto px-4">
               <DynamicFaqSection />
@@ -130,7 +130,7 @@ export default function Home() {
           {/* Location & Contact Section */}
           <section 
             aria-labelledby="location-heading"
-            className="py-8 lg:py-16 bg-gradient-to-t from-background to-muted/10"
+            className=" bg-background"
           >
             <div className="container mx-auto px-4">
               <header className="text-center mb-12 lg:mb-16">
@@ -140,7 +140,7 @@ export default function Home() {
                 >
                   Discover Kasbat Souss, Agadir
                 </h2>
-                <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                <p className="text-base font-light md:text-xl text-muted max-w-3xl mx-auto leading-relaxed">
                   Located in the heart of historic Kasbat Souss, our workshop offers an authentic cultural experience just minutes from Agadir's city center
                 </p>
               </header>
@@ -148,31 +148,31 @@ export default function Home() {
               {/* Location Info Grid */}
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
                 <div className="space-y-6">
-                  <div className="bg-card/50 rounded-2xl p-6 lg:p-8">
-                    <h3 className="text-xl font-semibold text-foreground mb-4 font-playfair">
+                  <div className="bg-card/40 rounded-2xl p-6 lg:p-8">
+                    <h3 className="text-xl font-bold text-primary tracking-wide  mb-4 font-playfair">
                       Visit Our Workshop
                     </h3>
-                    <div className="space-y-3 text-muted-foreground">
+                    <div className="space-y-3 text-muted">
                       <p className="flex items-center gap-3">
-                        <span className="w-2 h-2 bg-accent rounded-full"></span>
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
                         Open daily: 10:30 AM – 7:30 PM
                       </p>
                       <p className="flex items-center gap-3">
-                        <span className="w-2 h-2 bg-accent rounded-full"></span>
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
                         Kasbat Souss, Agadir 80000
                       </p>
                       <p className="flex items-center gap-3">
-                        <span className="w-2 h-2 bg-accent rounded-full"></span>
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
                         Free parking available
                       </p>
                     </div>
                   </div>
                   
-                  <div className="bg-card/50 rounded-2xl p-6 lg:p-8">
-                    <h3 className="text-xl font-semibold text-foreground mb-4 font-playfair">
+                  <div className="bg-card/40 rounded-2xl p-6 lg:p-8">
+                    <h3 className="text-xl font-bold text-primary mb-4 font-playfair tracking-wide">
                       Easy to Find
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-muted leading-relaxed">
                       Follow the signs to the Kasbat Souss Museum — we're just next door. 
                       Enter through the main gate or use the back entrance with convenient parking.
                     </p>
@@ -189,14 +189,14 @@ export default function Home() {
                 <div className="inline-flex flex-col sm:flex-row gap-4 items-center">
                   <a
                     href="/contact"
-                    className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-lg hover:bg-primary/90 transition-colors duration-200 shadow-lg hover:shadow-xl"
+                    className="inline-flex items-center justify-center px-8 py-4 bg-primary border-foreground border text-primary-foreground rounded-full font-semibold text-lg hover:bg-primary/90 transition-colors duration-200 shadow-lg hover:shadow-xl"
                     aria-label="Get directions to Live It Maghribi"
                   >
                     Plan Your Visit
                   </a>
                   <a
                     href="tel:+212610714670"
-                    className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold text-lg hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+                    className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary bg-foreground rounded-full font-semibold text-lg hover:bg-primary hover:border-foreground hover:text-primary-foreground transition-colors duration-200"
                     aria-label="Call Live It Maghribi"
                   >
                     Call Us Now

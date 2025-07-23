@@ -4,8 +4,9 @@ import { useState, useEffect } from "react";
 import { hero } from "@/content/content";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { LuChevronsDown, LuCalendarCheck, LuMapPin } from "react-icons/lu";
 import Image from "next/image";
+import { MapPin, CalendarCheck, ChevronsDown } from "lucide-react"
+
 
 const Hero = ()  => {
   const [showVideo, setShowVideo] = useState(false);
@@ -17,6 +18,7 @@ const Hero = ()  => {
     };
     if (document.readyState === "complete") {
       onLoad();
+      return;
     } else {
       window.addEventListener("load", onLoad);
       return () => window.removeEventListener("load", onLoad);
@@ -78,11 +80,11 @@ const Hero = ()  => {
           {/* Key highlights */}
           <div className="flex flex-wrap justify-center gap-4 lg:gap-6 text-sm lg:text-base font-medium">
             <div className="flex items-center gap-2 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2">
-              <LuMapPin className="w-4 h-4" />
+              <MapPin className="w-4 h-4" />
               <span>Kasbat Souss, Agadir</span>
             </div>
             <div className="flex items-center gap-2 bg-black/30 backdrop-blur-sm rounded-full px-4 py-2">
-              <LuCalendarCheck className="w-4 h-4" />
+              <CalendarCheck className="w-4 h-4" />
               <span>Open Daily 10:30-19:30</span>
             </div>
           </div>
@@ -123,7 +125,7 @@ const Hero = ()  => {
         }}
         className="absolute bottom-8 z-20"
       >
-        <LuChevronsDown className="text-white w-8 h-8 lg:w-10 lg:h-10 drop-shadow-lg" />
+        <ChevronsDown className="text-white w-8 h-8 lg:w-10 lg:h-10 drop-shadow-lg" />
       </motion.div>
     </section>
   );

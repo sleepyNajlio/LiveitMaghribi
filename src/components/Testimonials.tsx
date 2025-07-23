@@ -82,7 +82,7 @@ export default function Testimonials()  {
         <h2 className="font-playfair font-bold tracking-wider text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
           What Our Guests Say
         </h2>
-        <p className="text-base md:text-lg lg:text-xl max-w-2xl mb-8 lg:mb-12 font-light text-balance text-center leading-relaxed mx-auto text-muted-foreground">
+        <p className="text-base md:text-lg lg:text-xl max-w-2xl mb-8 lg:mb-12 font-light text-balance text-center leading-relaxed mx-auto text-muted">
           Real voices from hands-on moments woven with clay, color, and connection in the heart of Morocco
         </p>
       </motion.div>
@@ -110,7 +110,7 @@ export default function Testimonials()  {
       >
         <Button
           variant="outline"
-          className="border-2 border-primary rounded-full py-4 px-8 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-lg hover:shadow-xl"
+          className="border-2 border-primary rounded-full py-4 px-8 text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-lg hover:shadow-xl"
           asChild
         >
           <a

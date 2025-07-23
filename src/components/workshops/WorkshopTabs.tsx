@@ -14,12 +14,13 @@ const categories: WorkshopCategory[] = [
 
 export const WorkshopTabs = ()  => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [activeTab, setActiveTab] = useState<WorkshopCategory>(categories[0]);
+  const [activeTab, setActiveTab] = useState<WorkshopCategory>(categories[0] as WorkshopCategory);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const hash = decodeURIComponent(window.location.hash.replace("#", ""));
       if (categories.includes(hash as WorkshopCategory)) {
+        console.log("hash:", hash);
         setActiveTab(hash as WorkshopCategory);
       }
     }
@@ -37,7 +38,7 @@ export const WorkshopTabs = ()  => {
 
   return (
     <div className="w-full space-y-4">
-      <Tabs defaultValue={categories[0]} className="space-y-4">
+      <Tabs value={activeTab} onValueChange={(value) => setActiveTab(value as WorkshopCategory) } className="space-y-4">
         <TabsList className="grid w-full h-full grid-cols-2 lg:grid-cols-4 gap-2 text-accent-foreground bg-foreground/50">
           {categories.map((category) => (
             <TabsTrigger

@@ -14,7 +14,7 @@ export default function MapComponent({ className }: MapComponentProps)  {
     if ("IntersectionObserver" in window) {
       observer = new window.IntersectionObserver(
         ([entry]) => {
-          if (entry.isIntersecting) {
+          if (entry?.isIntersecting) {
             setShowMap(true);
             observer.disconnect();
           }

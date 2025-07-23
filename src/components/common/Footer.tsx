@@ -53,13 +53,14 @@ const Footer = ()  => {
               <p className="text-ivory-cream tracking-wider text-center mb-4 italic">
                 {hero.description}
               </p>
-              <div className="flex flex-row flex-wrap items-center justify-center gap-4 underline">
-                {NavLinks.map((link, index) => (
-                  <a key={index} href={link.href} className="font-bold text-foreground">
-                    {link.label}
-                  </a>
-                ))}
-              </div>
+
+            </motion.div>
+            <motion.div className="flex flex-row lg:flex-col flex-wrap items-center justify-center gap-4 underline">
+              {NavLinks.map((link, index) => (
+                <a key={index} href={link.href} className="font-bold text-foreground">
+                  {link.label}
+                </a>
+              ))}
             </motion.div>
 
             <motion.div

@@ -31,7 +31,7 @@ export default function Contact()  {
           <p className="font-light text-md md:text-xl max-w-xl tracking-wide text-foreground/90 leading-relaxed px-2">
             {contact.subline}
           </p>
-          <div className="mt-2 py-1 px-4 rounded-2xl">
+          <div className="mt-2 py-1 px-4 rounded-2xl bg-primary/50 backdrop-blur-sm">
             <div className="flex flex-row items-center justify-center gap-2">
               <h2 className="text-2xl md:text-3xl tracking-wide font-bold text-foreground font-playfair">
                 {contact.openDays}

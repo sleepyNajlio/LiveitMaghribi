@@ -137,7 +137,7 @@ export const WorkshopCard = ({ workshop, Invert }: WorkshopCardProps)  => {
                 asChild
               >
                 <a
-                  href={contact.contactLinks[1].href}
+                  href={contact.contactLinks[1]?.href}
                   target="_blank"
                   rel="noreferrer"
                   className=" flex flex-row items-center justify-center gap-2"

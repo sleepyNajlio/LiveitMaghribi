@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 export const FaqSection = ()  => {
   return (
-    <section className="max-w-4xl mx-auto py-8 lg:py-12 px-4">
+    <section className="max-w-4xl mx-auto  px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ export const FaqSection = ()  => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-playfair mb-4">
           Frequently Asked Questions
         </h2>
-        <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        <p className="text-base md:text-lg lg:text-xl text-muted font-light max-w-2xl mx-auto leading-relaxed">
           Everything you need to know about your Moroccan workshop experience
         </p>
       </motion.div>

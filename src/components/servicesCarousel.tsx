@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import ServiceCard from "./common/serviceCard";
-import { services } from "../content/content";
+import { services } from "@/content/content";
 import { motion } from "framer-motion";
 
 // Import Swiper styles
@@ -16,7 +16,7 @@ import { Navigation, Scrollbar, Pagination, Autoplay } from "swiper/modules";
 
 export const ServicesCarousel = ()  => {
   return (
-    <div className="relative flex flex-col w-full items-center justify-center">
+    <div className="container mx-auto relative flex flex-col w-full items-center justify-center">
       {/* Enhanced header section */}
       <motion.div 
         className="flex flex-col items-center justify-center gap-4 mb-8 lg:mb-12 max-w-4xl mx-auto text-center"
@@ -28,21 +28,21 @@ export const ServicesCarousel = ()  => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-foreground font-extrabold font-playfair tracking-wide">
           {services.title}
         </h2>
-        <p className="text-base md:text-lg lg:text-xl leading-relaxed font-light max-w-2xl text-muted-foreground text-balance">
+        <p className="text-base md:text-lg lg:text-xl leading-relaxed font-light max-w-2xl text-muted text-balance">
           {services.description}
         </p>
         
         {/* Workshop categories preview */}
-        <div className="flex flex-wrap justify-center gap-2 mt-4">
-          {["Clay & Earth", "Pattern & Heritage", "Textile & Thread", "Tastes & Tabletop"].map((category) => (
-            <span 
-              key={category}
-              className="px-3 py-1 bg-accent/20 text-accent-foreground rounded-full text-sm font-medium"
-            >
-              {category}
-            </span>
-          ))}
-        </div>
+        {/*<div className="flex flex-wrap justify-center gap-2 mt-4">*/}
+        {/*  {["Clay & Earth", "Pattern & Heritage", "Textile & Thread", "Tastes & Tabletop"].map((category) => (*/}
+        {/*    <span */}
+        {/*      key={category}*/}
+        {/*      className="px-3 py-1 bg-accent/20 text-accent-foreground rounded-full text-sm font-medium"*/}
+        {/*    >*/}
+        {/*      {category}*/}
+        {/*    </span>*/}
+        {/*  ))}*/}
+        {/*</div>*/}
       </motion.div>
 
       {/* Enhanced carousel */}
@@ -99,7 +99,7 @@ export const ServicesCarousel = ()  => {
           loop={true}
           modules={[Navigation, Pagination, Autoplay]}
           className="w-full !py-8 lg:!py-12
-            [--swiper-navigation-size:3rem]
+            [--swiper-navigation-size:2rem]
             [--swiper-navigation-color:hsl(var(--foreground))]
             [--swiper-pagination-color:hsl(var(--primary))]
             [--swiper-pagination-bullet-inactive-color:hsl(var(--muted-foreground))]
