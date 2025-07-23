@@ -33,11 +33,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <!-- Google tag (gtag.js) -->
         <title>{hero.title}</title>
          <link rel="preload" as="image" href="/images/hero-image.avif" type="image/avif" />
       </head>
-      <body className={`${playfair.variable} font-work-sans bg-background `}>
+      <body className={`${playfair.variable} ${work_sans.variable} bg-background `}>
         <Navbar />
         <main>{children}</main>
         <Footer />
