@@ -12,7 +12,7 @@ const categories: WorkshopCategory[] = [
   "Tastes & Tabletop",
 ];
 
-export const WorkshopTabs = (): JSX.Element => {
+export const WorkshopTabs = ()  => {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeTab, setActiveTab] = useState<WorkshopCategory>(categories[0]);
 

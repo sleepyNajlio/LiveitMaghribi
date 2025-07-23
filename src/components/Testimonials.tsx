@@ -8,7 +8,7 @@ import { FcGoogle } from "react-icons/fc";
 import { motion } from "framer-motion";
 import type { TestimonialCardProps } from "@/types";
 
-function TestimonialCard({ testimonial, index, expanded, setExpanded }: TestimonialCardProps): JSX.Element {
+function TestimonialCard({ testimonial, index, expanded, setExpanded }: TestimonialCardProps)  {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -67,7 +67,7 @@ function TestimonialCard({ testimonial, index, expanded, setExpanded }: Testimon
   );
 }
 
-export default function Testimonials(): JSX.Element {
+export default function Testimonials()  {
   const [expanded, setExpanded] = useState<number | null>(null);
 
   return (

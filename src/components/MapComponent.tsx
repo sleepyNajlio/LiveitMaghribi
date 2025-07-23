@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import type { MapComponentProps } from "@/types";
 
-export default function MapComponent({ className }: MapComponentProps): JSX.Element {
+export default function MapComponent({ className }: MapComponentProps)  {
   const ref = useRef<HTMLDivElement>(null);
   const [showMap, setShowMap] = useState(false);
 

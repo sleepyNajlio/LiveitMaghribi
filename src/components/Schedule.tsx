@@ -11,7 +11,7 @@ interface ScheduleEntry {
   id: number;
 }
 
-const Schedule = (): JSX.Element => {
+const Schedule = ()  => {
   const [activeTab, setActiveTab] = useState('Lundi');
 
   const scheduleData: ScheduleEntry[] = [

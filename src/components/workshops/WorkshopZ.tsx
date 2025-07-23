@@ -6,7 +6,7 @@ interface WorkshopZProps {
   workshops: Workshop[];
 }
 
-export const WorkshopZ = ({ workshops }: WorkshopZProps): JSX.Element => {
+export const WorkshopZ = ({ workshops }: WorkshopZProps)  => {
   return (
     <div className="flex flex-col justify-start gap-6 p-1">
       {workshops.map((workshop, idx) => (

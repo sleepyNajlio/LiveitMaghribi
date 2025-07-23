@@ -24,7 +24,7 @@ const links: NavLink[] = [
   },
 ];
 
-export default function Navbar(): JSX.Element {
+export default function Navbar()  {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 

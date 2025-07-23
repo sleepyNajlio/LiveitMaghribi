@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, useTransform, useScroll } from "framer-motion";
 
-const CTA = (): JSX.Element => {
+const CTA = ()  => {
   const { scrollYProgress } = useScroll();
 
   const textScale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);

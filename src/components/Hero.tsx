@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 import { LuChevronsDown, LuCalendarCheck, LuMapPin } from "react-icons/lu";
 import Image from "next/image";
 
-const Hero = (): JSX.Element => {
+const Hero = ()  => {
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {

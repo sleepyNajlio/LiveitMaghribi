@@ -10,7 +10,7 @@ import { Button } from "../ui/button";
 import CalButton from "@/components/common/calButton";
 import type { WorkshopCardProps } from "@/types";
 
-export const WorkshopCard = ({ workshop, Invert }: WorkshopCardProps): JSX.Element => {
+export const WorkshopCard = ({ workshop, Invert }: WorkshopCardProps)  => {
   const backgroundSvg = `<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0,0 H400 
       A200,200 0 0,1 400,400 

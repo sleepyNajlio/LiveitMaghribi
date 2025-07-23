@@ -50,7 +50,7 @@ const faqs: FAQ[] = [
 // Lazy load map for performance
 // const MapComponent = dynamic(() => import("./MapComponent"), { ssr: false });
 
-export default function HomePage(): JSX.Element {
+export default function HomePage()  {
   return (
     <main className="bg-background text-foreground font-sans min-h-screen">
       {/* Hero */}

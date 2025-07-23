@@ -25,7 +25,7 @@ const NavLinks: NavLink[] = [
   },
 ];
 
-const Footer = (): JSX.Element => {
+const Footer = ()  => {
   const currentYear = new Date().getFullYear();
 
   return (

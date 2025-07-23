@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import type { ServiceCardProps } from "@/types";
 
-export default function ServiceCard({ service }: ServiceCardProps): JSX.Element {
+export default function ServiceCard({ service }: ServiceCardProps)  {
   const backgroundSvg = `
     <svg width="600" height="900" viewBox="0 0 600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,900 V300 

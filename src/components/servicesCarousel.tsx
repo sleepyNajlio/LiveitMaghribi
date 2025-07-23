@@ -14,7 +14,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Navigation, Scrollbar, Pagination, Autoplay } from "swiper/modules";
 
-export const ServicesCarousel = (): JSX.Element => {
+export const ServicesCarousel = ()  => {
   return (
     <div className="relative flex flex-col w-full items-center justify-center">
       {/* Enhanced header section */}

@@ -17,7 +17,7 @@ interface DatePickerProps {
   setDate: (date: Date | null) => void;
 }
 
-export function DatePicker({ date, setDate }: DatePickerProps): JSX.Element {
+export function DatePicker({ date, setDate }: DatePickerProps)  {
   return (
     <Popover>
       <PopoverTrigger asChild>

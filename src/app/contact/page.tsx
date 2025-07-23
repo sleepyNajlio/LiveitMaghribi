@@ -8,7 +8,7 @@ import MapComponent from "@/components/MapComponent";
 import { Button } from "@/components/ui/button";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
-export default function Contact(): JSX.Element {
+export default function Contact()  {
   return (
     <div>
       {/* Stacked section */}

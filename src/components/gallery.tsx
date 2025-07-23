@@ -8,7 +8,7 @@ interface GalleryImage {
   alt: string;
 }
 
-const Gallery = (): JSX.Element => {
+const Gallery = ()  => {
   const galleryImages: GalleryImage[] = [
     {
       src: "/images/gallery/cut1.jpg",

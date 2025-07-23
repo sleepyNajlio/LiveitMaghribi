@@ -13,7 +13,7 @@ interface Plan {
   prices: PriceItem[];
 }
 
-const Pricing = (): JSX.Element => {
+const Pricing = ()  => {
   const plans: Plan[] = [
     {
       title: "Cours Collectifs (60 min)",

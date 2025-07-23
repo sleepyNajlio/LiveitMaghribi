@@ -10,7 +10,7 @@ import { Button } from "./ui/button";
 import { Faq } from "@/content/Faq";
 import { motion } from "framer-motion";
 
-export const FaqSection = (): JSX.Element => {
+export const FaqSection = ()  => {
   return (
     <section className="max-w-4xl mx-auto py-8 lg:py-12 px-4">
       <motion.div

@@ -5,7 +5,7 @@ import { services } from "@/content/content";
 import { useState } from "react";
 import ServiceCard from "./common/serviceCard";
 
-export const Services = (): JSX.Element => {
+export const Services = ()  => {
   // Add state to track which card is flipped
   const [flippedCardIndex, setFlippedCardIndex] = useState<number | null>(null);
 

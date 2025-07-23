@@ -24,7 +24,7 @@ const FlipCard = ({
   isFlipped,
   calUsername,
   calEvent,
-}: FlipCardProps): JSX.Element => {
+}: FlipCardProps)  => {
   return (
     <div className="group relative w-full h-auto cursor-pointer " onClick={onFlip}>
       <div

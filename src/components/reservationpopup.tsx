@@ -68,7 +68,7 @@ interface ReservationPopupProps {
 }
 
 // Main ReservationPopup component
-const ReservationPopup = ({ trigger, open, onOpenChange }: ReservationPopupProps): JSX.Element => {
+const ReservationPopup = ({ trigger, open, onOpenChange }: ReservationPopupProps)  => {
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {

@@ -7,7 +7,7 @@ import { IoSparklesSharp } from "react-icons/io5";
 import { LuBrush, LuHeartHandshake } from "react-icons/lu";
 import { Button } from "@/components/ui/button";
 
-export default function About(): JSX.Element {
+export default function About()  {
   const backgroundSvg = `
   <svg width="600" height="900" viewBox="0 0 600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0,900 V300 

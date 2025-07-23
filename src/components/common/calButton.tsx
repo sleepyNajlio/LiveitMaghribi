@@ -10,7 +10,7 @@ export default function CalButton({
   variant = "default",
   size = "default",
   className,
-}: CalButtonProps): JSX.Element {
+}: CalButtonProps)  {
   useEffect(() => {
     (async function () {
       try {

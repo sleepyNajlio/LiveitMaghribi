@@ -7,7 +7,7 @@ import { PiClockClockwiseLight } from "react-icons/pi";
 import { contact, about } from "@/content/content";
 import Link from "next/link";
 
-const AboutUs = (): JSX.Element => {
+const AboutUs = ()  => {
   return (
     <section
       id="about"

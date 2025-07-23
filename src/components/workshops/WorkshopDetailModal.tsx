@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogTitle, DialogClose } from "@/components/ui
 import { Button } from "@/components/ui/button";
 import type { WorkshopDetailModalProps } from "@/types";
 
-export const WorkshopDetailModal = ({ workshop, open, onClose }: WorkshopDetailModalProps): JSX.Element | null => {
+export const WorkshopDetailModal = ({ workshop, open, onClose }: WorkshopDetailModalProps)  | null => {
   if (!workshop) return null;
   const calendlyUrl = `https://calendly.com/liveitmaghribi/${workshop.calNamespace}`;
 

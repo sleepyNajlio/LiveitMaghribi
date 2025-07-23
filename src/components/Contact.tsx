@@ -12,7 +12,7 @@ interface FormData {
   message: string;
 }
 
-const Contact = (): JSX.Element => {
+const Contact = ()  => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
