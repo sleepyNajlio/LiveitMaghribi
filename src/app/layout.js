@@ -5,7 +5,9 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
-import { hero } from "../content/content";
+import { hero } from "@/content/content";
+import { GoogleTagManager} from "@next/third-parties/google";
+
 export const metadata = {
   title: hero.title,
   description: hero.description,
@@ -32,20 +34,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-19SSLE284Z"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-
-          gtag('config', 'G-19SSLE284Z');
-        </script>
-        {/* <link rel="preload" as="image" href="/images/hero-image.avif" type="image/avif" /> */}
+        <title>{hero.title}</title>
+         <link rel="preload" as="image" href="/images/hero-image.avif" type="image/avif" />
       </head>
       <body className={`${playfair.variable} font-work-sans bg-background `}>
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <GoogleTagManager gtmId="G-19SSLE284Z" />
         <SpeedInsights />
         <Analytics />
       </body>
