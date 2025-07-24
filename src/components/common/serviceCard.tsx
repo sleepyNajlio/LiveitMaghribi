@@ -63,7 +63,7 @@ export default function ServiceCard({ service }: ServiceCardProps)  {
           </p>
           <Button
             variant="outline"
-            className="w-fit font-sans text-accent border-accent rounded-full shadow-xl tracking-wide mb-2 px-8"
+            className="text-lg font-sans  text-primary bg-foreground  border-primary  rounded-full shadow-xl tracking-wide mb-2 px-8  py-6"
             asChild
           >
             <a href={`/Workshops#${encodeURIComponent(service.category)}`}>Step Inside</a>

@@ -45,7 +45,7 @@ export const FaqSection = ()  => {
             >
               <AccordionItem 
                 value={`item-${index}`} 
-                className="bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 px-6 py-2 hover:bg-card/70 transition-colors duration-200"
+                className="bg-card/40 backdrop-blur-sm rounded-xl border border-border/50 px-6 py-2 hover:bg-card/70 transition-colors duration-200"
               >
                 <AccordionTrigger className="text-lg font-semibold text-foreground hover:text-primary transition-colors duration-200 text-left">
                   {item.question}
@@ -72,7 +72,7 @@ export const FaqSection = ()  => {
         <div className="flex flex-col sm:flex-row gap-4">
           <Button 
             variant="outline" 
-            className="px-8 py-3 rounded-full border-2 border-foreground text-foreground  hover:scale-105 transition-all duration-300"
+            className="px-8 py-6 rounded-full border-2 border-foreground text-foreground text-lg hover:scale-105 transition-all duration-300"
             asChild
           >
             <a href="/contact" aria-label="Contact Live It Maghribi for more information">

@@ -16,7 +16,7 @@ import { Navigation, Scrollbar, Pagination, Autoplay } from "swiper/modules";
 
 export const ServicesCarousel = ()  => {
   return (
-    <div className="container mx-auto relative flex flex-col w-full items-center justify-center">
+    <div className=" relative flex flex-col w-full items-center justify-center">
       {/* Enhanced header section */}
       <motion.div 
         className="flex flex-col items-center justify-center gap-4 mb-8 lg:mb-12 max-w-4xl mx-auto text-center"
@@ -143,21 +143,21 @@ export const ServicesCarousel = ()  => {
       </motion.div>
 
       {/* Call to action */}
-      <motion.div
-        className="mt-8 lg:mt-12 text-center"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-      >
-        <a
-          href="/Workshops"
-          className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-lg hover:bg-primary/90 transition-colors duration-200 shadow-lg hover:shadow-xl"
-          aria-label="View all Moroccan workshops"
-        >
-          View All Workshops
-        </a>
-      </motion.div>
+      {/*<motion.div*/}
+      {/*  className="mt-8 lg:mt-12 text-center"*/}
+      {/*  initial={{ opacity: 0, y: 20 }}*/}
+      {/*  whileInView={{ opacity: 1, y: 0 }}*/}
+      {/*  viewport={{ once: true, amount: 0.5 }}*/}
+      {/*  transition={{ duration: 0.6, delay: 0.4 }}*/}
+      {/*>*/}
+      {/*  <a*/}
+      {/*    href="/Workshops"*/}
+      {/*    className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-lg hover:bg-primary/90 transition-colors duration-200 shadow-lg hover:shadow-xl"*/}
+      {/*    aria-label="View all Moroccan workshops"*/}
+      {/*  >*/}
+      {/*    View All Workshops*/}
+      {/*  </a>*/}
+      {/*</motion.div>*/}
     </div>
   );
 };

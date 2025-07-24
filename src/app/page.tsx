@@ -148,8 +148,8 @@ export default function Home() {
               {/* Location Info Grid */}
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
                 <div className="space-y-6">
-                  <div className="bg-card/40 rounded-2xl p-6 lg:p-8">
-                    <h3 className="text-xl font-bold text-primary tracking-wide  mb-4 font-playfair">
+                  <div className="bg-foreground/50 rounded-2xl p-6 lg:p-8">
+                    <h3 className="text-2xl font-extrabold text-primary tracking-wide  mb-4 font-playfair">
                       Visit Our Workshop
                     </h3>
                     <div className="space-y-3 text-muted">
@@ -168,8 +168,8 @@ export default function Home() {
                     </div>
                   </div>
                   
-                  <div className="bg-card/40 rounded-2xl p-6 lg:p-8">
-                    <h3 className="text-xl font-bold text-primary mb-4 font-playfair tracking-wide">
+                  <div className="bg-foreground/50  rounded-2xl p-6 lg:p-8">
+                    <h3 className="text-2xl font-extrabold text-primary mb-4 font-playfair tracking-wide">
                       Easy to Find
                     </h3>
                     <p className="text-muted leading-relaxed">
@@ -194,13 +194,13 @@ export default function Home() {
                   >
                     Plan Your Visit
                   </a>
-                  <a
-                    href="tel:+212610714670"
-                    className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary bg-foreground rounded-full font-semibold text-lg hover:bg-primary hover:border-foreground hover:text-primary-foreground transition-colors duration-200"
-                    aria-label="Call Live It Maghribi"
-                  >
-                    Call Us Now
-                  </a>
+                  {/*<a*/}
+                  {/*  href="tel:+212610714670"*/}
+                  {/*  className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary bg-foreground rounded-full font-semibold text-lg hover:bg-primary hover:border-foreground hover:text-primary-foreground transition-colors duration-200"*/}
+                  {/*  aria-label="Call Live It Maghribi"*/}
+                  {/*>*/}
+                  {/*  Call Us Now*/}
+                  {/*</a>*/}
                 </div>
               </div>
             </div>

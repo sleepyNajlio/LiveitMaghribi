@@ -10,7 +10,7 @@ body {
 @layer base {
   :root {
     /* Base colors */
-    --background: 12 45% 45%; /* Terracotta - #9f5744 */
+    --background: 12 45% 40%; /* Terracotta - #9f5744 */
     --foreground: 30 80% 92%; /* Cream - #feebd6 */
 
     /* Card variants */
@@ -61,12 +61,6 @@ body {
     /* Tag backgrounds */
     --tag-bg: 30 45% 85%; /* Beige */
 
-    /* Chart colors */
-    --chart-1: 12 45% 45%; /* Terracotta */
-    --chart-2: 35 40% 65%; /* Sand */
-    --chart-3: 20 30% 55%; /* Taupe */
-    --chart-4: 30 35% 75%; /* Warm beige */
-    --chart-5: 15 40% 60%; /* Rustic brown */
 
     /* UI radius */
     --radius: 0.5rem;

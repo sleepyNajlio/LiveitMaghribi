@@ -26,9 +26,9 @@ const Hero = ()  => {
   }, []);
 
   return (
-    <section className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-background text-foreground">
+    <section className="relative h-svh w-full flex flex-col items-center justify-center overflow-hidden bg-background text-foreground">
       {/* Background overlay */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-black/20 to-black/40"></div>
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-background/60 via-background/20 to-background/40 "></div>
 
       {/* Background media */}
       <div className="absolute inset-0 w-full">
@@ -73,17 +73,17 @@ const Hero = ()  => {
           </h1>
           
           {/* Subheading */}
-          <p className="text-lg sm:text-xl lg:text-2xl max-w-3xl mx-auto font-light text-balance leading-relaxed drop-shadow-lg">
+          <p className="text-lg sm:text-xl lg:text-2xl max-w-3xl mx-auto  text-balance leading-relaxed drop-shadow-lg">
             {hero.description}
           </p>
 
           {/* Key highlights */}
           <div className="flex flex-wrap justify-center gap-4 lg:gap-6 text-sm lg:text-base font-medium">
-            <div className="flex items-center gap-2 bg-background/30 backdrop-blur-sm rounded-full px-4 py-2">
+            <div className="flex items-center gap-2 bg-background/50 backdrop-blur-sm rounded-full px-4 py-2">
               <MapPin className="w-4 h-4" />
               <span>Kasbat Souss, Agadir</span>
             </div>
-            <div className="flex items-center gap-2 bg-background/30 backdrop-blur-sm rounded-full px-4 py-2">
+            <div className="flex items-center gap-2 bg-background/50 backdrop-blur-sm rounded-full px-4 py-2">
               <CalendarCheck className="w-4 h-4" />
               <span>Open Daily 10:30-19:30</span>
             </div>
@@ -94,7 +94,7 @@ const Hero = ()  => {
             <Button
               asChild
               size="lg"
-              className="px-8 py-4 bg-primary text-primary-foreground text-lg font-semibold rounded-full transition-all duration-300 hover:bg-primary/90 hover:scale-105 active:scale-95 shadow-2xl hover:shadow-3xl"
+              className="px-8 py-6 bg-foreground border border-primary text-background text-lg font-semibold rounded-full transition-all duration-300 hover:bg-primary/90 hover:text-foreground hover:scale-105 active:scale-95 shadow-2xl hover:shadow-3xl"
             >
               <a href="/Workshops" aria-label="Explore our authentic Moroccan workshops">
                 {hero.button}
@@ -125,7 +125,7 @@ const Hero = ()  => {
         }}
         className="absolute bottom-8 z-20"
       >
-        <ChevronsDown className="text-white w-8 h-8 lg:w-10 lg:h-10 drop-shadow-lg" />
+        <ChevronsDown className="text-foreground w-8 h-8 lg:w-10 lg:h-10 drop-shadow-lg" />
       </motion.div>
     </section>
   );

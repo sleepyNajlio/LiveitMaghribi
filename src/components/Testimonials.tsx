@@ -110,7 +110,7 @@ export default function Testimonials()  {
       >
         <Button
           variant="outline"
-          className="border-2 border-primary rounded-full py-4 px-8 text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-lg hover:shadow-xl"
+          className="border-2 border-primary rounded-full py-6 px-8 text-lg text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-lg hover:shadow-xl"
           asChild
         >
           <a
