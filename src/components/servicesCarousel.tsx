@@ -31,18 +31,18 @@ export const ServicesCarousel = ()  => {
         <p className="text-base md:text-lg lg:text-xl leading-relaxed font-light max-w-2xl text-muted text-balance">
           {services.description}
         </p>
-        
+
         {/* Workshop categories preview */}
-        {/*<div className="flex flex-wrap justify-center gap-2 mt-4">*/}
-        {/*  {["Clay & Earth", "Pattern & Heritage", "Textile & Thread", "Tastes & Tabletop"].map((category) => (*/}
-        {/*    <span */}
-        {/*      key={category}*/}
-        {/*      className="px-3 py-1 bg-accent/20 text-accent-foreground rounded-full text-sm font-medium"*/}
-        {/*    >*/}
-        {/*      {category}*/}
-        {/*    </span>*/}
-        {/*  ))}*/}
-        {/*</div>*/}
+        <div className="flex flex-wrap justify-center gap-2 mt-4">
+          {["Clay & Earth", "Pattern & Heritage", "Textile & Thread", "Tastes & Tabletop"].map((category) => (
+            <span
+              key={category}
+              className="px-3 py-1 bg-accent/20 text-accent-foreground rounded-full text-sm font-medium"
+            >
+              {category}
+            </span>
+          ))}
+        </div>
       </motion.div>
 
       {/* Enhanced carousel */}
@@ -141,23 +141,6 @@ export const ServicesCarousel = ()  => {
           ))}
         </Swiper>
       </motion.div>
-
-      {/* Call to action */}
-      {/*<motion.div*/}
-      {/*  className="mt-8 lg:mt-12 text-center"*/}
-      {/*  initial={{ opacity: 0, y: 20 }}*/}
-      {/*  whileInView={{ opacity: 1, y: 0 }}*/}
-      {/*  viewport={{ once: true, amount: 0.5 }}*/}
-      {/*  transition={{ duration: 0.6, delay: 0.4 }}*/}
-      {/*>*/}
-      {/*  <a*/}
-      {/*    href="/Workshops"*/}
-      {/*    className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-lg hover:bg-primary/90 transition-colors duration-200 shadow-lg hover:shadow-xl"*/}
-      {/*    aria-label="View all Moroccan workshops"*/}
-      {/*  >*/}
-      {/*    View All Workshops*/}
-      {/*  </a>*/}
-      {/*</motion.div>*/}
     </div>
   );
 };

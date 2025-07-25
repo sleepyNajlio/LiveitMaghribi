@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import { ServicesCarousel } from "../components/servicesCarousel";
 import Testimonials from "../components/Testimonials";
 import { FaqSection } from "@/components/Faq";
-import MapComponent from "@/components/MapComponent";
+import MapComponent from "../../../untitled/src/components/MapComponent";
 
 // Dynamic imports for non-critical components
 const DynamicTestimonials = dynamic(() => import("../components/Testimonials"), {
@@ -15,7 +15,7 @@ const DynamicFaqSection = dynamic(() => import("@/components/Faq").then(mod => (
   loading: () => <div className="h-48 bg-muted/20 animate-pulse rounded-xl" />,
 });
 
-const DynamicMapComponent = dynamic(() => import("@/components/MapComponent"), {
+const DynamicMapComponent = dynamic(() => import("../../../untitled/src/components/MapComponent"), {
   loading: () => <div className="h-96 bg-muted/20 animate-pulse rounded-xl" />,
 });
 

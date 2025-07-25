@@ -4,7 +4,7 @@ import { contact } from "@/content/contact";
 import { LuClock10, LuPhone } from "react-icons/lu";
 import { FaMapMarkerAlt, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { PiWarningOctagonLight } from "react-icons/pi";
-import MapComponent from "@/components/MapComponent";
+import MapComponent from "../../../../untitled/src/components/MapComponent";
 import { Button } from "@/components/ui/button";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
