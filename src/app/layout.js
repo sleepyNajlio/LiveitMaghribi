@@ -6,7 +6,7 @@ import "./globals.css";
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
 import { hero } from "@/content/content";
-import { GoogleTagManager} from "@next/third-parties/google";
+import { GoogleAnalytics} from "@next/third-parties/google";
 
 export const metadata = {
   title: hero.title,
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <GoogleTagManager gtmId="G-19SSLE284Z" />
+        <GoogleAnalytics gaId="G-19SSLE284Z" />
         <SpeedInsights />
         <Analytics />
       </body>
